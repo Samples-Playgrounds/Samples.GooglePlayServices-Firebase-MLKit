@@ -1,0 +1,3 @@
+[submodule "externals/submodules/gps-fb"]
+	path = externals/submodules/gps-fb
+	url = https://github.com/xamarin/GooglePlayServicesComponents.git
