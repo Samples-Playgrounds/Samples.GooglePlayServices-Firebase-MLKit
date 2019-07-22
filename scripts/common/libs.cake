@@ -3,6 +3,12 @@
 LibSourceSolutions = GetFiles(source_solutions);
 LibSourceProjects = GetFiles(source_projects);
 
+string[] configs = new string[] 
+{ 
+    "Debug", 
+    "Release" 
+};
+
 //---------------------------------------------------------------------------------------
 Task("libs")
     .IsDependentOn ("nuget-restore-libs")
@@ -26,36 +32,18 @@ Task("libs-msbuild-solutions")
         {
             foreach(FilePath sln in LibSourceSolutions)
             {
-                MSBuild
-                (
-                    sln.ToString(),
-                    new MSBuildSettings
-                    {
-                        Configuration = "Debug",
-                    }
-                    //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
-                );
-                MSBuild
-                (
-                    sln.ToString(),
-                    new MSBuildSettings
-                    {
-                        Configuration = "Release",
-                        BinaryLogger = new MSBuildBinaryLogSettings 
-                        { 
-                            Enabled = true, 
-                            FileName = MakeAbsolute(new FilePath("./output/libs.binlog"))
-                                            .FullPath 
+				foreach (string config in configs)
+                {
+                    MSBuild
+                    (
+                        sln.ToString(),
+                        new MSBuildSettings
+                        {
+                            Configuration = config,
                         }
-                    }
-                    //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
-                    // c.Targets.Clear();
-                    // c.Targets.Add("Pack");
-                    // c.Properties.Add("PackageOutputPath", new [] { MakeAbsolute(outputPath).FullPath });
-                    // c.Properties.Add("PackageRequireLicenseAcceptance", new [] { "true" });
-                    // c.Properties.Add("DesignTimeBuild", new [] { "false" });
-                    // c.Properties.Add("AndroidSdkBuildToolsVersion", new [] { "28.0.3" });
-                );
+                        //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
+                    );
+                }
             }
 
             return;
@@ -69,32 +57,18 @@ Task("libs-dotnet-solutions")
         {
             foreach(FilePath sln in LibSourceSolutions)
             {
-                DotNetCoreBuild
-                (
-                    sln.ToString(),
-                    // https://cakebuild.net/api/Cake.Common.Tools.DotNetCore.MSBuild/DotNetCoreMSBuildSettings/
-                    new DotNetCoreBuildSettings
-                    {
-                        Configuration = "Debug",
-                        DiagnosticOutput = true,
-                        // DetailedSummary = true,
-                        //DistributedFileLogger = true,
-                        //DistributedFileLogger = true,
-                    }
-                    //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
-                );
-                DotNetCoreBuild
-                (
-                    sln.ToString(),
-                    new DotNetCoreBuildSettings
-                    {
-                        Configuration = "Release",
-                        DiagnosticOutput = true,
-                        // DetailedSummary = true,
-                        //DistributedFileLogger = true,
-                    }
-                    //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
-                );
+				foreach (string config in configs)
+                {
+                    DotNetCoreBuild
+                    (
+                        sln.ToString(),
+                        new DotNetCoreBuildSettings
+                        {
+                            Configuration = config,
+                        }
+                        //.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
+                    );
+                }
             }
 
             return;
@@ -162,4 +136,29 @@ Task("libs-dotnet-projects")
             return;
         }
     );
+
+public void Build(string pattern)
+{
+	FilePathCollection files = GetFiles(pattern);
+
+	foreach(FilePath file in files)
+	{
+		foreach (string config in configs)
+		{
+			MSBuild
+			(
+				file.ToString(),
+				new MSBuildSettings
+				{
+					Configuration = config,
+				}
+				//.WithProperty("DefineConstants", "TRACE;DEBUG;NETCOREAPP2_0;NUNIT")
+				.WithProperty("AndroidClassParser", "jar2xml")
+				
+			);
+		}
+	}
+	
+	return;
+}
 //---------------------------------------------------------------------------------------
