@@ -344,5 +344,5 @@
   <Import Project="..\packages\Xamarin.Firebase.Iid.Interop.71.1601.0\build\MonoAndroid90\Xamarin.Firebase.Iid.Interop.targets" Condition="Exists('..\packages\Xamarin.Firebase.Iid.Interop.71.1601.0\build\MonoAndroid90\Xamarin.Firebase.Iid.Interop.targets')" />
   <Import Project="..\packages\Xamarin.Firebase.Iid.71.1710.0\build\MonoAndroid90\Xamarin.Firebase.Iid.targets" Condition="Exists('..\packages\Xamarin.Firebase.Iid.71.1710.0\build\MonoAndroid90\Xamarin.Firebase.Iid.targets')" />
   <Import Project="..\packages\Xamarin.Firebase.Messaging.71.1740.0\build\MonoAndroid90\Xamarin.Firebase.Messaging.targets" Condition="Exists('..\packages\Xamarin.Firebase.Messaging.71.1740.0\build\MonoAndroid90\Xamarin.Firebase.Messaging.targets')" />
-  <Import Project="..\packages\Xamarin.Android.ManifestMerger.1.0.0-preview02\build\monoandroid\Xamarin.Android.ManifestMerger.targets" Condition="Exists('..\packages\Xamarin.Android.ManifestMerger.1.0.0-preview02\build\monoandroid\Xamarin.Android.ManifestMerger.targets')" />
+  <Import Project="..\packages\Xamarin.Android.ManifestMerger.1.0.0-preview03\build\monoandroid\Xamarin.Android.ManifestMerger.targets" Condition="Exists('..\packages\Xamarin.Android.ManifestMerger.1.0.0-preview03\build\monoandroid\Xamarin.Android.ManifestMerger.targets')" />
 </Project>
