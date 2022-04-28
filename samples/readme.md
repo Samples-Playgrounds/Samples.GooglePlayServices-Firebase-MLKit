@@ -2,6 +2,39 @@
 
 Google.Play.Services and Firebase repro samples.
 
+## Samples
+
+*	Build fails when install Xamarin.GooglePlayServices.Ads.Lite in .NET MAUI RC1 #603
+
+	*	GPS
+
+	*	https://github.com/xamarin/GooglePlayServicesComponents/issues/603
+
+		*	https://github.com/nacompllo/AdsLiteIssue
+
+*	Unable to recognize single digit characters from receipts #566
+
+	*	FB
+
+	*	https://github.com/xamarin/GooglePlayServicesComponents/issues/566
+
+		*	https://github.com/manan-itsol/MlKitTextRecognitionSample
+
+*	.NET 6 packages don't download the native Java dependencies #553
+
+	*	GPS-FB-MLKit
+
+		*	https://github.com/xamarin/GooglePlayServicesComponents/issues/553
+
+			*	https://github.com/xamarin/GooglePlayServicesComponents/files/7695638/Archive.zip
+
+*	[BUG] Crash at runtime Xamarin.Firebase.InAppMessaging.Display 120.1.0.2 #551
+
+	*	https://github.com/xamarin/GooglePlayServicesComponents/issues/551
+
+		*	https://github.com/xamarin/GooglePlayServicesComponents/files/7682503/AppTest.zip
+
+
 
 *   Issue228-not_logged/archive_20190702/firebaseperfunoexperiment
     *   javac ACW errors
