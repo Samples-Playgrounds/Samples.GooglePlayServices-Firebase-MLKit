@@ -30,6 +30,8 @@ Google.Play.Services and Firebase repro samples.
 
 *	[BUG] Crash at runtime Xamarin.Firebase.InAppMessaging.Display 120.1.0.2 #551
 
+	*	FB
+
 	*	https://github.com/xamarin/GooglePlayServicesComponents/issues/551
 
 		*	https://github.com/xamarin/GooglePlayServicesComponents/files/7682503/AppTest.zip
