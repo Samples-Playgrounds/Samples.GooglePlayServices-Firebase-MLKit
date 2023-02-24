@@ -1,0 +1,3153 @@
+
+
+
+
+
+
+<!DOCTYPE html><html lang="en"
+      class=""><head><script>var a=window.devsite||{};window.devsite=a;a.readyCallbacks=[];window.devsite.readyCallbacks=a.readyCallbacks;a.ready=function(b){a.readyCallbacks.push(b)};window.devsite.ready=a.ready;
+</script><meta charset="utf-8"><meta name="xsrf_token" content="3aF-ZuUNJNL0uBjO7uFj8e07DbgRDM5NOD7WIfaIbrQ6MTU1MTk5MTg0MTI5Njg3OA" /><link rel="canonical" href="https://developers.google.com/android/ota"><link rel="alternate" href="https://developers.google.com/android/ota" hreflang="en"><link rel="alternate" href="https://developers.google.cn/android/ota" hreflang="en-cn"><link rel="alternate" href="https://developers.google.com/android/ota" hreflang="x-default"><link rel="shortcut icon" href="https://developers.google.com/_static/16eb031c2e/images/favicon.png"><link rel="apple-touch-icon" href="https://developers.google.com/_static/16eb031c2e/images/touch-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet"
+      
+      href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"
+      ><link rel="stylesheet"
+        href="https://developers.google.com/_static/16eb031c2e/css/devsite-blue-grey.css"><link rel="search"
+        type="application/opensearchdescription+xml"
+        title="Google Developers"
+        href="https://developers.google.com/s/opensearch.xml"><script src="https://developers.google.com/_static/16eb031c2e/js/jquery-bundle.js"></script><meta property="og:site_name" content="Google Developers"><meta property="og:type" content="website"><meta property="og:url" content="https://developers.google.com/android/ota"><meta property="og:locale" content="en"><script>
+    var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'en';
+  </script><title>Full OTA Images for Nexus and Pixel Devices &nbsp;|&nbsp; Google APIs for Android
+      &nbsp;|&nbsp; Google Developers</title><meta property="og:title" content="Full OTA Images for Nexus and Pixel Devices &nbsp;|&nbsp; Google APIs for Android
+      &nbsp;|&nbsp; Google Developers"><meta property="og:image"
+          content="https://developers.google.com/_static/16eb031c2e/images/share/devsite-blue-grey.png"><meta property="og:image:secure_url"
+          content="https://developers.google.com/_static/16eb031c2e/images/share/devsite-blue-grey.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"></head><body class="
+               devsite-doc-page
+               
+               
+               
+               devsite-header-no-upper-tabs
+               "
+        data-family="endorsed"
+        
+        
+        
+        id="top_of_page"><div class="devsite-wrapper"><div class="devsite-top-section-wrapper
+            "><header class="devsite-top-section nocontent"><div class="devsite-top-logo-row-wrapper-wrapper"><div class="devsite-top-logo-row-wrapper"><div class="devsite-top-logo-row devsite-full-site-width"><button type="button" class="devsite-expand-section-nav devsite-header-icon-button
+                                       button-flat material-icons gc-analytics-event"
+                  data-category="Site-Wide Custom Events" data-label="Hamburger menu"></button><div class="devsite-product-name-wrapper"><a class="devsite-product-name-link gc-analytics-event"
+       href="https://developers.google.com/android/"
+       data-category="Site-Wide Custom Events"
+       data-label="Project logo (header)"><img src="https://developers.google.com/site-assets/developers_64dp.png" class="devsite-product-logo"
+               alt="Google APIs for Android"></a><span class="devsite-product-name"><ul class="devsite-breadcrumb-list"><li class="devsite-breadcrumb-item"><a href="https://developers.google.com/android/" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Upper Header"
+       data-value="1">
+    
+    
+      
+        Google APIs for Android
+      
+    
+    
+    </a></li></ul></span></div><div class="devsite-header-upper-tabs"></div><form class="devsite-search-form"
+                action="https://developers.google.com/s/results/"
+                method="GET"
+                id="top-search"
+                search-placeholder='Search'><div id="searchbox" class="devsite-searchbox"><input placeholder='Search'
+         
+         type="text"
+         class="devsite-search-field devsite-search-query"
+         name="q"
+         value=""
+         autocomplete="off"
+         
+         aria-label="Search box"
+         ><div class="devsite-search-image material-icons"></div></div><input type="hidden"
+       name="p"
+       id="search_project"
+       value="/android/"
+       data-project-name="Google APIs for Android"
+       data-project-path="/android/"
+       data-query-match=""><input type="hidden" class="suggest-project" value="Google APIs for Android" /></form><a class="devsite-header-link devsite-top-button button gc-analytics-event"
+               
+               href="https://developers.google.com/products/"
+               
+               data-category="Site-Wide Custom Events"
+               data-label="Site header link"
+               track-type="globalNav"
+               track-name="all products"
+               track-metadata-position="nav"
+               track-metadata-eventDetail='nav'><div class="devsite-header-link-label">All Products</div></a><button type="button" class="devsite-search-button devsite-header-icon-button button-flat
+                                       material-icons"></button><a href="https://accounts.google.com/ServiceLogin?passive=true&continue=https%3A%2F%2Fdevelopers.google.com%2Fandroid%2Fota%3Frefresh%3D1&service=ahsid"
+   class="devsite-user-signin devsite-top-button button gc-analytics-event"
+   data-category="Site-Wide Custom Events"
+   data-label="Sign in button"
+   track-type='globalNav'
+   track-name='signIn'
+   track-metadata-eventDetail='nav'
+   track-metadata-position='nav'>
+  
+  Sign in
+</a></div></div></div><div class="devsite-collapsible-section"><div class="devsite-header-background devsite-full-site-width"><div class="devsite-doc-set-nav-row devsite-full-site-width"><nav class="devsite-doc-set-nav devsite-nav devsite-overflow-tabs-scroll-wrapper"><ul class="devsite-doc-set-nav-tab-list devsite-overflow-tabs-scroll"><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/"
+           class=" devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Home"
+         >
+          Home
+        </a></li><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/guides/overview"
+           class=" devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Guides"
+         >
+          Guides
+        </a></li><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/reference/packages"
+           class=" devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Reference"
+         >
+          Reference
+        </a></li><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/images"
+           class="devsite-doc-set-nav-active devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           aria-label="Downloads, selected"
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Downloads"
+         >
+          Downloads
+        </a></li></ul></nav></div></div></div></header><script>
+    if (window.jQuery) {
+      $(document).ready(function() {
+        if (window.devsite && window.devsite.search) {
+          
+          window.devsite.search.init('en')
+        }
+      });
+    }
+  </script></div><div id="gc-wrapper"itemscope itemtype="http://schema.org/Article"><input class="google-analytics-id-json" type="hidden" value="{&quot;dimensions&quot;: {&quot;dimension6&quot;: &quot;en&quot;, &quot;dimension4&quot;: &quot;Google APIs for Android&quot;, &quot;dimension5&quot;: &quot;en&quot;, &quot;dimension3&quot;: false, &quot;dimension1&quot;: &quot;Signed out&quot;, &quot;dimension8&quot;: null}, &quot;gaid&quot;: &quot;UA-24532603-1&quot;}"><script>
+      var dataLayer = [{"freeTrialEligibleUser": "False", "userCountry": "US", "language": {"requested": "en", "served": "en"}, "projectName": "Google APIs for Android", "scriptsafe": null, "signedIn": "False", "internalUser": "False"}];
+    </script>
+
+      
+        <div class="devsite-site-mask"></div>
+        
+  
+
+
+<nav class="devsite-nav-responsive devsite-nav nocontent" tabindex="0">
+  
+  <div class="devsite-nav-responsive-tabs-panel">
+    
+      
+
+
+
+<nav class="devsite-nav-responsive-tabs devsite-nav">
+  <ul class="devsite-nav-list">
+  
+
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <a 
+             href="https://developers.google.com/android/"
+           
+           class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                  "
+           
+           data-category="Site-Wide Custom Events" data-label="Responsive Tab: Home">
+          Home
+        </a>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <a 
+             href="https://developers.google.com/android/guides/overview?nav=true"
+           
+           class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                  "
+           
+           data-category="Site-Wide Custom Events" data-label="Responsive Tab: Guides">
+          Guides
+        </a>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <a 
+             href="https://developers.google.com/android/reference/packages?nav=true"
+           
+           class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                  "
+           
+           data-category="Site-Wide Custom Events" data-label="Responsive Tab: Reference">
+          Reference
+        </a>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <span class="devsite-nav-responsive-forward devsite-nav-responsive-tab devsite-nav-title
+                     devsite-nav-active gc-analytics-event"
+              data-category="Site-Wide Custom Events" data-label="Responsive Tab: Downloads"
+              tabindex="0">
+          Downloads
+        </span>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      <a href="https://developers.google.com/products/"
+         class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+         data-label="Responsive Tab: all_products"
+         >
+        All Products
+      </a>
+    </li>
+  
+  </ul>
+</nav>
+
+
+    
+  </div>
+  
+  
+  <div class="devsite-nav-responsive-sidebar-panel">
+    
+    <div class="devsite-nav-responsive-back" tabindex="0"></div>
+    
+    <nav class="devsite-nav-responsive-sidebar">
+      
+      
+    </nav>
+  </div>
+  
+  
+</nav>
+
+
+        <div class="devsite-main-content clearfix">
+
+        
+        
+
+        
+  
+  
+    
+    
+      
+  <nav class="devsite-section-nav devsite-nav nocontent">
+    <ul class="devsite-nav-list"><li class="devsite-nav-item"><a href="https://developers.google.com/android/images" class="devsite-nav-title">Factory Images</a></li><li class="devsite-nav-item devsite-nav-active"><a href="https://developers.google.com/android/ota" class="devsite-nav-title">Full OTA Images</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/drivers" class="devsite-nav-title">Driver Binaries</a></li></ul>
+  </nav>
+
+    
+
+    
+  <nav class="devsite-page-nav devsite-nav"></nav>
+
+
+      <article class="devsite-article">
+        <article class="devsite-article-inner">
+  
+          
+  
+
+
+<div class="devsite-rating-container
+            "><div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="1" data-category="Site-Wide Custom Events" data-label="Star Rating 1"
+         track-metadata-score="1" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="2" data-category="Site-Wide Custom Events" data-label="Star Rating 2"
+         track-metadata-score="2" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="3" data-category="Site-Wide Custom Events" data-label="Star Rating 3"
+         track-metadata-score="3" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="4" data-category="Site-Wide Custom Events" data-label="Star Rating 4"
+         track-metadata-score="4" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="5" data-category="Site-Wide Custom Events" data-label="Star Rating 5"
+         track-metadata-score="5" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 5 out of 5"></div></div><div class="devsite-rating-description"></div><div class="devsite-rating-internal"><span class="devsite-rating-stats"></span></div></div><script>
+  $(document).ready(function() {
+    devsite.ratings.init(
+      document.querySelectorAll('#devsite-feedback-project'), false
+      
+    );
+  });
+</script>
+
+
+  
+  <nav class="devsite-breadcrumb-nav devsite-nav">
+    
+
+
+<ul class="devsite-breadcrumb-list">
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <a href="https://developers.google.com/products/" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Breadcrumbs"
+       data-value="1">
+    
+    
+      Products
+    
+    
+    </a>
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <div class="devsite-breadcrumb-guillemet material-icons"></div>
+    
+    
+    <a href="https://developers.google.com/android/" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Breadcrumbs"
+       data-value="2">
+    
+    
+      Google APIs for Android
+    
+    
+    </a>
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <div class="devsite-breadcrumb-guillemet material-icons"></div>
+    
+    
+    <a href="https://developers.google.com/android/images" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Breadcrumbs"
+       data-value="3">
+    
+    
+      Downloads
+    
+    
+    </a>
+    
+  </li>
+  
+</ul>
+
+  </nav>
+  
+  
+  <h1 itemprop="name" class="devsite-page-title">
+    Full OTA Images for Nexus and Pixel Devices
+  </h1>
+  
+  
+  <nav class="devsite-page-nav-embedded devsite-nav"></nav>
+  
+  <div class="devsite-article-body clearfix
+            "
+       itemprop="articleBody">
+    
+
+
+<p>This page contains full OTA update packages that allow you to restore your Nexus
+or Pixel device&#39;s original factory firmware. You will find these files useful
+if you have experienced a failure to take an OTA. This has the same effect as
+flashing the corresponding factory image, but without the need to wipe the
+device or unlock the bootloader.</p>
+
+<p>These files are for use only on your personal Nexus or Pixel device and may not
+be disassembled, decompiled, reverse engineered, modified or redistributed by
+you or used in any way except as specifically set forth in the license terms
+that came with your device.</p>
+
+<h2 id="legal">Terms and conditions</h2>
+
+<p>Downloading of the system image and use of the device software is subject to the
+<a href="https://www.google.com/intl/en/policies/terms/">Google Terms of Service</a>. By
+continuing, you agree to the
+<a href="https://www.google.com/intl/en/policies/terms/">Google Terms of Service</a> and
+<a href="https://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>. Your
+downloading of the system image and use of the device software may also be
+subject to certain third-party terms of service, which can be found in
+<strong>Settings &gt; About phone &gt; Legal information</strong>, or as otherwise provided.</p>
+
+
+
+<h2 id="instructions">Updating instructions</h2>
+<aside class="caution"><strong>Caution:</strong><span> Be certain to first backup any personal data such as photos before
+applying update.</span></aside>
+<p>To update a device using one of the OTA images below, you need the latest <code>adb</code>
+tool. You can get it from the <strong>Android SDK Platform-Tools</strong> package, which you can
+<a href="https://developer.android.com/studio/releases/platform-tools.html">download here</a>.</p>
+
+<p>Don&#39;t forget to either add <code>adb</code> to your <code>PATH</code> environment variable or change
+into the directory containing the executable.</p>
+
+<p>Also be certain that you&#39;ve set up USB access for your device, as described in
+<a href="https://developer.android.com/studio/run/device.html">Run Apps on a Hardware Device</a>.</p>
+
+<p>To apply an OTA update image:</p>
+
+<ol>
+<li>Make sure that there is no pending OTA update, by going to <strong>Settings &gt;
+About phone &gt; System updates</strong>, which should say &quot;Your system is
+up to date&quot;.</li>
+<li>Download the appropriate update image for your device below.</li>
+<li>Verify the checksum of the image: the OTA mechanism has a built-in validation
+feature, but verifying will save you some time if the file is incomplete.
+The last portion of the filename is the first 8 digits of its SHA-256
+checksum; the full SHA-256 checksum is also shown next to the download link.</li>
+<li>With the device powered on and USB debugging enabled, execute:
+<pre>adb reboot recovery</pre>
+If you&#39;re unable to use adb to reboot into recovery, you can use the
+<a href="https://source.android.com/source/running#booting-into-fastboot-mode">key combination</a>
+for your device instead, and then select the <strong>Recovery</strong> option from the
+bootloader menu.
+The device is now in recovery mode and an Android logo with red exclamation
+mark should appear on screen.</li>
+<li>To access the recovery menu, hold the <strong>Power</strong> button and press
+<strong>Volume Up</strong> once. The recovery text menu will appear.</li>
+<li>To enter sideload mode, select the option <strong>Apply update from ADB</strong>.</li>
+<li>Run the following command:
+<pre>adb devices</pre>
+and check that your device shows up with &quot;sideload&quot; next to its name.</li>
+<li>Run the following command:
+<pre>adb sideload <var>ota_file.zip</var></pre>
+where <var>ota_file.zip</var> is the name of the file you have downloaded and
+verified.</li>
+<li>Once the update finishes, reboot the phone by choosing
+<strong>Reboot system now</strong>.</li>
+</ol>
+
+<p>For security, you should disable USB debugging when the device is not being
+updated.</p>
+
+
+
+<h2 id="crosshatch">"crosshatch" for Pixel 3 XL</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="crosshatchpd1a.180720.030">
+    <td>9.0.0 (PD1A.180720.030, Sep 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/crosshatch-ota-pd1a.180720.030-21ac68ff.zip">Link</a></td>
+    <td>21ac68ff9e6aacefec2be4c4dde1cfa0b45e0b4aefe412dc741c4f096cbc6af5</td>
+  </tr>
+  <tr id="crosshatchpd1a.180720.031">
+    <td>9.0.0 (PD1A.180720.031, Sep 2018, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/crosshatch-ota-pd1a.180720.031-e5f99be0.zip">Link</a></td>
+    <td>e5f99be08947d7cb75d86d3c2c837d4d9b225a9d35f44be36728cc57402c62c4</td>
+  </tr>
+  <tr id="crosshatchpq1a.181105.017.a1">
+    <td>9.0.0 (PQ1A.181105.017.A1, Nov 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/crosshatch-ota-pq1a.181105.017.a1-feb712c3.zip">Link</a></td>
+    <td>feb712c3ca8b5b58a13543969dde22702ecb62d051cd38958a40cfa444f03e6c</td>
+  </tr>
+  <tr id="crosshatchpq1a.181205.006">
+    <td>9.0.0 (PQ1A.181205.006, Dec 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/crosshatch-ota-pq1a.181205.006-bc75321e.zip">Link</a></td>
+    <td>bc75321ebeeafde609d2e096f0a49beeb6821dd5d4ffef3f499a8b78fe92bd55</td>
+  </tr>
+  <tr id="crosshatchpq1a.181205.006.a1">
+    <td>9.0.0 (PQ1A.181205.006.A1, Dec 2018, Docomo)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/crosshatch-ota-pq1a.181205.006.a1-359dc9b0.zip">Link</a></td>
+    <td>359dc9b019c2ab4e54a3c3133605411104f6e908273c492cbb89b2a30a982af7</td>
+  </tr>
+  <tr id="crosshatchpq1a.190105.004">
+    <td>9.0.0 (PQ1A.190105.004, Jan 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/crosshatch-ota-pq1a.190105.004-5f23d043.zip">Link</a></td>
+    <td>5f23d043fe29c47ea00d87f04fc3cd7393bcf7602ebbf3b3e670a5e354efb79f</td>
+  </tr>
+  <tr id="crosshatchpq2a.190205.001">
+    <td>9.0.0 (PQ2A.190205.001, Feb 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/crosshatch-ota-pq2a.190205.001-4225fb81.zip">Link</a></td>
+    <td>4225fb81e4966985965ca80b26d165dc9344dbbb5c2128dde55f9092f71ad5e4</td>
+  </tr>
+  <tr id="crosshatchpq2a.190305.002">
+    <td>9.0.0 (PQ2A.190305.002, Mar 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/crosshatch-ota-pq2a.190305.002-5f13844f.zip">Link</a></td>
+    <td>5f13844fc314f0ebe1d69ec233246126a1197aaf119af40d0ed68a170ca6836c</td>
+  </tr>
+</table>
+
+
+<h2 id="blueline">"blueline" for Pixel 3</h2>
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="bluelinepd1a.180720.030">
+    <td>9.0.0 (PD1A.180720.030, Sep 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/blueline-ota-pd1a.180720.030-1d5a4f8d.zip">Link</a></td>
+    <td>1d5a4f8dc5b91a1a78e9b44357e62a49dbc1d64965d743f01da563d4d534092b</td>
+  </tr>
+  <tr id="bluelinepd1a.180720.031">
+    <td>9.0.0 (PD1A.180720.031, Sep 2018, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/blueline-ota-pd1a.180720.031-60fa3eba.zip">Link</a></td>
+    <td>60fa3ebaf1ddc6bbd93e20c261014f85329c37acd9d389e98351452372b287d7</td>
+  </tr>
+  <tr id="bluelinepq1a.181105.017.a1">
+    <td>9.0.0 (PQ1A.181105.017.A1, Nov 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/blueline-ota-pq1a.181105.017.a1-7f2186c3.zip">Link</a></td>
+    <td>7f2186c3905eafcaee2dc9b965633963224e54361015d3e371bb66bf3419b4fe</td>
+  </tr>
+  <tr id="bluelinepq1a.181205.006">
+    <td>9.0.0 (PQ1A.181205.006, Dec 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/blueline-ota-pq1a.181205.006-25420c78.zip">Link</a></td>
+    <td>25420c7848fb2f07b0b0eaf5a6584f01aec9a01bc901d9c7c3a2ce7121463d4a</td>
+  </tr>
+  <tr id="bluelinepq1a.181205.006.a1">
+    <td>9.0.0 (PQ1A.181205.006.A1, Dec 2018, Docomo)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/blueline-ota-pq1a.181205.006.a1-a665cd08.zip">Link</a></td>
+    <td>a665cd087b87fd0b9186441faed55835b208f39af7bb8ad02698495f8890c7a0</td>
+  </tr>
+  <tr id="bluelinepq1a.190105.004">
+    <td>9.0.0 (PQ1A.190105.004, Jan 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/blueline-ota-pq1a.190105.004-6aad2760.zip">Link</a></td>
+    <td>6aad27604e16452df0fe256ccf761ba7a45e8dfb3653136def6d2136c201c078</td>
+  </tr>
+  <tr id="bluelinepq2a.190205.001">
+    <td>9.0.0 (PQ2A.190205.001, Feb 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/blueline-ota-pq2a.190205.001-c4975610.zip">Link</a></td>
+    <td>c497561067a9600162f310519b2dfcc91745bee300e508255b914f669db51fd5</td>
+  </tr>
+  <tr id="bluelinepq2a.190305.002">
+    <td>9.0.0 (PQ2A.190305.002, Mar 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/blueline-ota-pq2a.190305.002-814c6733.zip">Link</a></td>
+    <td>814c6733c37b4d2c83115c1ad71e41011591c0f1705ac9b5e9210942211f04a6</td>
+  </tr>
+</table>
+
+
+<h2 id="taimen">"taimen" for Pixel 2 XL</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="taimenopd1.170816.010">
+    <td>8.0.0 (OPD1.170816.010, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opd1.170816.010-825664c4.zip">Link</a></td>
+    <td>825664c4b581bae9af8231ad323ad5fc63105785d868bdd53b3c9dfb75bdcca1</td>
+  </tr>
+  <tr id="taimenopd1.170816.011">
+    <td>8.0.0 (OPD1.170816.011, Sep 2017, Telstra)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opd1.170816.011-797ba455.zip">Link</a></td>
+    <td>797ba455bb5e6a3c8d7be5a4f0800983bbcb4495d1be0bcf2bc1407c53e7c9b9</td>
+  </tr>
+  <tr id="taimenopd1.170816.012">
+    <td>8.0.0 (OPD1.170816.012, Sep 2017, Rogers, Fido)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opd1.170816.012-c726c936.zip">Link</a></td>
+    <td>c726c936cab143b4c99ed71463bfbbab7af841374942f0f06a8945da4197dae9</td>
+  </tr>
+  <tr id="taimenopd3.170816.012">
+    <td>8.0.0 (OPD3.170816.012, Sep 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opd3.170816.012-b436aae6.zip">Link</a></td>
+    <td>b436aae670c6ca95d62494c3d050507217c999a12c2723eedf3e341184ad8653</td>
+  </tr>
+  <tr id="taimenopd1.170816.025">
+    <td>8.0.0 (OPD1.170816.025, Nov 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opd1.170816.025-f62d726d.zip">Link</a></td>
+    <td>f62d726d1696713ac3e5d52794209cbe9857931b33ed368b5318d91282b34315</td>
+  </tr>
+  <tr id="taimenopd3.170816.023">
+    <td>8.0.0 (OPD3.170816.023, Nov 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opd3.170816.023-78039794.zip">Link</a></td>
+    <td>780397940f5a459d6f219fda5a361cfaf92f11c65b0300f65f0894a97c845c3a</td>
+  </tr>
+  <tr id="taimenopm1.171019.011">
+    <td>8.1.0 (OPM1.171019.011, Dec 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm1.171019.011-03a35830.zip">Link</a></td>
+    <td>03a3583099daaa1c5799a66ec715ff1541234bf409dc460efbeb44db7ce31a78</td>
+  </tr>
+  <tr id="taimenopm2.171019.012">
+    <td>8.1.0 (OPM2.171019.012, Dec 2017, Telus Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm2.171019.012-dc30d3b7.zip">Link</a></td>
+    <td>dc30d3b7a6aa8d1d74e2079012162004c68db4709ec1ed9dfe7d8df313995f43</td>
+  </tr>
+  <tr id="taimenopm1.171019.013">
+    <td>8.1.0 (OPM1.171019.013, Jan 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm1.171019.013-81edd164.zip">Link</a></td>
+    <td>81edd16456670a60cf1965f903d3562e586b50a36880c6474bf92c85beafaa43</td>
+  </tr>
+  <tr id="taimenopm1.171019.014">
+    <td>8.1.0 (OPM1.171019.014, Jan 2018, O2/UK only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm1.171019.014-14624c53.zip">Link</a></td>
+    <td>14624c537b2c8bbea4a89a8d48dbb4d4460c442d8e09fdd5f3f19155b96f5755</td>
+  </tr>
+  <tr id="taimenopm1.171019.018">
+    <td>8.1.0 (OPM1.171019.018, Feb 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm1.171019.018-660c9291.zip">Link</a></td>
+    <td>660c9291449657e4367210915e5751ac54131a95571be17c46b68c6095c0e527</td>
+  </tr>
+  <tr id="taimenopm1.171019.021">
+    <td>8.1.0 (OPM1.171019.021, Mar 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm1.171019.021-7995d48c.zip">Link</a></td>
+    <td>7995d48cb38c39d18a63b1501ae6e70169048cd1ed6aa298f2b414f98c7b31da</td>
+  </tr>
+  <tr id="taimenopm2.171019.029">
+    <td>8.1.0 (OPM2.171019.029, Apr 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm2.171019.029-1b792f19.zip">Link</a></td>
+    <td>1b792f19b92b87413091e8705ad1eb94dd57e2ea7e28c8d19b70356731c62e53</td>
+  </tr>
+  <tr id="taimenopm4.171019.015.a1">
+    <td>8.1.0 (OPM4.171019.015.A1, Apr 2018, Telus and Koodo Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm4.171019.015.a1-384ebe17.zip">Link</a></td>
+    <td>384ebe17cceeebccf2b8ccd6c9fccee295bbbfa7c78989f8e01bb2f7d84a990f</td>
+  </tr>
+  <tr id="taimenopm2.171019.029.b1">
+    <td>8.1.0 (OPM2.171019.029.B1, May 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm2.171019.029.b1-9276e899.zip">Link</a></td>
+    <td>9276e8998c65462271f332d91969b20a469459466048281aa288bcba53b5c65d</td>
+  </tr>
+  <tr id="taimenopm4.171019.016.b1">
+    <td>8.1.0 (OPM4.171019.016.B1, May 2018, Fi Carriers)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm4.171019.016.b1-3ff1f16f.zip">Link</a></td>
+    <td>3ff1f16f0183f1620586526ad41529b35d9d7f38dfa9ac3808acc7d39fe79d68</td>
+  </tr>
+  <tr id="taimenopm2.171026.006.c1">
+    <td>8.1.0 (OPM2.171026.006.C1, Jun 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm2.171026.006.c1-e5ce99bc.zip">Link</a></td>
+    <td>e5ce99bc58577ff089eaa04655c8fa58c8f334e2b3e617a511e68a2fc6bd4805</td>
+  </tr>
+  <tr id="taimenopm4.171019.021.e1">
+    <td>8.1.0 (OPM4.171019.021.E1, Jun 2018, T-Mobile)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm4.171019.021.e1-817aa113.zip">Link</a></td>
+    <td>817aa11345feb2d9b09746f85508276d100effbf32e10aedb4ed5bc5b4fa6098</td>
+  </tr>
+  <tr id="taimenopm2.171026.006.h1">
+    <td>8.1.0 (OPM2.171026.006.H1, Jul 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm2.171026.006.h1-339d5d30.zip">Link</a></td>
+    <td>339d5d3070497339b156af4106a7a03f60e08533f8eb911f8dc6f1c9698dfc03</td>
+  </tr>
+  <tr id="taimenopm4.171019.021.r1">
+    <td>8.1.0 (OPM4.171019.021.R1, Jul 2018, T-Mobile)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-opm4.171019.021.r1-83539bc7.zip">Link</a></td>
+    <td>83539bc7d06c1d0732f5aa309f2214aa40cfb614b2d00dac200fccdc48d74665</td>
+  </tr>
+  <tr id="taimenppr1.180610.009">
+    <td>9.0.0 (PPR1.180610.009, Aug 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-ppr1.180610.009-8ac43d39.zip">Link</a></td>
+    <td>8ac43d394b7ab8ef80e0fe396f47eec43e3581b1a8874521b8037c8490e56ab9</td>
+  </tr>
+  <tr id="taimenppr1.180610.011">
+    <td>9.0.0 (PPR1.180610.011, Aug 2018, Telstra)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-ppr1.180610.011-d5d094b0.zip">Link</a></td>
+    <td>d5d094b040f5326de388d56962ce7ece95aa4513d41aa80894f55b79c8e348e8</td>
+  </tr>
+  <tr id="taimenppr2.180905.005">
+    <td>9.0.0 (PPR2.180905.005, Sep 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-ppr2.180905.005-6f1f7ef7.zip">Link</a></td>
+    <td>6f1f7ef71125619c07108f5a87b837e7b91c8df9dc7a3cec067d79a01452ae45</td>
+  </tr>
+  <tr id="taimenppr2.181005.003">
+    <td>9.0.0 (PPR2.181005.003, Oct 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-ppr2.181005.003-b1969df7.zip">Link</a></td>
+    <td>b1969df7adb62989695a6c5a52a8b58ec65a19a9d1ea40a77043998feb6facfd</td>
+  </tr>
+  <tr id="taimenpq1a.181105.017.a1">
+    <td>9.0.0 (PQ1A.181105.017.A1, Nov 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-pq1a.181105.017.a1-36f455f8.zip">Link</a></td>
+    <td>36f455f81914eb322607110ec283913dd072905e405c232434e499261ee786ff</td>
+  </tr>
+  <tr id="taimenpq1a.181205.002">
+    <td>9.0.0 (PQ1A.181205.002, Dec 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-pq1a.181205.002-5f46b944.zip">Link</a></td>
+    <td>5f46b9449157d3aef1771872b7b18e46c81ee56061e802dd3eecbea7e4030e6a</td>
+  </tr>
+  <tr id="taimenpq1a.190105.004">
+    <td>9.0.0 (PQ1A.190105.004, Jan 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-pq1a.190105.004-27e32aa1.zip">Link</a></td>
+    <td>27e32aa14278601254f8983672e8b12fb646756c804725a5cf06ca918def33d4</td>
+  </tr>
+  <tr id="taimenpq2a.190205.002">
+    <td>9.0.0 (PQ2A.190205.002, Feb 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-pq2a.190205.002-1f4c18f0.zip">Link</a></td>
+    <td>1f4c18f0756bdcc9ed5de2cff42084a8821547094d2cb1890b1a87b863f62310</td>
+  </tr>
+  <tr id="taimenpq2a.190305.002">
+    <td>9.0.0 (PQ2A.190305.002, Mar 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/taimen-ota-pq2a.190305.002-6f1909e8.zip">Link</a></td>
+    <td>6f1909e8a11d32510e5f3e2342b2d078a5fcb9472a61831c97e57e27816549d6</td>
+  </tr>
+</table>
+
+
+<h2 id="walleye">"walleye" for Pixel 2</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="walleyeopd1.170816.010">
+    <td>8.0.0 (OPD1.170816.010, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opd1.170816.010-768eb7b1.zip">Link</a></td>
+    <td>768eb7b1141db97be5c8e5118935c19178e5a12defe862c86dfd6dc0eb468f31</td>
+  </tr>
+  <tr id="walleyeopd1.170816.011">
+    <td>8.0.0 (OPD1.170816.011, Sep 2017, Telstra)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opd1.170816.011-1e0ba663.zip">Link</a></td>
+    <td>1e0ba663ab69d5ef3f4130ea03322856018877e5124a94e60c0065e507065a10</td>
+  </tr>
+  <tr id="walleyeopd1.170816.012">
+    <td>8.0.0 (OPD1.170816.012, Sep 2017, Rogers, Fido)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opd1.170816.012-e69461b4.zip">Link</a></td>
+    <td>e69461b4ed3471a3c96607b335f1a469776f068ff7ffa7ee861284b06fb9b1ca</td>
+  </tr>
+  <tr id="walleyeopd3.170816.012">
+    <td>8.0.0 (OPD3.170816.012, Sep 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opd3.170816.012-bbc91277.zip">Link</a></td>
+    <td>bbc9127714099c776fcc3b79edf3daaccffe681699dd33c58a4a676d2e2b4535</td>
+  </tr>
+  <tr id="walleyeopd1.170816.018">
+    <td>8.0.0 (OPD1.170816.018, Nov 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opd1.170816.018-9b02fd1c.zip">Link</a></td>
+    <td>9b02fd1cd6c13d7f8909a673cd22100b95a37eea13cece6debd121cb4d607d8e</td>
+  </tr>
+  <tr id="walleyeopd2.170816.015">
+    <td>8.0.0 (OPD2.170816.015, Nov 2017, DTAG)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opd2.170816.015-33c7118e.zip">Link</a></td>
+    <td>33c7118eb6489da7b8feb2c2f0118e5067bcb26ab9634d14b08b21ad978b38c1</td>
+  </tr>
+  <tr id="walleyeopd3.170816.016">
+    <td>8.0.0 (OPD3.170816.016, Nov 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opd3.170816.016-a0bf57be.zip">Link</a></td>
+    <td>a0bf57beb9b2c45eb8c9f77a9f55cd35d3af673eb2083a7f05e84c2eff659651</td>
+  </tr>
+  <tr id="walleyeopd1.170816.025">
+    <td>8.0.0 (OPD1.170816.025, Nov 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opd1.170816.025-70ad5f95.zip">Link</a></td>
+    <td>70ad5f95391ad34520cc16d497acff338c5c990cc81883bb67cc470589dd5e57</td>
+  </tr>
+  <tr id="walleyeopd3.170816.023">
+    <td>8.0.0 (OPD3.170816.023, Nov 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opd3.170816.023-b97764eb.zip">Link</a></td>
+    <td>b97764ebdec5f969787a94d8f685c1ac70a646961f124b01491e4c7ee4afdcec</td>
+  </tr>
+  <tr id="walleyeopm1.171019.011">
+    <td>8.1.0 (OPM1.171019.011, Dec 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm1.171019.011-4f58f0f0.zip">Link</a></td>
+    <td>4f58f0f0cd1e90db605bdd918decac55ce166ea999f437a50aaf388dc6c7fb11</td>
+  </tr>
+  <tr id="walleyeopm2.171019.012">
+    <td>8.1.0 (OPM2.171019.012, Dec 2017, Telus Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm2.171019.012-ae2ee0f5.zip">Link</a></td>
+    <td>ae2ee0f5be023a56fcb0ff13267eef917f71ffa052a49a9efc750609fdda3ed1</td>
+  </tr>
+  <tr id="walleyeopm1.171019.013">
+    <td>8.1.0 (OPM1.171019.013, Jan 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm1.171019.013-5ccf0b20.zip">Link</a></td>
+    <td>5ccf0b204cc2375e115800dfe8db9ae93e821374261a0fb4ef4c041a9412bde2</td>
+  </tr>
+  <tr id="walleyeopm1.171019.014">
+    <td>8.1.0 (OPM1.171019.014, Jan 2018, O2/UK only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm1.171019.014-a871c13e.zip">Link</a></td>
+    <td>a871c13ebe5fdacac59658c9d07f5a42bf20a5872c7df7bf3108290edd283418</td>
+  </tr>
+  <tr id="walleyeopm2.171019.016">
+    <td>8.1.0 (OPM2.171019.016, Jan 2018, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm2.171019.016-c59768eb.zip">Link</a></td>
+    <td>c59768eb4344db412ee1dd658146d939bbf2b858d54206f6cb1a5a7a2913e05c</td>
+  </tr>
+  <tr id="walleyeopm1.171019.019">
+    <td>8.1.0 (OPM1.171019.019, Feb 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm1.171019.019-5b2af7a9.zip">Link</a></td>
+    <td>5b2af7a9f00da30a2299868e72df2aeffe400d74a470b39586ce77f6962caaec</td>
+  </tr>
+  <tr id="walleyeopm1.171019.021">
+    <td>8.1.0 (OPM1.171019.021, Mar 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm1.171019.021-bb894efa.zip">Link</a></td>
+    <td>bb894efab495db9c09d0a338e1d27514e76cb432c93898dff17f6cd241186cae</td>
+  </tr>
+  <tr id="walleyeopm2.171019.029">
+    <td>8.1.0 (OPM2.171019.029, Apr 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm2.171019.029-ffa41853.zip">Link</a></td>
+    <td>ffa41853eb56f58702f2ea71ecd568e0ed1b6d9ccce1d493ac77b16c2a9f249e</td>
+  </tr>
+  <tr id="walleyeopm4.171019.015.a1">
+    <td>8.1.0 (OPM4.171019.015.A1, Apr 2018, Telus and Koodo Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm4.171019.015.a1-777ad923.zip">Link</a></td>
+    <td>777ad9236cd3771aa784a41dce7a112181d03359b74559f45bd61d9516c8e01f</td>
+  </tr>
+  <tr id="walleyeopm2.171019.029.b1">
+    <td>8.1.0 (OPM2.171019.029.B1, May 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm2.171019.029.b1-2967bea4.zip">Link</a></td>
+    <td>2967bea4e990b4c97a7e575be104c64d4f3a61a6cc5838f8a1377a5758739e28</td>
+  </tr>
+  <tr id="walleyeopm4.171019.016.b1">
+    <td>8.1.0 (OPM4.171019.016.B1, May 2018, Fi Carriers)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm4.171019.016.b1-b83fbf0f.zip">Link</a></td>
+    <td>b83fbf0fa18606f541eadc585846dc1572052166e652b6bfa97018e1cc7dc842</td>
+  </tr>
+  <tr id="walleyeopm2.171026.006.c1">
+    <td>8.1.0 (OPM2.171026.006.C1, Jun 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm2.171026.006.c1-33e9c879.zip">Link</a></td>
+    <td>33e9c879c25bf36420cb96942e8349a2ed5e58de654df5e9521f2b624b037ea6</td>
+  </tr>
+  <tr id="walleyeopm4.171019.021.e1">
+    <td>8.1.0 (OPM4.171019.021.E1, Jun 2018, T-Mobile)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm4.171019.021.e1-a374575e.zip">Link</a></td>
+    <td>a374575e2261b869293c084fd9d77183c819c0654580ad2ae22e5a03c0f3638b</td>
+  </tr>
+  <tr id="walleyeopm2.171026.006.g1">
+    <td>8.1.0 (OPM2.171026.006.G1, Jul 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm2.171026.006.g1-b06e7b35.zip">Link</a></td>
+    <td>b06e7b35f5c7db1add35e7fd01f9d1f7498190fc384a373912cab9ab2865727c</td>
+  </tr>
+  <tr id="walleyeopm4.171019.021.q1">
+    <td>8.1.0 (OPM4.171019.021.Q1, Jul 2018, T-Mobile)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-opm4.171019.021.q1-065c848f.zip">Link</a></td>
+    <td>065c848f020368c853c2b185652fd095260198497f09d3e67ca49ab3639dc164</td>
+  </tr>
+  <tr id="walleyeppr1.180610.009">
+    <td>9.0.0 (PPR1.180610.009, Aug 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-ppr1.180610.009-22d3af61.zip">Link</a></td>
+    <td>22d3af61d7685392a940baa3b003e267737a967030b86a2a6a9bb66887d28a8c</td>
+  </tr>
+  <tr id="walleyeppr1.180610.011">
+    <td>9.0.0 (PPR1.180610.011, Aug 2018, Telstra)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-ppr1.180610.011-758e2d65.zip">Link</a></td>
+    <td>758e2d65a8707943b33b1b05a0c9d356d5c5133eab8b55e20e597e9b0d5e6ca4</td>
+  </tr>
+  <tr id="walleyeppr2.180905.005">
+    <td>9.0.0 (PPR2.180905.005, Sep 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-ppr2.180905.005-d21ce55a.zip">Link</a></td>
+    <td>d21ce55ac3cc724a1ea274a2d9a7047bd023f82df67d4500c23b5cd4ca91f405</td>
+  </tr>
+  <tr id="walleyeppr2.181005.003">
+    <td>9.0.0 (PPR2.181005.003, Oct 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-ppr2.181005.003-86d37e14.zip">Link</a></td>
+    <td>86d37e14162b00d171ec494f2e76053827d5c67cafd7f9b858fae9a388dd433b</td>
+  </tr>
+  <tr id="walleyepq1a.181105.017.a1">
+    <td>9.0.0 (PQ1A.181105.017.A1, Nov 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-pq1a.181105.017.a1-075d9b58.zip">Link</a></td>
+    <td>075d9b58fc6816c3be975ab4e8379a1530e26f1b9a0b75e899d7085605790a6f</td>
+  </tr>
+  <tr id="walleyepq1a.181205.002">
+    <td>9.0.0 (PQ1A.181205.002, Dec 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-pq1a.181205.002-8df1d1f7.zip">Link</a></td>
+    <td>8df1d1f7d916ded7c1661c7086e84c2505fca80902e543e3674213b43933ae7a</td>
+  </tr>
+  <tr id="walleyepq1a.190105.004">
+    <td>9.0.0 (PQ1A.190105.004, Jan 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-pq1a.190105.004-67d7b0d6.zip">Link</a></td>
+    <td>67d7b0d6be6a16a07916125fa9f4b59b51bb0dc1840ccdbd5f12b7e0f0003b05</td>
+  </tr>
+  <tr id="walleyepq2a.190205.002">
+    <td>9.0.0 (PQ2A.190205.002, Feb 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-pq2a.190205.002-f8793f98.zip">Link</a></td>
+    <td>f8793f98e14b07dcaa723b30aa8d1b5ee7067e16e06ae2040d25ea756dbf96aa</td>
+  </tr>
+  <tr id="walleyepq2a.190305.002">
+    <td>9.0.0 (PQ2A.190305.002, Mar 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/walleye-ota-pq2a.190305.002-1a12c227.zip">Link</a></td>
+    <td>1a12c227ed04a0ddbd70bdc753613a5ec8776304792de36c3f669be437c04606</td>
+  </tr>
+</table>
+
+
+<h2 id="marlin">"marlin" for Pixel XL</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="marlinnde63h">
+    <td>7.1.0 (NDE63H, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nde63h-0c0ed502.zip">Link</a></td>
+    <td>0c0ed502c19913c3a328eafe4e8142cbda1325be18a377e6e4122b486763e1c8</td>
+  </tr>
+  <tr id="marlinnde63l">
+    <td>7.1.0 (NDE63L, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nde63l-205d22e7.zip">Link</a></td>
+    <td>205d22e797998ce5aa4ad3c877a09900c3f55067c0b2dfd8661de441a2db786d</td>
+  </tr>
+  <tr id="marlinnde63p">
+    <td>7.1.0 (NDE63P, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nde63p-20858ae7.zip">Link</a></td>
+    <td>20858ae7151f25963bf1a5b1bb54d3129fec9f3766e8e29ad2982bf8c80d8244</td>
+  </tr>
+  <tr id="marlinnde63u">
+    <td>7.1.0 (Europe, NDE63U, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nde63u-56d5b07a.zip">Link</a></td>
+    <td>56d5b07ad7be75718f8786d8eba900daa44a9f1b49094ec5aee04dfc9af3050c</td>
+  </tr>
+  <tr id="marlinnde63v">
+    <td>7.1.0 (NDE63V, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nde63v-272853b5.zip">Link</a></td>
+    <td>272853b51eefde37e7a8b159f4f4d1ccb125c56da2b81708d6451a5e4d970ecf</td>
+  </tr>
+  <tr id="marlinnde63x">
+    <td>7.1.0 (Verizon, NDE63X, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nde63x-3c8add4e.zip">Link</a></td>
+    <td>3c8add4eba146483b39cbd3d1b85e7763260bbf65ada3e43dcc1682e377241e3</td>
+  </tr>
+  <tr id="marlinnmf26o">
+    <td>7.1.1 (NMF26O, Dec 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nmf26o-54bb505e.zip">Link</a></td>
+    <td>54bb505e0144abdce6e8b2d185bbc633e01ce81d45730594ae49441cedb56bdd</td>
+  </tr>
+  <tr id="marlinnmf26q">
+    <td>7.1.1 (NMF26Q, Dec 2016, Europe/O2)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nmf26q-2337023a.zip">Link</a></td>
+    <td>2337023a7a51e166fd05d672f85486bf686d9f113dfc78754e5494b435ce9863</td>
+  </tr>
+  <tr id="marlinnmf26u">
+    <td>7.1.1 (NMF26U, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nmf26u-b1e4388d.zip">Link</a></td>
+    <td>b1e4388d4b5e61554a1dc22e2e856ab0b2ad036b57530d453b21e898b48f9639</td>
+  </tr>
+  <tr id="marlinnmf26v">
+    <td>7.1.1 (NMF26V, Jan 2017, Europe/O2)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nmf26v-7bda3acb.zip">Link</a></td>
+    <td>7bda3acb14219405b41bd9034ceb77ce6e559a8ee54fc974b7faaf6a4c770b82</td>
+  </tr>
+  <tr id="marlinnof26v">
+    <td>7.1.1 (NOF26V, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nof26v-51079639.zip">Link</a></td>
+    <td>5107963915c386d48b99fe60a2adb34e7910277d46a9c4317f21a17b2aef20b4</td>
+  </tr>
+  <tr id="marlinnof26w">
+    <td>7.1.1 (NOF26W, Feb 2017, Rogers Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nof26w-591f4655.zip">Link</a></td>
+    <td>591f4655b4d1be3472629e5701b041d1b9f4f68e698b73eeb7e9bdbedbb703d8</td>
+  </tr>
+  <tr id="marlinnof27b">
+    <td>7.1.1 (NOF27B, Mar 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nof27b-ca49da7b.zip">Link</a></td>
+    <td>ca49da7bc3563a767076347521038225931641875c776444fde57bbe4321dde3</td>
+  </tr>
+  <tr id="marlinnof27c">
+    <td>7.1.1 (NOF27C, Mar 2017, Rogers Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nof27c-4aadb995.zip">Link</a></td>
+    <td>4aadb9954a844467a90c8e2206d11b936e34f40d35f564a56a863ed02e690943</td>
+  </tr>
+  <tr id="marlinnof27d">
+    <td>7.1.1 (NOF27D, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nof27d-a715d144.zip">Link</a></td>
+    <td>a715d144b53a8b983ff26ee6bb63480e9e996745305425d77a27e66a9462fea1</td>
+  </tr>
+  <tr id="marlinn2g47e">
+    <td>7.1.2 (N2G47E, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-n2g47e-a3451543.zip">Link</a></td>
+    <td>a3451543b281a7f4215e365b8f85d411ac0a7c45abaf96c6e6898b60a330064b</td>
+  </tr>
+  <tr id="marlinn2g47j">
+    <td>7.1.2 (N2G47J, Apr 2017, Deutsche Telekom)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-n2g47j-38b606eb.zip">Link</a></td>
+    <td>38b606ebe933074e3c650b84bf8da88162037b3fbbb44890affcb1b56d47f852</td>
+  </tr>
+  <tr id="marlinnhg47k">
+    <td>7.1.2 (NHG47K, Apr 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nhg47k-e96ce5e0.zip">Link</a></td>
+    <td>e96ce5e0f24d45ac8aad8be27866b9e2c66fa1f01bc74e70c4c234371f309c96</td>
+  </tr>
+  <tr id="marlinn2g47o">
+    <td>7.1.2 (N2G47O, May 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-n2g47o-61bf55a3.zip">Link</a></td>
+    <td>61bf55a324e66a8503dc63c67204e4f33b5fb396711799116db8131b4a78178a</td>
+  </tr>
+  <tr id="marlinn2g47t">
+    <td>7.1.2 (N2G47T, May 2017, Deutsche Telekom)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-n2g47t-fb903a4e.zip">Link</a></td>
+    <td>fb903a4e9ad6ac89ba42425b85d6739d1dd433f55e8229bb6c48cd7d9882a6f6</td>
+  </tr>
+  <tr id="marlinnhg47l">
+    <td>7.1.2 (NHG47L, May 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nhg47l-1b06c596.zip">Link</a></td>
+    <td>1b06c59695031c8f70c7236208263fd367015f259b6dba5f1d3a060f487290c1</td>
+  </tr>
+  <tr id="marlinnhg47n">
+    <td>7.1.2 (NHG47N, Jun 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nhg47n-9ee19a18.zip">Link</a></td>
+    <td>9ee19a1892c5989ad3a39ea5d4a47fd10495bfaeb1573385cad70f19ad678792</td>
+  </tr>
+  <tr id="marlinnjh34c">
+    <td>7.1.2 (NJH34C, Jun 2017, Deutsche Telekom)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-njh34c-03e85369.zip">Link</a></td>
+    <td>03e85369aefb319a8d99258e02be4c5d43a4a699965c6f9c1bf6da8500af1ab9</td>
+  </tr>
+  <tr id="marlinnjh47b">
+    <td>7.1.2 (NJH47B, Jun 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-njh47b-8d52ade5.zip">Link</a></td>
+    <td>8d52ade5a0749fd86f22a8a9d74ea4ccb25a298d89abf7fe61672539215d1086</td>
+  </tr>
+  <tr id="marlinnkg47l">
+    <td>7.1.2 (NKG47L, Jun 2017, T-Mobile, Fi carriers, and Rogers)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nkg47l-90564fbf.zip">Link</a></td>
+    <td>90564fbf909ebea32222477f3b13951f41532eba1eb634db1d35b399dd87f173</td>
+  </tr>
+  <tr id="marlinnhg47o">
+    <td>7.1.2 (NHG47O, Jul 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nhg47o-8e5d8090.zip">Link</a></td>
+    <td>8e5d8090ae80eaa0fd71ca9f2fdd4d4597a483c2ae0ceb979fab6b4227af6420</td>
+  </tr>
+  <tr id="marlinnjh47d">
+    <td>7.1.2 (NJH47D, Jul 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-njh47d-86c9c49b.zip">Link</a></td>
+    <td>86c9c49bbee3e750abdec294d64287ea940c396e476e8c35081d3da86d0ab84b</td>
+  </tr>
+  <tr id="marlinnkg47m">
+    <td>7.1.2 (NKG47M, Jul 2017, T-Mobile, Fi carriers)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nkg47m-29dd9efe.zip">Link</a></td>
+    <td>29dd9efe7c928e8dcb296d73525ac63cac2e2785a6b1a7be35c8597b46cf77cc</td>
+  </tr>
+  <tr id="marlinnzh54b">
+    <td>7.1.2 (NZH54B, Jul 2017, Deutsche Telekom)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nzh54b-1a93c007.zip">Link</a></td>
+    <td>1a93c007aeee95d2ec255b521bfc92010bb7a151f008d6f740227af92a52143a</td>
+  </tr>
+  <tr id="marlinnhg47q">
+    <td>7.1.2 (NHG47Q, Aug 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nhg47q-73c108b9.zip">Link</a></td>
+    <td>73c108b92248ca04c9f222a98cdf7808a4d24b2e83e8b215e239e292c1d4ebfc</td>
+  </tr>
+  <tr id="marlinnjh47f">
+    <td>7.1.2 (NJH47F, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-njh47f-72cd90c0.zip">Link</a></td>
+    <td>72cd90c00f5d9fe03f81998d39a1dfddb4a6d17245a3ab40964825bfa4068d69</td>
+  </tr>
+  <tr id="marlinnkg47s">
+    <td>7.1.2 (NKG47S, Aug 2017, T-Mobile, Fi carriers, and Rogers)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nkg47s-cfed311f.zip">Link</a></td>
+    <td>cfed311faf5012ca4e9cc7cc4237e854abf995d68b97d8996889ae8531ed83ed</td>
+  </tr>
+  <tr id="marlinnzh54d">
+    <td>7.1.2 (NZH54D, Aug 2017, Deutsche Telekom)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-nzh54d-2e78d8a1.zip">Link</a></td>
+    <td>2e78d8a13828c4ae7bf22fd567ba9ba881b3971c2623326a72585dc7aa5961d2</td>
+  </tr>
+  <tr id="marlinopr6.170623.011">
+    <td>8.0.0 (OPR6.170623.011, Aug 2017, Bell, Telus, Telstra, TMO, Sprint, USCC, Rogers/Fido)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opr6.170623.011-b4e02849.zip">Link</a></td>
+    <td>b4e02849ea8906487e45dbcc50e8a164ab9bf8bfff0262f098d8ee5a93aaab46</td>
+  </tr>
+  <tr id="marlinopr6.170623.012">
+    <td>8.0.0 (OPR6.170623.012, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opr6.170623.012-f265546b.zip">Link</a></td>
+    <td>f265546b3f5bb19b6d18d61d59ef5a1c2720377c9f8351bf9d7afa3ea2ccbc69</td>
+  </tr>
+  <tr id="marlinopr1.170623.026">
+    <td>8.0.0 (OPR1.170623.026, Sep 2017, Fi/Canada)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opr1.170623.026-fd9a004a.zip">Link</a></td>
+    <td>fd9a004a5459f00dc3a2c05f4885ec97442c213bd86de4a5138e5b5d48073c66</td>
+  </tr>
+  <tr id="marlinopr3.170623.007">
+    <td>8.0.0 (OPR3.170623.007, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opr3.170623.007-5725ac52.zip">Link</a></td>
+    <td>5725ac524f78f8e1b827ce2e857e155385c00408a2420183313d6edd6adfcfe8</td>
+  </tr>
+  <tr id="marlinopr1.170623.027">
+    <td>8.0.0 (OPR1.170623.027, Oct 2017, Fi/Canada)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opr1.170623.027-0314f12d.zip">Link</a></td>
+    <td>0314f12d681548efc1df1cf300415bddd9ab7534c1e7e1e182d505b217797830</td>
+  </tr>
+  <tr id="marlinopr3.170623.008">
+    <td>8.0.0 (OPR3.170623.008, Oct 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opr3.170623.008-919e59ff.zip">Link</a></td>
+    <td>919e59ffdd726e17b996f689eac99b83c90062ac84465f092e7b6d36f9bcc4cd</td>
+  </tr>
+  <tr id="marlinopr1.170623.032">
+    <td>8.0.0 (OPR1.170623.032, Nov 2017, Fi/Canada)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opr1.170623.032-7a023782.zip">Link</a></td>
+    <td>7a023782692a76f854978338d1dbd526e83ec1471d30fae4e974c93818e78b5b</td>
+  </tr>
+  <tr id="marlinopr3.170623.013">
+    <td>8.0.0 (OPR3.170623.013, Nov 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opr3.170623.013-5b69f81e.zip">Link</a></td>
+    <td>5b69f81e922704658417be1e93fce188a93800a77a03de7a3ddc34c80ffda2e0</td>
+  </tr>
+  <tr id="marlinopm1.171019.011">
+    <td>8.1.0 (OPM1.171019.011, Dec 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opm1.171019.011-b447f54f.zip">Link</a></td>
+    <td>b447f54f4232db235214f65a9fc4ea830d8e71f98e003527ef785a1423292733</td>
+  </tr>
+  <tr id="marlinopm1.171019.012">
+    <td>8.1.0 (OPM1.171019.012, Jan 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opm1.171019.012-8c9cdae2.zip">Link</a></td>
+    <td>8c9cdae2a4b27231709c88d2d06510ea9a35a2ab46a236f1895b9222c2863d3c</td>
+  </tr>
+  <tr id="marlinopm1.171019.014">
+    <td>8.1.0 (OPM1.171019.014, Jan 2018, O2/UK only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opm1.171019.014-ead49d56.zip">Link</a></td>
+    <td>ead49d567dc9420fec03cbfe7886206c066667e526550eca0e75b3e83424e537</td>
+  </tr>
+  <tr id="marlinopm1.171019.016">
+    <td>8.1.0 (OPM1.171019.016, Feb 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opm1.171019.016-31ab6440.zip">Link</a></td>
+    <td>31ab6440cea3c5f736ce0131f7d48324c9aee307c38d0862f956d9c9d5682306</td>
+  </tr>
+  <tr id="marlinopm1.171019.021">
+    <td>8.1.0 (OPM1.171019.021, Mar 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opm1.171019.021-94fe1bf0.zip">Link</a></td>
+    <td>94fe1bf05615191a6d228343eac466485e7724dc4b2648a3183d4abec8957ceb</td>
+  </tr>
+  <tr id="marlinopm2.171019.029">
+    <td>8.1.0 (OPM2.171019.029, Apr 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opm2.171019.029-cfa79090.zip">Link</a></td>
+    <td>cfa790903e4f2980ac0f1cc245bccd11240720286d1836e0e9987ae828300528</td>
+  </tr>
+  <tr id="marlinopm4.171019.016.b1">
+    <td>8.1.0 (OPM4.171019.016.B1, May 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opm4.171019.016.b1-6811029d.zip">Link</a></td>
+    <td>6811029d796f3c958f1340190246ae68c11774edf63715a4c9bfef4b280e5756</td>
+  </tr>
+  <tr id="marlinopm4.171019.021.d1">
+    <td>8.1.0 (OPM4.171019.021.D1, Jun 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opm4.171019.021.d1-fd6998a5.zip">Link</a></td>
+    <td>fd6998a5e0dac2f8c847173772cf0a80d8e42e6d62684cd75ad8cea500082ef1</td>
+  </tr>
+  <tr id="marlinopm4.171019.021.p1">
+    <td>8.1.0 (OPM4.171019.021.P1, Jul 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-opm4.171019.021.p1-f0709550.zip">Link</a></td>
+    <td>f0709550866e9ef956059900ca5b59cd9cbf3839b030c8b00495d9c8ee3578ec</td>
+  </tr>
+  <tr id="marlinppr1.180610.009">
+    <td>9.0.0 (PPR1.180610.009, Aug 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-ppr1.180610.009-657223c1.zip">Link</a></td>
+    <td>657223c1e407f8513b4460e8259ec3b682c0ee22d206a3195449e468eaf445ad</td>
+  </tr>
+  <tr id="marlinppr1.180610.010">
+    <td>9.0.0 (PPR1.180610.010, Aug 2018, Telus)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-ppr1.180610.010-858a8d39.zip">Link</a></td>
+    <td>858a8d39637fcfa5bb3ba5ca6dd93a049a9cde64acbb996a5613b8c050b625d5</td>
+  </tr>
+  <tr id="marlinppr1.180905.003">
+    <td>9.0.0 (PPR1.180905.003, Sep 2018, Telus)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-ppr1.180905.003-838c54a8.zip">Link</a></td>
+    <td>838c54a88b3a56e1203460d28d9680d807d96eea28371faad1e44948e9e2e96c</td>
+  </tr>
+  <tr id="marlinppr2.180905.006">
+    <td>9.0.0 (PPR2.180905.006, Sep 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-ppr2.180905.006-809f6887.zip">Link</a></td>
+    <td>809f6887cf252333c022197107f3706559ac03dac708d8cdbef1eb1e96cfdfd9</td>
+  </tr>
+  <tr id="marlinppr2.180905.006.a1">
+    <td>9.0.0 (PPR2.180905.006.A1, Sep 2018, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-ppr2.180905.006.a1-34e91bd3.zip">Link</a></td>
+    <td>34e91bd3bd584028fcf112760a3ab938942e3d3bd8c5d7933fa019ead47b1e97</td>
+  </tr>
+  <tr id="marlinppr1.181005.003">
+    <td>9.0.0 (PPR1.181005.003, Oct 2018, Telus Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-ppr1.181005.003-b9a78d71.zip">Link</a></td>
+    <td>b9a78d71ace6a9f3a9fee72c62ca1b651e8365420d85d4e3efa26fba2628642a</td>
+  </tr>
+  <tr id="marlinppr2.181005.003">
+    <td>9.0.0 (PPR2.181005.003, Oct 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-ppr2.181005.003-469ae02d.zip">Link</a></td>
+    <td>469ae02d552fc56274f1d0e7f26db0683b506a7cde420d456e516b2f39aa9d9a</td>
+  </tr>
+  <tr id="marlinppr1.181005.003.a1">
+    <td>9.0.0 (PPR1.181005.003.A1, Nov 2018, Telus Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-ppr1.181005.003.a1-4657de4d.zip">Link</a></td>
+    <td>4657de4d8aec86ecc8241d5495da0831c79488136b51f6e9ec3eb473f4e949ec</td>
+  </tr>
+  <tr id="marlinppr2.181005.003.a1">
+    <td>9.0.0 (PPR2.181005.003.A1, Nov 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-ppr2.181005.003.a1-2b95d4d2.zip">Link</a></td>
+    <td>2b95d4d276fe0da84c4b154311368c9a0a954db0d7bbd6264b4b82220101fbc9</td>
+  </tr>
+  <tr id="marlinpq1a.181205.002.a1">
+    <td>9.0.0 (PQ1A.181205.002.A1, Dec 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-pq1a.181205.002.a1-b7df60eb.zip">Link</a></td>
+    <td>b7df60eb2e9b458843a185cb3427c25f1f264fbcb867bc08d2fcd420f47ac95d</td>
+  </tr>
+  <tr id="marlinpq1a.190105.004">
+    <td>9.0.0 (PQ1A.190105.004, Jan 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-pq1a.190105.004-9c05b51f.zip">Link</a></td>
+    <td>9c05b51fe28a425f03dd454e240fc95e7fdc1ce5135db98a5455f265d7ec61c5</td>
+  </tr>
+  <tr id="marlinpq2a.190205.003">
+    <td>9.0.0 (PQ2A.190205.003, Feb 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-pq2a.190205.003-471a4610.zip">Link</a></td>
+    <td>471a4610de13bb6e7f742599463fa5eab9074692f4907cad342a619ede53046f</td>
+  </tr>
+  <tr id="marlinpq2a.190305.002">
+    <td>9.0.0 (PQ2A.190305.002, Mar 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/marlin-ota-pq2a.190305.002-c110ab88.zip">Link</a></td>
+    <td>c110ab88c101cc3902d3d061cfca6b2d2ba4105dda80d87a44aa9b04f6f6bf7e</td>
+  </tr>
+</table>
+
+
+<h2 id="sailfish">"sailfish" for Pixel</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="sailfishnde63h">
+    <td>7.1.0 (NDE63H, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nde63h-995d0511.zip">Link</a></td>
+    <td>995d05114406218a859a707cb4af4d5aa68eb3659aaaecbf192b5c8139c7ad9e</td>
+  </tr>
+  <tr id="sailfishnde63l">
+    <td>7.1.0 (NDE63L, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nde63l-8223118b.zip">Link</a></td>
+    <td>8223118bd7ca7c53e063a5d7539c93223514073dbf7c967a6fe0eae11dfae344</td>
+  </tr>
+  <tr id="sailfishnde63p">
+    <td>7.1.0 (NDE63P, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nde63p-688a930b.zip">Link</a></td>
+    <td>688a930ba2bd1b6fda84cfb88367dd3df1cc506774cc74b9f6521a1ee5540ae0</td>
+  </tr>
+  <tr id="sailfishnde63u">
+    <td>7.1.0 (Europe, NDE63U, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nde63u-f1c2a8f5.zip">Link</a></td>
+    <td>f1c2a8f555643cdcd4c4f0772003c388f30873035a50a195114cd433c0388d42</td>
+  </tr>
+  <tr id="sailfishnde63v">
+    <td>7.1.0 (NDE63V, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nde63v-4dd1942e.zip">Link</a></td>
+    <td>4dd1942eca61766e1f14d5b5eb442be1117ed9cfbdf3bb4d07692985478ca8ba</td>
+  </tr>
+  <tr id="sailfishnde63x">
+    <td>7.1.0 (Verizon, NDE63X, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nde63x-59a512a1.zip">Link</a></td>
+    <td>59a512a19ac374bb1bff1b66f710b9ace0af8a8f64b47206d99c78f7fddf6d10</td>
+  </tr>
+  <tr id="sailfishnmf26o">
+    <td>7.1.1 (NMF26O, Dec 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nmf26o-3e7c4b66.zip">Link</a></td>
+    <td>3e7c4b669b7eee6991c2b6583332da95f7bb07caee55c9aece0a706cd75e3ba4</td>
+  </tr>
+  <tr id="sailfishnmf26q">
+    <td>7.1.1 (NMF26Q, Dec 2016, Europe/O2)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nmf26q-6478188a.zip">Link</a></td>
+    <td>6478188a18919c8e856ade7668d571edf870ef6d2f314074a7fe787fbbc0da8a</td>
+  </tr>
+  <tr id="sailfishnmf26u">
+    <td>7.1.1 (NMF26U, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nmf26u-6ea22a0c.zip">Link</a></td>
+    <td>6ea22a0c1c285d4c6f9e671ed947ff789b4b5ce032bab716e7b54076dbe0734c</td>
+  </tr>
+  <tr id="sailfishnmf26v">
+    <td>7.1.1 (NMF26V, Jan 2017, Europe/O2)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nmf26v-1988a458.zip">Link</a></td>
+    <td>1988a4588be6e2b332167153bce7915dc651b1c751d4622f52751f7263080157</td>
+  </tr>
+  <tr id="sailfishnof26v">
+    <td>7.1.1 (NOF26V, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nof26v-4bbb310d.zip">Link</a></td>
+    <td>4bbb310d98c028e9a90a063d59b811ca207abeeb88e98bb726784035295d8a3a</td>
+  </tr>
+  <tr id="sailfishnof26w">
+    <td>7.1.1 (NOF26W, Feb 2017, Rogers Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nof26w-1b59bd54.zip">Link</a></td>
+    <td>1b59bd54f76fa231c083a682483488dcf9bd53b91fbdb4448d3197bf2c230d55</td>
+  </tr>
+  <tr id="sailfishnof27b">
+    <td>7.1.1 (NOF27B, Mar 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nof27b-8130b5a8.zip">Link</a></td>
+    <td>8130b5a84fbdaf6d9b58de3ce814700c66645262b785c85f5e7952e82d11dbb6</td>
+  </tr>
+  <tr id="sailfishnof27c">
+    <td>7.1.1 (NOF27C, Mar 2017, Rogers Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nof27c-fb487658.zip">Link</a></td>
+    <td>fb487658934e7a1d68f5d73c7e9ee765f18a02c046629b5d5aa142324c3fa84e</td>
+  </tr>
+  <tr id="sailfishnof27d">
+    <td>7.1.1 (NOF27D, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nof27d-54f22208.zip">Link</a></td>
+    <td>54f22208f1e573c2dcbbad975d719260a338a2f0dfd24553f8e72f283b21df63</td>
+  </tr>
+  <tr id="sailfishn2g47e">
+    <td>7.1.2 (N2G47E, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-n2g47e-340ae119.zip">Link</a></td>
+    <td>340ae119dc0b2eb167341da426fc71afca090b3c8e46aa7c969d265d3768c3e8</td>
+  </tr>
+  <tr id="sailfishn2g47j">
+    <td>7.1.2 (N2G47J, Apr 2017, Deutsche Telekom)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-n2g47j-fc371af4.zip">Link</a></td>
+    <td>fc371af4eea0ce6bbcc3f3c6a203a0a6cd87ae69dab0e82f2802f0993e2b01a1</td>
+  </tr>
+  <tr id="sailfishnhg47k">
+    <td>7.1.2 (NHG47K, Apr 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nhg47k-2abd5688.zip">Link</a></td>
+    <td>2abd56882e4207b49b49e99d57456689c091ffe1fec3f03d1e51c952c89166cd</td>
+  </tr>
+  <tr id="sailfishn2g47o">
+    <td>7.1.2 (N2G47O, May 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-n2g47o-2fa538ea.zip">Link</a></td>
+    <td>2fa538eaf866d0f641a6af0d8e71ca398efa16b9ba81feedc138cc1d658f54fd</td>
+  </tr>
+  <tr id="sailfishn2g47t">
+    <td>7.1.2 (N2G47T, May 2017, Deutsche Telekom)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-n2g47t-88d76dfd.zip">Link</a></td>
+    <td>88d76dfd8d4d55f164c0a6e413f6633539fc6527d4ae6798fa6cd6b1e64858a4</td>
+  </tr>
+  <tr id="sailfishnhg47l">
+    <td>7.1.2 (NHG47L, May 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nhg47l-fabdd5f0.zip">Link</a></td>
+    <td>fabdd5f09f8c2d9a80d73aa64da518fda0daea3fe6d5881943761d79decb684c</td>
+  </tr>
+  <tr id="sailfishnhg47n">
+    <td>7.1.2 (NHG47N, Jun 2017, NHG47N)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nhg47n-762d1418.zip">Link</a></td>
+    <td>762d14186fbe0f08a828c4a0ce439cafa0987e2b06b890ce3625ca8be2cdb432</td>
+  </tr>
+  <tr id="sailfishnjh34c">
+    <td>7.1.2 (NJH34C, Jun 2017, Deutsche Telekom)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-njh34c-4e5248de.zip">Link</a></td>
+    <td>4e5248de485ae33af6778a95e710819444bcd67d51e6dbf32852e8bbf1ae8a2b</td>
+  </tr>
+  <tr id="sailfishnjh47b">
+    <td>7.1.2 (NJH47B, Jun 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-njh47b-ed08e156.zip">Link</a></td>
+    <td>ed08e156990fa2b2512985c58ea4bf56e8634b261e700a98337531fbd294c055</td>
+  </tr>
+  <tr id="sailfishnkg47l">
+    <td>7.1.2 (NKG47L, Jun 2017, T-Mobile, Fi carriers, and Rogers)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nkg47l-eda5a753.zip">Link</a></td>
+    <td>eda5a753f13def8f18fba3b47bc9928009608c3474710bb7e829dadcd2fb0aab</td>
+  </tr>
+  <tr id="sailfishnhg47o">
+    <td>7.1.2 (NHG47O, Jul 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nhg47o-b57598a0.zip">Link</a></td>
+    <td>b57598a04313f7bae910051c56fa5c82f0d32e55aa9379cf1517f5f25ebd6677</td>
+  </tr>
+  <tr id="sailfishnjh47d">
+    <td>7.1.2 (NJH47D, Jul 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-njh47d-5eecdbc1.zip">Link</a></td>
+    <td>5eecdbc18ffb2189d7ae9dd94b91b667a9d515c81e8bedf903d7b04577f8722b</td>
+  </tr>
+  <tr id="sailfishnkg47m">
+    <td>7.1.2 (NKG47M, Jul 2017, T-Mobile, Fi carriers)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nkg47m-84012eb4.zip">Link</a></td>
+    <td>84012eb431b0776464f83d8ea000a561be569b4f99f038dad3b8088146737dc2</td>
+  </tr>
+  <tr id="sailfishnzh54b">
+    <td>7.1.2 (NZH54B, Jul 2017, Deutsche Telekom)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nzh54b-ece7fe6e.zip">Link</a></td>
+    <td>ece7fe6ee9ec08223783a931339a43217fbe20e1940fd799fca9b8916d309e5f</td>
+  </tr>
+  <tr id="sailfishnhg47q">
+    <td>7.1.2 (NHG47Q, Aug 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nhg47q-a0950148.zip">Link</a></td>
+    <td>a0950148ae6d0742ac376d581be7f9358ff8af3ff657ef66bc1abfa4cabc27fa</td>
+  </tr>
+  <tr id="sailfishnjh47f">
+    <td>7.1.2 (NJH47F, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-njh47f-b1b5d050.zip">Link</a></td>
+    <td>b1b5d050cfaebfb710258bd2cc3b69efee76695ccdca7a7b54973732f429623d</td>
+  </tr>
+  <tr id="sailfishnkg47s">
+    <td>7.1.2 (NKG47S, Aug 2017, T-Mobile, Fi carriers, and Rogers)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nkg47s-606df834.zip">Link</a></td>
+    <td>606df834f122cbcbd62d1b15be1d922c62e7da914319dd5ba33b03d3d27233c0</td>
+  </tr>
+  <tr id="sailfishnzh54d">
+    <td>7.1.2 (NZH54D, Aug 2017, Deutsche Telekom)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-nzh54d-2163742b.zip">Link</a></td>
+    <td>2163742b2a40fd224c42d74ca553932fcfac9bb7947ac4b71709ca5e02889074</td>
+  </tr>
+  <tr id="sailfishopr6.170623.011">
+    <td>8.0.0 (OPR6.170623.011, Aug 2017, Bell, Telus, Telstra, TMO, Sprint, USCC, Rogers/Fido)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opr6.170623.011-b42cfa2f.zip">Link</a></td>
+    <td>b42cfa2f5549a6afb8b9e8f241eaf06f8eadd83e521977733df37f0a718cb206</td>
+  </tr>
+  <tr id="sailfishopr6.170623.012">
+    <td>8.0.0 (OPR6.170623.012, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opr6.170623.012-b48a822b.zip">Link</a></td>
+    <td>b48a822b76b8739a019a679979c905f933c750ca7085ee21e4b49668c9549232</td>
+  </tr>
+  <tr id="sailfishopr1.170623.026">
+    <td>8.0.0 (OPR1.170623.026, Sep 2017, Fi/Canada)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opr1.170623.026-a754585b.zip">Link</a></td>
+    <td>a754585bd6e02554b36e96583abd8bec32286908fd624261f300630e14d51c62</td>
+  </tr>
+  <tr id="sailfishopr3.170623.007">
+    <td>8.0.0 (OPR3.170623.007, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opr3.170623.007-6281e5cd.zip">Link</a></td>
+    <td>6281e5cd12cab54d3bd4eb45cad13c7b31095596861a0bad42151a078379f89a</td>
+  </tr>
+  <tr id="sailfishopr1.170623.027">
+    <td>8.0.0 (OPR1.170623.027, Oct 2017, Fi/Canada)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opr1.170623.027-41f8742a.zip">Link</a></td>
+    <td>41f8742a68bb78f833766190a2ce8c4e361cb0e70d4c415346f6e238cfbf18ab</td>
+  </tr>
+  <tr id="sailfishopr3.170623.008">
+    <td>8.0.0 (OPR3.170623.008, Oct 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opr3.170623.008-56e17c7e.zip">Link</a></td>
+    <td>56e17c7ea9173c7f9c0e211f06ad79f0ee58b5e7d621803dea3c737602f06243</td>
+  </tr>
+  <tr id="sailfishopr1.170623.032">
+    <td>8.0.0 (OPR1.170623.032, Nov 2017, Fi/Canada)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opr1.170623.032-f5eb977e.zip">Link</a></td>
+    <td>f5eb977ee0a7af919c2707c7152323f4da7cdcd9419e39fc364b6edb5f27b35e</td>
+  </tr>
+  <tr id="sailfishopr3.170623.013">
+    <td>8.0.0 (OPR3.170623.013, Nov 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opr3.170623.013-3c966cab.zip">Link</a></td>
+    <td>3c966cabf766e672d82abf81a4e7bcfe0a34bd703a81b0ef33c138625aa6bdbd</td>
+  </tr>
+  <tr id="sailfishopm1.171019.011">
+    <td>8.1.0 (OPM1.171019.011, Dec 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opm1.171019.011-5dca05ea.zip">Link</a></td>
+    <td>5dca05ea46aafd46a2eae407009970cc6ede2adf4c61731c1a13ed93399bdfac</td>
+  </tr>
+  <tr id="sailfishopm1.171019.012">
+    <td>8.1.0 (OPM1.171019.012, Jan 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opm1.171019.012-679e6d76.zip">Link</a></td>
+    <td>679e6d760fa2a3c3d448723a7a45c4649bf564c8892330ddf0dfb39472b9a874</td>
+  </tr>
+  <tr id="sailfishopm1.171019.014">
+    <td>8.1.0 (OPM1.171019.014, Jan 2018, O2/UK only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opm1.171019.014-dd581852.zip">Link</a></td>
+    <td>dd581852d2176e7853f4a604b9327f8799a417991aab5a6ac5729efce84b2dfe</td>
+  </tr>
+  <tr id="sailfishopm1.171019.016">
+    <td>8.1.0 (OPM1.171019.016, Feb 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opm1.171019.016-423e3270.zip">Link</a></td>
+    <td>423e32707537a167900c979513c7862d9fc7fe217d29f16e1cce1c4d53351649</td>
+  </tr>
+  <tr id="sailfishopm1.171019.021">
+    <td>8.1.0 (OPM1.171019.021, Mar 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opm1.171019.021-09aafd10.zip">Link</a></td>
+    <td>09aafd10bfc34b0f7a2f4979df6f84f43719f87aef3f6dd9293dcc080e9bb5b8</td>
+  </tr>
+  <tr id="sailfishopm2.171019.029">
+    <td>8.1.0 (OPM2.171019.029, Apr 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opm2.171019.029-d0f1d78c.zip">Link</a></td>
+    <td>d0f1d78cdf752f9277f402e20399cb7de6fc7f872e8e47d187615f5888ba8d13</td>
+  </tr>
+  <tr id="sailfishopm4.171019.016.b1">
+    <td>8.1.0 (OPM4.171019.016.B1, May 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opm4.171019.016.b1-b387f7b2.zip">Link</a></td>
+    <td>b387f7b20579115d8e0cf39653783e80db8831445191ffb1792cab226c088d70</td>
+  </tr>
+  <tr id="sailfishopm4.171019.021.d1">
+    <td>8.1.0 (OPM4.171019.021.D1, Jun 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opm4.171019.021.d1-fbca7ada.zip">Link</a></td>
+    <td>fbca7adaf75551baa8103981795b7a707578d32ee2fc60ad89fa33eff694c87e</td>
+  </tr>
+  <tr id="sailfishopm4.171019.021.p1">
+    <td>8.1.0 (OPM4.171019.021.P1, Jul 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-opm4.171019.021.p1-9fe2c539.zip">Link</a></td>
+    <td>9fe2c53940f030a2415cf7bb164d129b6002bd3d19c18e94d367ebc60ea7eb88</td>
+  </tr>
+  <tr id="sailfishppr1.180610.009">
+    <td>9.0.0 (PPR1.180610.009, Aug 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-ppr1.180610.009-ddead1af.zip">Link</a></td>
+    <td>ddead1afab31d12762ceeee0e85fe01b263629a3e25629fdcb29209b61d5b1c5</td>
+  </tr>
+  <tr id="sailfishppr1.180610.010">
+    <td>9.0.0 (PPR1.180610.010, Aug 2018, Telus)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-ppr1.180610.010-fd4ff9ef.zip">Link</a></td>
+    <td>fd4ff9ef5aa7d04431f4b50abfeb76a93527e7aa5cf9443916600375b59ceec7</td>
+  </tr>
+  <tr id="sailfishppr1.180905.003">
+    <td>9.0.0 (PPR1.180905.003, Sep 2018, Telus)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-ppr1.180905.003-151acc7e.zip">Link</a></td>
+    <td>151acc7e163236b2bb6e27a8677d6bc2f5db154dd8e35828b33410f0c8209412</td>
+  </tr>
+  <tr id="sailfishppr2.180905.006">
+    <td>9.0.0 (PPR2.180905.006, Sep 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-ppr2.180905.006-18857afc.zip">Link</a></td>
+    <td>18857afc5ac1b3110c51022796a3e1de757f81519381fd692cffac71aaf0ff2d</td>
+  </tr>
+  <tr id="sailfishppr2.180905.006.a1">
+    <td>9.0.0 (PPR2.180905.006.A1, Sep 2018, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-ppr2.180905.006.a1-a2adb8b4.zip">Link</a></td>
+    <td>a2adb8b4527f8f9281fb4dce829be83865fc57cea49126e5509a872931237f51</td>
+  </tr>
+  <tr id="sailfishppr1.181005.003">
+    <td>9.0.0 (PPR1.181005.003, Oct 2018, Telus Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-ppr1.181005.003-1ac4e10b.zip">Link</a></td>
+    <td>1ac4e10be1c886653e39fe45ef675ece1273c200255ce7f5a335aed858c225c7</td>
+  </tr>
+  <tr id="sailfishppr2.181005.003">
+    <td>9.0.0 (PPR2.181005.003, Oct 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-ppr2.181005.003-db23e6d5.zip">Link</a></td>
+    <td>db23e6d53044596bba493d65e26b8ddb4b47b3e8a22a91b47771f286a0b8dd1f</td>
+  </tr>
+  <tr id="sailfishppr1.181005.003.a1">
+    <td>9.0.0 (PPR1.181005.003.A1, Nov 2018, Telus Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-ppr1.181005.003.a1-c32f580c.zip">Link</a></td>
+    <td>c32f580cbc447c0023b36b8ebe612f08795831b1e81e0d52138a253d7e113503</td>
+  </tr>
+  <tr id="sailfishppr2.181005.003.a1">
+    <td>9.0.0 (PPR2.181005.003.A1, Nov 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-ppr2.181005.003.a1-89adce91.zip">Link</a></td>
+    <td>89adce91f31271051c28de2dce75fbb7236ef65b32ff15bb155b9d697ff54893</td>
+  </tr>
+  <tr id="sailfishpq1a.181205.002.a1">
+    <td>9.0.0 (PQ1A.181205.002.A1, Dec 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-pq1a.181205.002.a1-a85b355b.zip">Link</a></td>
+    <td>a85b355b5b8de5b0bea33c6d774d01b39095941a679c2dea7effbebe79f052c8</td>
+  </tr>
+  <tr id="sailfishpq1a.190105.004">
+    <td>9.0.0 (PQ1A.190105.004, Jan 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-pq1a.190105.004-d5feb9d8.zip">Link</a></td>
+    <td>d5feb9d8085517d27f848d22cc36b71d13991c2963c954342bfb3b75084b1f55</td>
+  </tr>
+  <tr id="sailfishpq2a.190205.003">
+    <td>9.0.0 (PQ2A.190205.003, Feb 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-pq2a.190205.003-b099e842.zip">Link</a></td>
+    <td>b099e842de8f3122857db7746c6d7fc36296ef9ae7d3f83662ab2642ef5a7748</td>
+  </tr>
+  <tr id="sailfishpq2a.190305.002">
+    <td>9.0.0 (PQ2A.190305.002, Mar 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/sailfish-ota-pq2a.190305.002-8e0b885c.zip">Link</a></td>
+    <td>8e0b885cacc403b6067aa235fdcb194e3fcba0d50387d0a82432f4e899e5e730</td>
+  </tr>
+</table>
+
+<h2 id="ryu">"ryu" for Pixel C</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="ryum5c14j">
+    <td>6.0.1 (M5C14J)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-m5c14j-cfffc36e.zip">Link</a></td>
+    <td>cfffc36e148db02088e9723d162f74564aa0fac1a7a3353a89eefd006d6adaa4</td>
+  </tr>
+  <tr id="ryumxc89f">
+    <td>6.0.1 (MXC89F)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-mxc89f-f4d5d078.zip">Link</a></td>
+    <td>f4d5d0786898c888c2c24253092379b33fa40d455931c36d78c971d5cd191896</td>
+  </tr>
+  <tr id="ryumxc89h">
+    <td>6.0.1 (MXC89H)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-mxc89h-39bdb33f.zip">Link</a></td>
+    <td>39bdb33fd2b346f3fcb5883c95fd7314b243e25308bfe6048e7a0750fdf5cd45</td>
+  </tr>
+  <tr id="ryumxc89k">
+    <td>6.0.1 (MXC89K)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-mxc89k-a4e05e0c.zip">Link</a></td>
+    <td>a4e05e0c4b1b8ac01de46c1f9d231c9a8620313e4a670cc2adcd4976d1f613e9</td>
+  </tr>
+  <tr id="ryumxc89l">
+    <td>6.0.1 (MXC89L)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-mxc89l-8d304456.zip">Link</a></td>
+    <td>8d3044562479129e6f2f75c87d39beb86d2d8c4e92bb6f37f64f69dc33a5901b</td>
+  </tr>
+  <tr id="ryunrd90m">
+    <td>7.0.0 (NRD90M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-nrd90m-69793d12.zip">Link</a></td>
+    <td>69793d127812a257ccf0d8289eecf0e9e8522aa9e221d5e5f51e871c3b4cd72c</td>
+  </tr>
+  <tr id="ryunrd90r">
+    <td>7.0.0 (NRD90R)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-nrd90r-d8c91d96.zip">Link</a></td>
+    <td>d8c91d968129f224d4fa112bdf730ff080f880b85a71b96c8017bbc287625d96</td>
+  </tr>
+  <tr id="ryunrd91d">
+    <td>7.0.0 (NRD91D, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-nrd91d-3db53b6a.zip">Link</a></td>
+    <td>3db53b6a6a12affdce433c09196352b2cb27030d0da672138d8d7087396b8ecf</td>
+  </tr>
+  <tr id="ryunrd91n">
+    <td>7.0.0 (NRD91N, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-nrd91n-de36f08b.zip">Link</a></td>
+    <td>de36f08b18db2847b8597fbc95921fced971dd2ac2f71055ac7efa7d09420b67</td>
+  </tr>
+  <tr id="ryunmf26h">
+    <td>7.1.1 (NMF26H, Dec 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-nmf26h-a593e30f.zip">Link</a></td>
+    <td>a593e30f2e6c9c3de2a3eb88cb13e9eaf0c7fb8144f13a73131a3c1c12ce0c71</td>
+  </tr>
+  <tr id="ryun4f26i">
+    <td>7.1.1 (N4F26I, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-n4f26i-c26b5ea4.zip">Link</a></td>
+    <td>c26b5ea49025284364828e1b2aed83e000ab232de85e4f4e87ec8e09d917613b</td>
+  </tr>
+  <tr id="ryun4f26o">
+    <td>7.1.1 (N4F26O, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-n4f26o-3e34a8bf.zip">Link</a></td>
+    <td>3e34a8bf98c96df4f04bfd6b1c8a437dea651d5e03dbd2085fbc013788d097d4</td>
+  </tr>
+  <tr id="ryun4f26t">
+    <td>7.1.1 (N4F26T, Mar 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-n4f26t-7a9293bc.zip">Link</a></td>
+    <td>7a9293bc455bfcd1acdb5a127fd68d8b89b5577f0e63102ad770ec3bd0bdee7f</td>
+  </tr>
+  <tr id="ryun2g47d">
+    <td>7.1.2 (N2G47D, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-n2g47d-9c3932cd.zip">Link</a></td>
+    <td>9c3932cd313bc7c90d919521570cf820e65991de1e596e38d9df4c4c8b0be6c9</td>
+  </tr>
+  <tr id="ryun2g47o">
+    <td>7.1.2 (N2G47O, May 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-n2g47o-64e86c52.zip">Link</a></td>
+    <td>64e86c52c27d2eae29f02eec00b0218a2e5227600b4586302a6b8aca0524b843</td>
+  </tr>
+  <tr id="ryun2g47w">
+    <td>7.1.2 (N2G47W, Jun 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-n2g47w-7d6dac7b.zip">Link</a></td>
+    <td>7d6dac7be6fa2c26cb7a135f5ba66c0877001aecc42d45fd6611529649e1301d</td>
+  </tr>
+  <tr id="ryun2g48b">
+    <td>7.1.2 (N2G48B, Jul 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-n2g48b-173657a7.zip">Link</a></td>
+    <td>173657a7de7ca326748dcd9be1069d287ddb23c6061a1285fffc1ca709fbab7f</td>
+  </tr>
+  <tr id="ryun2g48c">
+    <td>7.1.2 (N2G48C, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-n2g48c-b25f43f9.zip">Link</a></td>
+    <td>b25f43f9ea9339347a812dbdaa78aa7924a1a033594c23502532919b4c545d4d</td>
+  </tr>
+  <tr id="ryuopr6.170623.010">
+    <td>8.0.0 (OPR6.170623.010, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opr6.170623.010-6a4a2ae2.zip">Link</a></td>
+    <td>6a4a2ae2b2cb685fd3e741fb0f3f718bbb04892ab5b8bea01aa1cd7a1d18d582</td>
+  </tr>
+  <tr id="ryuopr1.170623.026">
+    <td>8.0.0 (OPR1.170623.026, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opr1.170623.026-0f2fd8de.zip">Link</a></td>
+    <td>0f2fd8decb79726b6d3dc400c3f955b9200823c4a001a7ca7fcb6966732599eb</td>
+  </tr>
+  <tr id="ryuopr1.170623.027">
+    <td>8.0.0 (OPR1.170623.027, Oct 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opr1.170623.027-63bcb615.zip">Link</a></td>
+    <td>63bcb6156d897b4d89a0f645ceeb6df69de02027f87273337614d75c4940b618</td>
+  </tr>
+  <tr id="ryuopr1.170623.032">
+    <td>8.0.0 (OPR1.170623.032, Nov 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opr1.170623.032-c157769a.zip">Link</a></td>
+    <td>c157769a77305e7505e4bde7bb705f3a8323b534f3f40bc320ef3f65b1337f8d</td>
+  </tr>
+  <tr id="ryuopm1.171019.011">
+    <td>8.1.0 (OPM1.171019.011, Dec 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm1.171019.011-cd6f2375.zip">Link</a></td>
+    <td>cd6f23759c1b41df7a0b564f4ba0d6299d0ef12a9ee4c75a112c68aaf1bef3d5</td>
+  </tr>
+  <tr id="ryuopm1.171019.015">
+    <td>8.1.0 (OPM1.171019.015, Jan 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm1.171019.015-c2fd5f0e.zip">Link</a></td>
+    <td>c2fd5f0e0f5e1533fd01b908b6c2978b9ab99c31e6e44a26672677a74e08e7cc</td>
+  </tr>
+  <tr id="ryuopm1.171019.016">
+    <td>8.1.0 (OPM1.171019.016, Feb 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm1.171019.016-a65013c6.zip">Link</a></td>
+    <td>a65013c6c09c7949637ce0a219ecb943901799c8b5b1aac888ccf7d2df2335a3</td>
+  </tr>
+  <tr id="ryuopm1.171019.022.a1">
+    <td>8.1.0 (OPM1.171019.022.A1, Mar 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm1.171019.022.a1-bca39f92.zip">Link</a></td>
+    <td>bca39f92d320a8ede249c0e3302972ccba87551d206a82fd71e23a8f60cf9fed</td>
+  </tr>
+  <tr id="ryuopm1.171019.026">
+    <td>8.1.0 (OPM1.171019.026, Apr 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm1.171019.026-a9f2738e.zip">Link</a></td>
+    <td>a9f2738ea2bb5eeec8c9cb30527931811dc6d6be00eb2815d6cae5f387f2ece1</td>
+  </tr>
+  <tr id="ryuopm4.171019.016.c1">
+    <td>8.1.0 (OPM4.171019.016.C1, May 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm4.171019.016.c1-cc83e359.zip">Link</a></td>
+    <td>cc83e3598c0df1cdde4235288ac883e40fee92dafd36775d542746f1af2e2a51</td>
+  </tr>
+  <tr id="ryuopm4.171019.021.d1">
+    <td>8.1.0 (OPM4.171019.021.D1, Jun 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm4.171019.021.d1-b9d18425.zip">Link</a></td>
+    <td>b9d18425779c1710ff91b29d7e92cb545e304ca4a2f71542dd90583072d5ac55</td>
+  </tr>
+  <tr id="ryuopm4.171019.021.n1">
+    <td>8.1.0 (OPM4.171019.021.N1, Jul 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm4.171019.021.n1-c5faa644.zip">Link</a></td>
+    <td>c5faa644186fccb4cc105edaf04b3d92ea811ada2bc4869330ced8c19cf06bf0</td>
+  </tr>
+  <tr id="ryuopm4.171019.021.y1">
+    <td>8.1.0 (OPM4.171019.021.Y1, Aug 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm4.171019.021.y1-4bf1fd50.zip">Link</a></td>
+    <td>4bf1fd505d789f56f1dfab64adae4235a2728e4436365147d16fdfc53ab75da2</td>
+  </tr>
+  <tr id="ryuopm4.171019.021.z1">
+    <td>8.1.0 (OPM4.171019.021.Z1, Sep 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm4.171019.021.z1-f78104a9.zip">Link</a></td>
+    <td>f78104a92f6887f3b711878b44097f79818802f3bfc9279ca090801efb07057f</td>
+  </tr>
+  <tr id="ryuopm8.181005.003">
+    <td>8.1.0 (OPM8.181005.003, Oct 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm8.181005.003-d093cdf7.zip">Link</a></td>
+    <td>d093cdf7c3296e618dc32f340e7d832acfa9dd890340a9674ae876214945692b</td>
+  </tr>
+  <tr id="ryuopm8.181105.002">
+    <td>8.1.0 (OPM8.181105.002, Nov 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm8.181105.002-81551a35.zip">Link</a></td>
+    <td>81551a35d0586322d21965648657a8e3344ce8541b982b32ce699b8a8f2b12ac</td>
+  </tr>
+  <tr id="ryuopm8.181205.001">
+    <td>8.1.0 (OPM8.181205.001, Dec 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm8.181205.001-83c98d30.zip">Link</a></td>
+    <td>83c98d3062f840ab403d14e10e6d96706c697543c4efd4dc7db9c667692e3201</td>
+  </tr>
+  <tr id="ryuopm8.190105.002">
+    <td>8.1.0 (OPM8.190105.002, Jan 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm8.190105.002-b4026664.zip">Link</a></td>
+    <td>b402666433e781ebbb2d5bbf9a9bd182a56d680d76bf15adb4c6936730d5947a</td>
+  </tr>
+  <tr id="ryuopm8.190205.001">
+    <td>8.1.0 (OPM8.190205.001, Feb 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm8.190205.001-a58d5b63.zip">Link</a></td>
+    <td>a58d5b63d175fdc1e42d318d537e4c41afd9a773c34db2758542446c2ed6591a</td>
+  </tr>
+  <tr id="ryuopm8.190305.001">
+    <td>8.1.0 (OPM8.190305.001, Mar 2019)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/ryu-ota-opm8.190305.001-4249e16e.zip">Link</a></td>
+    <td>4249e16e9b5a9726b1ccef0dba0a88f3c34ef64956418e6d9227ae7b1ce65cf9</td>
+  </tr>
+</table>
+
+
+<h2 id="angler">"angler" for Nexus 6P</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="anglermhc19q">
+    <td>6.0.1 (MHC19Q)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp//angler-ota-mhc19q-b9ac826b.zip">Link</a></td>
+    <td>b9ac826b083d9de0f6cfce889e5ecc5357373537f205178bd64feba49fb4be6f</td>
+  </tr>
+  <tr id="anglermtc19t">
+    <td>6.0.1 (MTC19T)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-mtc19t-0884ae89.zip">Link</a></td>
+    <td>0884ae89f913e3c29f1b3f0c4b740613093ce9aff8b211a3803235a2d6a43fd1</td>
+  </tr>
+  <tr id="anglermtc19v">
+    <td>6.0.1 (MTC19V)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-mtc19v-cb7d5b1c.zip">Link</a></td>
+    <td>cb7d5b1c24c83f22ccbdd01dfa63e22afab73e42cbce5ffd152374665960871c</td>
+  </tr>
+  <tr id="anglermtc19x">
+    <td>6.0.1 (MTC19X)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-mtc19x-d3368f48.zip">Link</a></td>
+    <td>d3368f48977e4220c7d679b21d1f3acd808ffbb0a8174cc5298f6e6e4b5db228</td>
+  </tr>
+  <tr id="anglermtc20f">
+    <td>6.0.1 (MTC20F)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-mtc20f-5a1e93e9.zip">Link</a></td>
+    <td>5a1e93e9974908a0683a4ac8a732b81023f4b01182fd3ead3f091f54300de5ce</td>
+  </tr>
+  <tr id="anglermtc20l">
+    <td>6.0.1 (MTC20L)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-mtc20l-095e81f7.zip">Link</a></td>
+    <td>095e81f70a6c898a4a05292e300ae59ed2cf6f913b7d95bb7d21dec792956e46</td>
+  </tr>
+  <tr id="anglernrd90t">
+    <td>7.0.0 (NRD90T)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-nrd90t-e19c600c.zip">Link</a></td>
+    <td>e19c600ced182664cac1e21bd0c51a32b5b1cbc90358ac309e37486d2b4521af</td>
+  </tr>
+  <tr id="anglernrd90u">
+    <td>7.0.0 (NRD90U)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-nrd90u-ff3f6b27.zip">Link</a></td>
+    <td>ff3f6b279338ed54a52cf4776ee8c4d7268a4c925a944146c91c6ebd3f76e0a7</td>
+  </tr>
+  <tr id="anglernbd90x">
+    <td>7.0.0 (NBD90X, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-nbd90x-78b5a5f8.zip">Link</a></td>
+    <td>78b5a5f8a794ccec0015d63e6762bae019b5ff43cfac7688d53ac87d49f7fbb0</td>
+  </tr>
+  <tr id="anglernbd91k">
+    <td>7.0.0 (NBD91K, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-nbd91k-32c2eac8.zip">Link</a></td>
+    <td>32c2eac8b2d8186e97aeb8914a49f2c378fa9fb1178bc73ddc81ba2590a06b52</td>
+  </tr>
+  <tr id="anglernmf26f">
+    <td>7.1.1 (NMF26F, Dec 2016. All carriers except Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-nmf26f-61b4a915.zip">Link</a></td>
+    <td>61b4a9152b192f6953f1f7e576d00232c6965534a9c6584b6d250c206392f8af</td>
+  </tr>
+  <tr id="anglern4f26i">
+    <td>7.1.1 (N4F26I, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-n4f26i-c9055583.zip">Link</a></td>
+    <td>c905558312d4c20c9b803ec605ba9984a0104266a62aa4d4929655fe4413e55c</td>
+  </tr>
+  <tr id="anglern4f26j">
+    <td>7.1.1 (N4F26J, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-n4f26j-36f7979e.zip">Link</a></td>
+    <td>36f7979e487c03117d7d6b39d6eeed627bc8f2916f3a33e04b3740510e87f8c3</td>
+  </tr>
+  <tr id="anglern4f26o">
+    <td>7.1.1 (N4F26O, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-n4f26o-6a853f19.zip">Link</a></td>
+    <td>6a853f192bd0568f568d2caae523da1a4ef16d5438eb25481fd2f2225a84e8ae</td>
+  </tr>
+  <tr id="anglernuf26k">
+    <td>7.1.1 (NUF26K, Feb 2017, Verizon Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-nuf26k-baec5b5e.zip">Link</a></td>
+    <td>baec5b5e037c056acc677b85ae4ae3f925015bd7d930ae053bd0ae4d100585b3</td>
+  </tr>
+  <tr id="anglern4f26t">
+    <td>7.1.1 (N4F26T, Mar 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-n4f26t-9675b78e.zip">Link</a></td>
+    <td>9675b78ed0de3179329c583b043c1ca539522c6d936e2a8afae67886a1b1aba3</td>
+  </tr>
+  <tr id="anglernuf26n">
+    <td>7.1.1 (NUF26N, Mar 2017, Verizon Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-nuf26n-50c44f30.zip">Link</a></td>
+    <td>50c44f303e573df0cd88e75cdf9e3a304f42d705aa656f28c920ee3ebe17bf28</td>
+  </tr>
+  <tr id="anglern4f26u">
+    <td>7.1.1 (N4F26U, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-n4f26u-417e98bd.zip">Link</a></td>
+    <td>417e98bd956920507575911f6db74bcb81dfe104d4f5aea79ca066db02dde6b7</td>
+  </tr>
+  <tr id="anglern2g47h">
+    <td>7.1.2 (N2G47H, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-n2g47h-f3bffaba.zip">Link</a></td>
+    <td>f3bffaba03081a462f48f93d3cfc298f3309d7aa40f1d7628ed47a00aa5dc0de</td>
+  </tr>
+  <tr id="anglern2g47o">
+    <td>7.1.2 (N2G47O, May 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-n2g47o-ec3f4df1.zip">Link</a></td>
+    <td>ec3f4df1327284bc68fef0fca9d99a9287034873cb7e338a76b3ae14fc3e807e</td>
+  </tr>
+  <tr id="anglern2g47w">
+    <td>7.1.2 (N2G47W, Jun 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-n2g47w-135b87b2.zip">Link</a></td>
+    <td>135b87b267ca8dfe32a51ae2295c7df84ae60793ba173b6ead808d834ffeea71</td>
+  </tr>
+  <tr id="anglern2g48b">
+    <td>7.1.2 (N2G48B, Jul 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-n2g48b-8166f6bf.zip">Link</a></td>
+    <td>8166f6bf470583b9e82e6dc8146cd2f606be824d13c0b9e930b7d6c19b48c814</td>
+  </tr>
+  <tr id="anglern2g48c">
+    <td>7.1.2 (N2G48C, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-n2g48c-b004b71e.zip">Link</a></td>
+    <td>b004b71e951181d287440315a35124f9fa831c997ea5a4ee1fd375aa5ad04c2b</td>
+  </tr>
+  <tr id="angleropr6.170623.013">
+    <td>8.0.0 (OPR6.170623.013, Aug 2017, Not for TMO/USCC/Fi)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opr6.170623.013-517abdd6.zip">Link</a></td>
+    <td>517abdd6acbd668de344a841236aee998a1a8c98cec9746e5c9e24b717c5a126</td>
+  </tr>
+  <tr id="angleropr6.170623.019">
+    <td>8.0.0 (OPR6.170623.019, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opr6.170623.019-d7784575.zip">Link</a></td>
+    <td>d77845753289e1588994026d02cd1f6d90cebb900d839af96bc7ce310c5a7ad4</td>
+  </tr>
+  <tr id="angleropr5.170623.007">
+    <td>8.0.0 (OPR5.170623.007, Oct 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opr5.170623.007-7a7505e1.zip">Link</a></td>
+    <td>7a7505e1c0ac47d1c0b3b2ac05ea589f71c172dd80147e18b3d2ba784629de54</td>
+  </tr>
+  <tr id="angleropr5.170623.011">
+    <td>8.0.0 (OPR5.170623.011, Nov 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opr5.170623.011-af497ac6.zip">Link</a></td>
+    <td>af497ac675971ada9e48d3056a8439e2df12cb7bbb99eb77a342051b85260ad7</td>
+  </tr>
+  <tr id="angleropr5.170623.014">
+    <td>8.0.0 (OPR5.170623.014, Dec 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opr5.170623.014-234956cb.zip">Link</a></td>
+    <td>234956cbafd9509c208606682e827179364b35beedff7adf7c91855675558286</td>
+  </tr>
+  <tr id="angleropm1.171019.011">
+    <td>8.1.0 (OPM1.171019.011, Dec 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm1.171019.011-f5b45df7.zip">Link</a></td>
+    <td>f5b45df79c5822ee0edb095df12cbab16161cd1aef4835acaa0e925571985634</td>
+  </tr>
+  <tr id="angleropm3.171019.013">
+    <td>8.1.0 (OPM3.171019.013, Jan 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm3.171019.013-a6478902.zip">Link</a></td>
+    <td>a647890223f733df48986ce0da50dcd62ff027bf1a1cc56f551afadf0e742d49</td>
+  </tr>
+  <tr id="angleropm5.171019.014">
+    <td>8.1.0 (OPM5.171019.014, Jan 2018, Softbank)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm5.171019.014-23ee50e1.zip">Link</a></td>
+    <td>23ee50e151e7e86adde30a6d4275c87a9c13cef2dbd764fa839ef8a836767a2d</td>
+  </tr>
+  <tr id="angleropm3.171019.014">
+    <td>8.1.0 (OPM3.171019.014, Feb 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm3.171019.014-dc6c073e.zip">Link</a></td>
+    <td>dc6c073ee36d0892c3a7f2ea027411ef09e8f5f86038b256a515ae1c95072804</td>
+  </tr>
+  <tr id="angleropm5.171019.015">
+    <td>8.1.0 (OPM5.171019.015, Feb 2018, Softbank)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm5.171019.015-5820f723.zip">Link</a></td>
+    <td>5820f7231b8c26809f5e5289921694d7fae1ca84bc074dcb6cb9c6d8930fca65</td>
+  </tr>
+  <tr id="angleropm3.171019.016">
+    <td>8.1.0 (OPM3.171019.016, Mar 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm3.171019.016-21b6cd95.zip">Link</a></td>
+    <td>21b6cd95abf53972bbc82a46b0843848f4c57b936d67146734dc6349d5bca258</td>
+  </tr>
+  <tr id="angleropm5.171019.017">
+    <td>8.1.0 (OPM5.171019.017, Mar 2018, Softbank)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm5.171019.017-cae9a4fd.zip">Link</a></td>
+    <td>cae9a4fdcf7cfbc47d8f181b436315b0e70615d1ac372523788a996fd831e089</td>
+  </tr>
+  <tr id="angleropm3.171019.019">
+    <td>8.1.0 (OPM3.171019.019, Apr 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm3.171019.019-cf5e76e4.zip">Link</a></td>
+    <td>cf5e76e4241261e83324af0e9e51e342dd21268edce53a0032067328c6bd487a</td>
+  </tr>
+  <tr id="angleropm5.171019.019">
+    <td>8.1.0 (OPM5.171019.019, Apr 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm5.171019.019-673ade6a.zip">Link</a></td>
+    <td>673ade6ac44a3f374211a3855e71a0dbf08fba9a0512b2311024f665f74579b8</td>
+  </tr>
+  <tr id="angleropm2.171019.029.a1">
+    <td>8.1.0 (OPM2.171019.029.A1, May 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm2.171019.029.a1-d2f29af4.zip">Link</a></td>
+    <td>d2f29af4d93364eb9bc67f6a2a4023b7fe0bb675bb0393c691ecf1596078aa9b</td>
+  </tr>
+  <tr id="angleropm6.171019.030.b1">
+    <td>8.1.0 (OPM6.171019.030.B1, Jun 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm6.171019.030.b1-94c3a3a6.zip">Link</a></td>
+    <td>94c3a3a64faae6d09d94dd50c24abd3ce27794c9c8c25fb5445dd07cd0493aba</td>
+  </tr>
+  <tr id="angleropm6.171019.030.e1">
+    <td>8.1.0 (OPM6.171019.030.E1, Jul 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm6.171019.030.e1-668c121c.zip">Link</a></td>
+    <td>668c121c144d91de40253cde5ef530b05a17252b73b6cdd1a465d46808ff623e</td>
+  </tr>
+  <tr id="angleropm6.171019.030.h1">
+    <td> (OPM6.171019.030.H1, Aug 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm6.171019.030.h1-ad27a75f.zip">Link</a></td>
+    <td>ad27a75f88fee0a6b506b9d22a3a0fb2371caee6a22feea746b2980fb8dd41d6</td>
+  </tr>
+  <tr id="angleropm6.171019.030.k1">
+    <td>8.1.0 (OPM6.171019.030.K1, Sep 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm6.171019.030.k1-fe46175a.zip">Link</a></td>
+    <td>fe46175a4e5602439b0b8d5e1b025157afdabc07406fde378aa1aca48ea8bb1b</td>
+  </tr>
+  <tr id="angleropm7.181005.003">
+    <td>8.1.0 (OPM7.181005.003, Oct 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm7.181005.003-b6000627.zip">Link</a></td>
+    <td>b6000627a9f14773733cb98d1821a2562ab69fdcabb7e852f80b4b4c1cfd6e86</td>
+  </tr>
+  <tr id="angleropm7.181105.004">
+    <td>8.1.0 (OPM7.181105.004, Nov 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm7.181105.004-81e2a4cc.zip">Link</a></td>
+    <td>81e2a4cceb46ce745ae9522c2c142323ec9a74c1b89fd17d2c1bbdaeda557a32</td>
+  </tr>
+  <tr id="angleropm7.181205.001">
+    <td>8.1.0 (OPM7.181205.001, Dec 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/angler-ota-opm7.181205.001-abb36a2f.zip">Link</a></td>
+    <td>abb36a2fddb08501f9a425b19e43200ac4d639bbf4e387bcfff206b28b7024fe</td>
+  </tr>
+</table>
+
+<h2 id="bullhead">"bullhead" for Nexus 5X</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="bullheadmhc19q">
+    <td>6.0.1 (MHC19Q)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp//bullhead-ota-mhc19q-8fe67a2b.zip">Link</a></td>
+    <td>8fe67a2b9e060d4790dfa5e7a2232b1afa38a79236c391d063c6c5de178c1396</td>
+  </tr>
+  <tr id="bullheadmtc19t">
+    <td>6.0.1 (MTC19T)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-mtc19t-4ea6522b.zip">Link</a></td>
+    <td>4ea6522b624459855af3b19f3c9c3a1d7a2897602fcfa6f993dbf16680ffae45</td>
+  </tr>
+  <tr id="bullheadmtc19v">
+    <td>6.0.1 (MTC19V)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-mtc19v-821d513d.zip">Link</a></td>
+    <td>821d513dc262ac277d2ef4ed680e81938e14bd59db06e3c8d3a66ecbd4f0fd9c</td>
+  </tr>
+  <tr id="bullheadmtc19z">
+    <td>6.0.1 (MTC19Z)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-mtc19z-b4cfce2c.zip">Link</a></td>
+    <td>b4cfce2c1096881dd209962f0affe1194aa9853aa5edd666fce758f979452239</td>
+  </tr>
+  <tr id="bullheadmtc20f">
+    <td>6.0.1 (MTC20F)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-mtc20f-6303e5cd.zip">Link</a></td>
+    <td>6303e5cd34832b2fbb6d701ec125009b9c24bdf3b56711d2aa24645b7ed584d8</td>
+  </tr>
+  <tr id="bullheadnrd90m">
+    <td>7.0.0 (NRD90M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-nrd90m-fdb8250a.zip">Link</a></td>
+    <td>fdb8250a2e95b172bf543cd4da5899b4b91da165283320dcbd2a2f60f5229011</td>
+  </tr>
+  <tr id="bullheadmtc20k">
+    <td>6.0.1 (MTC20K)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-mtc20k-531d55c0.zip">Link</a></td>
+    <td>531d55c028291eb84dc217584d4f7c098490603875458e46f2634683354a6a76</td>
+  </tr>
+  <tr id="bullheadnrd90r">
+    <td>7.0.0 (NRD90R)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-nrd90r-b3b77497.zip">Link</a></td>
+    <td>b3b77497bf68b43ed7edd57b20d92c97ca3684204dc96a806d9ad315d5c1dbc6</td>
+  </tr>
+  <tr id="bullheadnrd90s">
+    <td>7.0.0 (NRD90S)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-nrd90s-11bca8c7.zip">Link</a></td>
+    <td>11bca8c7440fb1fe6839b336d90373acd403afa57c2a6bc7a91dbe7b01b67f75</td>
+  </tr>
+  <tr id="bullheadnbd90w">
+    <td>7.0.0 (NBD90W, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-nbd90w-5b7cbeb8.zip">Link</a></td>
+    <td>5b7cbeb8efd9391e1585d2494bb2f4a659882c0871d4d35a4da98d214d958d81</td>
+  </tr>
+  <tr id="bullheadnrd91n">
+    <td>7.0.0 (NRD91N, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-nrd91n-888dc7ab.zip">Link</a></td>
+    <td>888dc7ab6ce50c6dce9193722f03a576d41a1d5f034a5210c65d060f5b17bc2d</td>
+  </tr>
+  <tr id="bullheadn5d91l">
+    <td>7.0.0 (N5D91L, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-n5d91l-b2644ba5.zip">Link</a></td>
+    <td>b2644ba541d725a7d9ebbb5fb5069816c9a1fd57faa07f66c68899646cbe8b08</td>
+  </tr>
+  <tr id="bullheadnmf26f">
+    <td>7.1.1 (NMF26F, Dec 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-nmf26f-27b4075c.zip">Link</a></td>
+    <td>27b4075c09857058a24b02d790014be6c2fe7ee2fd5fb5abc80736463eb4c5b5</td>
+  </tr>
+  <tr id="bullheadn4f26i">
+    <td>7.1.1 (N4F26I, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-n4f26i-06953aec.zip">Link</a></td>
+    <td>06953aece112747cc32b2c0115a12f1c1e548150aed1082030b9275b312dfc28</td>
+  </tr>
+  <tr id="bullheadn4f26o">
+    <td>7.1.1 (N4F26O, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-n4f26o-6624f529.zip">Link</a></td>
+    <td>6624f52963cab4022ad421a067b682476dd35c5b8087e4df0984f2f622db0e4d</td>
+  </tr>
+  <tr id="bullheadn4f26t">
+    <td>7.1.1 (N4F26T, Mar 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-n4f26t-648ce802.zip">Link</a></td>
+    <td>648ce802bd192160d21ab000106189714069156ce87c1d020a9badd324d54682</td>
+  </tr>
+  <tr id="bullheadn4f26u">
+    <td>7.1.1 (N4F26U, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-n4f26u-a15b50b3.zip">Link</a></td>
+    <td>a15b50b31223cc2832fc7c163b92e2d38a7b063b1a9742fafaf7dee383cdc73c</td>
+  </tr>
+  <tr id="bullheadn2g47f">
+    <td>7.1.2 (N2G47F, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-n2g47f-87f5e6a4.zip">Link</a></td>
+    <td>87f5e6a4aaadf5ace6395b9c8d1e101bcc48b21d5b68b75e073657a32a70ba9c</td>
+  </tr>
+  <tr id="bullheadn2g47o">
+    <td>7.1.2 (N2G47O, May 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-n2g47o-b6cdc215.zip">Link</a></td>
+    <td>b6cdc215d284184b8a8a01a7c480f8698eb5c96f21735de73235a3456e9f7b50</td>
+  </tr>
+  <tr id="bullheadn2g47w">
+    <td>7.1.2 (N2G47W, Jun 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-n2g47w-60388647.zip">Link</a></td>
+    <td>603886472e96bbfa0b579fa21292b0e14bbda1548e36d89125231096dab41bc4</td>
+  </tr>
+  <tr id="bullheadn2g47z">
+    <td>7.1.2 (N2G47Z, Jul 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-n2g47z-07a2c0b4.zip">Link</a></td>
+    <td>07a2c0b482129ac2d4091f6fa7a58a365f91fd4f759939805337a3086ca8b128</td>
+  </tr>
+  <tr id="bullheadn2g48c">
+    <td>7.1.2 (N2G48C, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-n2g48c-b90e4a00.zip">Link</a></td>
+    <td>b90e4a002e809702b184811854a3170217328df5f387ad51ffea4f3c2f527700</td>
+  </tr>
+  <tr id="bullheadopr6.170623.013">
+    <td>8.0.0 (OPR6.170623.013, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opr6.170623.013-87f85e44.zip">Link</a></td>
+    <td>87f85e44518b4ab632f14403c7817c6afefe0c66304fa1368d9857c991e13925</td>
+  </tr>
+  <tr id="bullheadopr4.170623.006">
+    <td>8.0.0 (OPR4.170623.006, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opr4.170623.006-98637094.zip">Link</a></td>
+    <td>986370941805502c0357497d36ffae9789ed3c54da821b633580488b8827faff</td>
+  </tr>
+  <tr id="bullheadopr6.170623.023">
+    <td>oreo-r6 (OPR6.170623.023, Nov 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opr6.170623.023-f6c8c456.zip">Link</a></td>
+    <td>f6c8c45682ada91450cd3fd129202d2e5de019436ffc6464dea1ff84d7b19ab9</td>
+  </tr>
+  <tr id="bullheadopr4.170623.020">
+    <td>8.0.0 (OPR4.170623.020, Dec 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opr4.170623.020-452f6408.zip">Link</a></td>
+    <td>452f640864f6c26c6988268d104dfebb85c088207a8daed2079a8f27469c3e17</td>
+  </tr>
+  <tr id="bullheadopm1.171019.011">
+    <td>8.1.0 (OPM1.171019.011, Dec 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm1.171019.011-7fe530d1.zip">Link</a></td>
+    <td>7fe530d17f4673f41b6bec7a3d3afd45a07ba791c86bda4b1ba158f9849e72f6</td>
+  </tr>
+  <tr id="bullheadopm3.171019.013">
+    <td>8.1.0 (OPM3.171019.013, Jan 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm3.171019.013-ab4fc7d3.zip">Link</a></td>
+    <td>ab4fc7d39495316db4660649816159237ea824a003071dfe50f7244bd0c931cc</td>
+  </tr>
+  <tr id="bullheadopm5.171019.014">
+    <td>8.1.0 (OPM5.171019.014, Jan 2018, Telstra and Softbank)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm5.171019.014-463ef376.zip">Link</a></td>
+    <td>463ef3760d0c82ce1fccf98b1d068b02c606fa863dc9d96d55a562011ba34f84</td>
+  </tr>
+  <tr id="bullheadopm3.171019.014">
+    <td>8.1.0 (OPM3.171019.014, Feb 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm3.171019.014-19dbdfdd.zip">Link</a></td>
+    <td>19dbdfddb03f4caeca971b789d272e63a8fe1426397fa7e2a0dc8c700e7d22a1</td>
+  </tr>
+  <tr id="bullheadopm5.171019.015">
+    <td>8.1.0 (OPM5.171019.015, Feb 2018, Telstra and Softbank)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm5.171019.015-394c6cd7.zip">Link</a></td>
+    <td>394c6cd7194c07c9d6cc9cd014338dd1db2e0422fd58ee4b65f9e51fa404c013</td>
+  </tr>
+  <tr id="bullheadopm3.171019.016">
+    <td>8.1.0 (OPM3.171019.016, Mar 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm3.171019.016-f7a9b546.zip">Link</a></td>
+    <td>f7a9b546414965decd2a38fbb04edb2f386ebd3bea6f6ee3640b25c80dcad606</td>
+  </tr>
+  <tr id="bullheadopm5.171019.017">
+    <td>8.1.0 (OPM5.171019.017, Mar 2018, Telstra and Softbank)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm5.171019.017-caac6618.zip">Link</a></td>
+    <td>caac66185619f5d5cf4ebf12fc8a58e5e50c33a68957d14c56aa7fe9e7c3f139</td>
+  </tr>
+  <tr id="bullheadopm2.171019.029">
+    <td>8.1.0 (OPM2.171019.029, Apr 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm2.171019.029-eaafce59.zip">Link</a></td>
+    <td>eaafce59996d4c7a72a1cee50add8ecc85497ced5c1e0b8d38c1629011aa7fc9</td>
+  </tr>
+  <tr id="bullheadopm4.171019.016.a1">
+    <td>8.1.0 (OPM4.171019.016.A1, May 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm4.171019.016.a1-510a2077.zip">Link</a></td>
+    <td>510a2077d6cea3fd26de10839a2c854409c332a0d2102a7635a7690372d2d41c</td>
+  </tr>
+  <tr id="bullheadopm6.171019.030.b1">
+    <td>8.1.0 (OPM6.171019.030.B1, Jun 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm6.171019.030.b1-264e9d26.zip">Link</a></td>
+    <td>264e9d266a59ef95bee2233d5a1c6206bcfd056d9c9195e5674a2ba5a8ef7533</td>
+  </tr>
+  <tr id="bullheadopm6.171019.030.e1">
+    <td>8.1.0 (OPM6.171019.030.E1, Jul 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm6.171019.030.e1-29a6b953.zip">Link</a></td>
+    <td>29a6b953872a95af9eaa4af0de28b71fcb248fcac4db8a4567d963ca048660fc</td>
+  </tr>
+  <tr id="bullheadopm6.171019.030.h1">
+    <td> (OPM6.171019.030.H1, Aug 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm6.171019.030.h1-9578f559.zip">Link</a></td>
+    <td>9578f5598b401b76bf31cc15f1beb5e5d63dffe436d68580efd560372e7e87ac</td>
+  </tr>
+  <tr id="bullheadopm6.171019.030.k1">
+    <td>8.1.0 (OPM6.171019.030.K1, Sep 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm6.171019.030.k1-118c2b3a.zip">Link</a></td>
+    <td>118c2b3a195edd44dbeb1f286fe05e543b80bec1e8214ccb726f2b18d18f0782</td>
+  </tr>
+  <tr id="bullheadopm7.181005.003">
+    <td>8.1.0 (OPM7.181005.003, Oct 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm7.181005.003-94150a78.zip">Link</a></td>
+    <td>94150a7894a98768c251156d0f50d7a08b2246867e4044c2c4523af0cefa6d32</td>
+  </tr>
+  <tr id="bullheadopm7.181105.004">
+    <td>8.1.0 (OPM7.181105.004, Nov 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm7.181105.004-1520cb0b.zip">Link</a></td>
+    <td>1520cb0bbdf9229cb0acc95760d132053802fc28f442678c42a3b1864d60eb64</td>
+  </tr>
+  <tr id="bullheadopm7.181205.001">
+    <td>8.1.0 (OPM7.181205.001, Dec 2018)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/bullhead-ota-opm7.181205.001-b1af2457.zip">Link</a></td>
+    <td>b1af2457a90503c56d45019a1901480bf9218ac02c7b7768d01fdc4e2de17078</td>
+  </tr>
+</table>
+
+<h2 id="hammerhead">"hammerhead" for Nexus 5 (GSM/LTE)</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="hammerheadmmb29x">
+    <td>6.0.1 (MMB29X)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/hammerhead-ota-mmb29x-13c27a19.zip">Link</a></td>
+    <td>13c27a19d036140ef17c3d7b53b06f819258077cfdf52bc5900d9975f6b27c6f</td>
+  </tr>
+  <tr id="hammerheadmob30d">
+    <td>6.0.1 (MOB30D)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp//hammerhead-ota-mob30d-74ff57bc.zip">Link</a></td>
+    <td>74ff57bc6526cc0349b78856beed7f20bf9572198d6c7331881d952afb06ebca</td>
+  </tr>
+  <tr id="hammerheadmob30h">
+    <td>6.0.1 (MOB30H)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/hammerhead-ota-mob30h-672f59e1.zip">Link</a></td>
+    <td>672f59e1c1f441df229026ffbc42d4dc125f2548e3e258a07f18d71e1c5974f7</td>
+  </tr>
+  <tr id="hammerheadmob30m">
+    <td>6.0.1 (MOB30M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/hammerhead-ota-mob30m-1af36a17.zip">Link</a></td>
+    <td>1af36a1788360dbae08f3dd9fce905f65ca0942078acafc807600910e066ea5c</td>
+  </tr>
+  <tr id="hammerheadmob30p">
+    <td>6.0.1 (MOB30P)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/hammerhead-ota-mob30p-d447411d.zip">Link</a></td>
+    <td>d447411d0ecb7c4ce16a08f57750aa53708cbe2bdd5c90061255ec4ce3e431e1</td>
+  </tr>
+  <tr id="hammerheadmob30y">
+    <td>6.0.1 (MOB30Y)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/hammerhead-ota-mob30y-308025d1.zip">Link</a></td>
+    <td>308025d1faacb235fc7a07f1e1612b0be5c1d5d326d7a39af3d0ed42a0851e7f</td>
+  </tr>
+  <tr id="hammerheadmob31e">
+    <td>6.0.1 (MOB31E)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/hammerhead-ota-mob31e-284a96a5.zip">Link</a></td>
+    <td>284a96a504593216c61d2460ce899d34a4d3699f09039d6e54cd9c540aa217b2</td>
+  </tr>
+  <tr id="hammerheadm4b30x">
+    <td>6.0.1 (M4B30X, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/hammerhead-ota-m4b30x-f2eb90a8.zip">Link</a></td>
+    <td>f2eb90a8da6bb28731dbcd72b47b2e228720cb815954614f707d421751c02881</td>
+  </tr>
+  <tr id="hammerheadm4b30z">
+    <td>6.0.1 (M4B30Z, Dec 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/hammerhead-ota-m4b30z-752c16b1.zip">Link</a></td>
+    <td>752c16b1f819d051d1d11ebd5be001c6118abbb0e31d099c6a286dbd30342f67</td>
+  </tr>
+</table>
+
+
+<h2 id="shamu">"shamu" for Nexus 6</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="shamummb29x">
+    <td>6.0.1 (MMB29X)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mmb29x-27102553.zip">Link</a></td>
+    <td>271025536502b0a1357022df0fe7cc4a2f0dbf9744f088b04057c7bfd2dfb6f2</td>
+  </tr>
+  <tr id="shamumob30d">
+    <td>6.0.1 (MOB30D)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp//shamu-ota-mob30d-6505ca97.zip">Link</a></td>
+    <td>6505ca973e14c11a93f70d0a6a8c12485cac127558f64f4c10424e205b973f91</td>
+  </tr>
+  <tr id="shamummb30g">
+    <td>6.0.1 (MMB30G)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mmb30g-ed581061.zip">Link</a></td>
+    <td>ed58106149d75046c6b196776e9b2058529fa6e99809d20fd3736dbac7487db3</td>
+  </tr>
+  <tr id="shamumob30i">
+    <td>6.0.1 (MOB30I)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mob30i-c0bdba8e.zip">Link</a></td>
+    <td>c0bdba8e5b2402c3faa0c0274e7da9aa15af9ab7edbe9e90b793c3554d5797ff</td>
+  </tr>
+  <tr id="shamummb30j">
+    <td>6.0.1 (MMB30J)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mmb30j-d684d15c.zip">Link</a></td>
+    <td>d684d15ceeae6f074636ad5680673f32f198105f3fafd349eb21bd857557a828</td>
+  </tr>
+  <tr id="shamumob30m">
+    <td>6.0.1 (MOB30M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mob30m-ec287aa6.zip">Link</a></td>
+    <td>ec287aa674ee60f79f2d716b382832df47612276ecd3c3e515d5bf2a3ab59bc6</td>
+  </tr>
+  <tr id="shamummb30k">
+    <td>6.0.1 (MMB30K)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mmb30k-93ddd447.zip">Link</a></td>
+    <td>93ddd447dd1f8e6bbe8dbac6578ffbd7b3f87e1a6702af85a3415c46b7071d59</td>
+  </tr>
+  <tr id="shamumob30o">
+    <td>6.0.1 (MOB30O)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mob30o-a0b05697.zip">Link</a></td>
+    <td>a0b05697430b9315fed3e99a91f801efad823f8385899f639dc754d5cf933b34</td>
+  </tr>
+  <tr id="shamummb30r">
+    <td>6.0.1 (MMB30R)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mmb30r-e5280455.zip">Link</a></td>
+    <td>e5280455b0930c4ddcdcbdd7a27082d1de1197652ab5842fbefc117c54641a57</td>
+  </tr>
+  <tr id="shamumob30w">
+    <td>6.0.1 (MOB30W)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mob30w-ff0cfe32.zip">Link</a></td>
+    <td>ff0cfe32128f3dc237f665e8fbe457d6bc39b0687e5f3023773f2bb577ca7014</td>
+  </tr>
+  <tr id="shamummb30w">
+    <td>6.0.1 (MMB30W)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mmb30w-4d32143a.zip">Link</a></td>
+    <td>4d32143a40a9d155cf7848e9786343a1aaeae169f39346a86734c113cb328311</td>
+  </tr>
+  <tr id="shamumob31e">
+    <td>6.0.1 (MOB31E)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mob31e-f90f1dcb.zip">Link</a></td>
+    <td>f90f1dcba01b8c044aea62a06672bd85a4c917082301d037a9e2a3d6fd64eaf9</td>
+  </tr>
+  <tr id="shamummb30y">
+    <td>6.0.1 (MMB30Y, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mmb30y-9685a993.zip">Link</a></td>
+    <td>9685a99394783ce7065c969d36eef3ed722c2d4fa325b4a1e45e28849e32717a</td>
+  </tr>
+  <tr id="shamumob31h">
+    <td>6.0.1 (MOB31H, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mob31h-4b066c21.zip">Link</a></td>
+    <td>4b066c21b6513f5bb86ef6871bc4f9bb2a181033757d8a67e88207134734622b</td>
+  </tr>
+  <tr id="shamunbd90z">
+    <td>7.0.0 (NBD90Z, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-nbd90z-78a931cb.zip">Link</a></td>
+    <td>78a931cb0f9295aa7ef65dc8ee7f5a61712fe54e9a38e9178501903d4ca73fd1</td>
+  </tr>
+  <tr id="shamummb31c">
+    <td>6.0.1 (MMB31C, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mmb31c-e1889e9d.zip">Link</a></td>
+    <td>e1889e9dab158ae119c3d3be552ad6f10b592b6611d69491cb2485f0dba5af3d</td>
+  </tr>
+  <tr id="shamumob31k">
+    <td>6.0.1 (MOB31K, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mob31k-5e66b850.zip">Link</a></td>
+    <td>5e66b8504c50eaaa813a5ac48a5be60663aafa56bae67c60a7adb9f25023d1a1</td>
+  </tr>
+  <tr id="shamunbd91p">
+    <td>7.0.0 (NBD91P, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-nbd91p-884ad5e6.zip">Link</a></td>
+    <td>884ad5e6de93777c397abbd8c629c9337237bcde398be9d1a355ff6cbaf450d7</td>
+  </tr>
+  <tr id="shamunbd91u">
+    <td>7.0.0 (NBD91U, Dec 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-nbd91u-344a7338.zip">Link</a></td>
+    <td>344a7338c1aca94b769946b4392bb14356ef7bd66ad66ba649eac4cee4a2b4c4</td>
+  </tr>
+  <tr id="shamumob31s">
+    <td>6.0.1 (MOB31S, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mob31s-cb600f3e.zip">Link</a></td>
+    <td>cb600f3ebc170e928e76fbf9314d796b00e6e4720e316271fde57c74495e3b02</td>
+  </tr>
+  <tr id="shamunbd91x">
+    <td>7.0.0 (NBD91X, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-nbd91x-c809432c.zip">Link</a></td>
+    <td>c809432ce6fae530b02b74051f1accb5042840cf00a4d792dfb1a236eba9cd2b</td>
+  </tr>
+  <tr id="shamun6f26q">
+    <td>7.1.1 (N6F26Q, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n6f26q-f4492864.zip">Link</a></td>
+    <td>f44928649c6eaff46f13c36bc34dea4fe926aac5e1077e874e319dd1329173fb</td>
+  </tr>
+  <tr id="shamun6f26r">
+    <td>7.1.1 (N6F26R, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n6f26r-f3fd968c.zip">Link</a></td>
+    <td>f3fd968c37e14a04a7163994dbdd8d9fc1902bec76343acf3527f6e9800f99b8</td>
+  </tr>
+  <tr id="shamunbd91y">
+    <td>7.0.0 (NBD91Y, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-nbd91y-92882eed.zip">Link</a></td>
+    <td>92882eed1864c9ae6646a2b64817388984fcedc65f1a57fcd780ac4b0ad86d89</td>
+  </tr>
+  <tr id="shamunbd91z">
+    <td>7.0.0 (NBD91Z, Feb 2017, ATT Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-nbd91z-aa71753c.zip">Link</a></td>
+    <td>aa71753cdc5ed805f1134cadb99761bb16da164abd1c99394845959986b70152</td>
+  </tr>
+  <tr id="shamumob31t">
+    <td>6.0.1 (MOB31T, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-mob31t-7cb1402d.zip">Link</a></td>
+    <td>7cb1402df13cfc10fed495728855e2241501eb660d085c9796379aadd34da80b</td>
+  </tr>
+  <tr id="shamunbd92d">
+    <td>7.0.0 (NBD92D, Mar 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-nbd92d-4f146eba.zip">Link</a></td>
+    <td>4f146ebac9c72ff3c268d2c74b982c34f807fcc09d4c2e0fa2fa9c97fbfa5bac</td>
+  </tr>
+  <tr id="shamunbd92e">
+    <td>7.0.0 (NBD92E, Mar 2017, ATT Only)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-nbd92e-4e043c2e.zip">Link</a></td>
+    <td>4e043c2e65edadd5203028561b1380ede7bc9707381174f0f60c207d8021b5a2</td>
+  </tr>
+  <tr id="shamun6f26u">
+    <td>7.1.1 (N6F26U, Mar 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n6f26u-62ac8549.zip">Link</a></td>
+    <td>62ac854958c15ac8955cf9c4964717ca2d54440c590c759b05312484541875f5</td>
+  </tr>
+  <tr id="shamunbd92f">
+    <td>7.0.0 (NBD92F, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-nbd92f-41469400.zip">Link</a></td>
+    <td>414694003be4f28320acc036940ddf55bbbf5600736e0046ebc1cd9b1862cd33</td>
+  </tr>
+  <tr id="shamunbd92g">
+    <td>7.0.0 (NBD92G, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-nbd92g-2b65257b.zip">Link</a></td>
+    <td>2b65257beed60e86e7478e107f786cc219beffcbe79a85f90256f5537e558331</td>
+  </tr>
+  <tr id="shamun6f26y">
+    <td>7.1.1 (N6F26Y, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n6f26y-5922a09b.zip">Link</a></td>
+    <td>5922a09b1163e4cbe074f9acb34cad6e4f20a77e8738cecbc734216871f25ed4</td>
+  </tr>
+  <tr id="shamun6f27c">
+    <td>7.1.1 (N6F27C, May 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n6f27c-8b9f07d1.zip">Link</a></td>
+    <td>8b9f07d11bc2d7a9e0c7eccd43009f8c8cb0c633156439e07c52609aff6fecf4</td>
+  </tr>
+  <tr id="shamun6f27e">
+    <td>7.1.1 (N6F27E, Jun 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n6f27e-a48c6fa8.zip">Link</a></td>
+    <td>a48c6fa82fc9cee083c8c1b9f187bf5c7be68d2bbe23b05bcae175a6500a6557</td>
+  </tr>
+  <tr id="shamun6f27h">
+    <td>7.1.1 (N6F27H, Jul 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n6f27h-2b12fcac.zip">Link</a></td>
+    <td>2b12fcac8624501aa45097536689fa5fa3cf68d6c662916b731caa901fa38853</td>
+  </tr>
+  <tr id="shamun6f27i">
+    <td>7.1.1 (N6F27I, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n6f27i-52bf4395.zip">Link</a></td>
+    <td>52bf43950acb2736ee0972ab617534af8dbed34becd2d8e8d51696059db64d73</td>
+  </tr>
+  <tr id="shamun8i11b">
+    <td>7.1.1 (N8I11B, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n8i11b-6ae9468e.zip">Link</a></td>
+    <td>6ae9468ee58093b96228ea1a3f46941e02465b343463d0d84b70aaf9ffac204c</td>
+  </tr>
+  <tr id="shamungi55d">
+    <td>7.1.1 (NGI55D, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-ngi55d-13b2aa29.zip">Link</a></td>
+    <td>13b2aa295fa7d66b4d03f6f7eab77137428b8e86bf4c734a3393de040f71c145</td>
+  </tr>
+  <tr id="shamun6f27m">
+    <td>7.1.1 (N6F27M, Oct 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n6f27m-df27bd83.zip">Link</a></td>
+    <td>df27bd83e29092c472da2793ffe47670101668e9410ee41e5af3fce722050cb9</td>
+  </tr>
+  <tr id="shamun8i11f">
+    <td>7.1.1 (N8I11F, Oct 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-n8i11f-b4de4046.zip">Link</a></td>
+    <td>b4de4046e9c47f16eeb54fa2f77d628253f6a88c3b0fd850dffa51d750652f01</td>
+  </tr>
+  <tr id="shamungi77b">
+    <td>7.1.1 (NGI77B, Oct 2017, Verizon)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/shamu-ota-ngi77b-0ea2ff80.zip">Link</a></td>
+    <td>0ea2ff804eb84cabbc018633f631959142bf87d8e03e8da8d8e3af3d651059f0</td>
+  </tr>
+</table>
+
+
+<h2 id="razor">"razor" for Nexus 7 [2013] (Wi-Fi)</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="razormob30d">
+    <td>6.0.1 (MOB30D)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp//razor-ota-mob30d-b7239cf4.zip">Link</a></td>
+    <td>b7239cf42f860119ef27e4e54d4b72e83170cbd163435b25bd0fdef72aaf6e5b</td>
+  </tr>
+  <tr id="razormob30j">
+    <td>6.0.1 (MOB30J)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razor-ota-mob30j-a1d349f7.zip">Link</a></td>
+    <td>a1d349f70a35e70f3be03795503cb554c5b24082902d4173251eedb529fc6e85</td>
+  </tr>
+  <tr id="razormob30m">
+    <td>6.0.1 (MOB30M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razor-ota-mob30m-084c62a1.zip">Link</a></td>
+    <td>084c62a1f5af4a90305f49f2ad3c20cefb177bf08ac123144fc78f393f05a98d</td>
+  </tr>
+  <tr id="razormob30p">
+    <td>6.0.1 (MOB30P)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razor-ota-mob30p-b41593f4.zip">Link</a></td>
+    <td>b41593f4a128a536ae5a73fbd7d839d5885c44248751e9c80b13d761c478638f</td>
+  </tr>
+  <tr id="razormob30x">
+    <td>6.0.1 (MOB30X)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razor-ota-mob30x-54635e45.zip">Link</a></td>
+    <td>54635e458810390fd33145fb2f162816530274510d8444aa6502c724c8e4972a</td>
+  </tr>
+</table>
+
+
+<h2 id="razorg">"razorg" for Nexus 7 [2013] (Mobile)</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="razorgmmb29x">
+    <td>6.0.1 (MMB29X)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razorg-ota-mmb29x-f97b2025.zip">Link</a></td>
+    <td>f97b2025fc25363ddd69d0a132485b2ce062a0647416cbb0773f5e8193964701</td>
+  </tr>
+  <tr id="razorgmob30d">
+    <td>6.0.1 (MOB30D)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp//razorg-ota-mob30d-e01d8774.zip">Link</a></td>
+    <td>e01d8774929914d185e74140e71dc4587b1bc4c89bddd3a8cdd857443f423215</td>
+  </tr>
+  <tr id="razorgmob30j">
+    <td>6.0.1 (MOB30J)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razorg-ota-mob30j-469e2683.zip">Link</a></td>
+    <td>469e2683222217982dcfaa178cf1cd93380a09f6165a5f3b5953391ec7acff0d</td>
+  </tr>
+  <tr id="razorgmmb30j">
+    <td>6.0.1 (MMB30J)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razorg-ota-mmb30j-d8a9effa.zip">Link</a></td>
+    <td>d8a9effa1b6ce8d4dc13ace569789fa22c53665435c51dea3cf36e3d8f016f29</td>
+  </tr>
+  <tr id="razorgmob30m">
+    <td>6.0.1 (MOB30M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razorg-ota-mob30m-2807dc31.zip">Link</a></td>
+    <td>2807dc31d7237c09df5968161bb645f6df731ec901f1583b35b9f92d7c47f8e4</td>
+  </tr>
+  <tr id="razorgmmb30m">
+    <td>6.0.1 (MMB30M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razorg-ota-mmb30m-cc2f4417.zip">Link</a></td>
+    <td>cc2f4417444ebfc4d6fc52757c2679833a01912a0adcd33d3b919e208a57c399</td>
+  </tr>
+  <tr id="razorgmob30p">
+    <td>6.0.1 (MOB30P)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razorg-ota-mob30p-2dafc4fb.zip">Link</a></td>
+    <td>2dafc4fb727717278942d3c837baf86779844d5d7752d87da50f09b46c5f774c</td>
+  </tr>
+  <tr id="razorgmmb30s">
+    <td>6.0.1 (MMB30S)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razorg-ota-mmb30s-0cfd0b2f.zip">Link</a></td>
+    <td>0cfd0b2f3f96f6c2ace7f031c446fa5b1681dd775ffa41d2ccea17dc60cbaa11</td>
+  </tr>
+  <tr id="razorgmob30x">
+    <td>6.0.1 (MOB30X)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/razorg-ota-mob30x-0b5aa9df.zip">Link</a></td>
+    <td>0b5aa9df66db710ae72f93ab8a1bcc8d7fa1fb7e8b5ffb291481afa74a84446c</td>
+  </tr>
+</table>
+
+
+<h2 id="volantisg">"volantisg" for Nexus 9 (LTE)</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="volantisgmmb29x">
+    <td>6.0.1 (MMB29X)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-mmb29x-fa4a68a8.zip">Link</a></td>
+    <td>fa4a68a8fc782d0c0a7be218f252c34ef6bc86e7a87f04327fe638acaac98062</td>
+  </tr>
+  <tr id="volantisgmob30d">
+    <td>6.0.1 (MOB30D)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp//volantisg-ota-mob30d-0339a6a9.zip">Link</a></td>
+    <td>0339a6a996e2e65a4e542fae2aad9eb06fbe04d9cb8b91f2cb0565b562f7a1ea</td>
+  </tr>
+  <tr id="volantisgmob30g">
+    <td>6.0.1 (MOB30G)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-mob30g-b2bcd502.zip">Link</a></td>
+    <td>b2bcd502c2ac39d929a38da8c8a7e8d917f710f154ba7ad0b3e32b2637bd5367</td>
+  </tr>
+  <tr id="volantisgmob30m">
+    <td>6.0.1 (MOB30M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-mob30m-6e8b9b5e.zip">Link</a></td>
+    <td>6e8b9b5e844c0584a693c9ea214bf63b79492204651b7425274aaa95fdb5c013</td>
+  </tr>
+  <tr id="volantisgmob30p">
+    <td>6.0.1 (MOB30P)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-mob30p-9e4ca547.zip">Link</a></td>
+    <td>9e4ca5475abb6e1a52537306f2c7b3ef7987b7bc7dd1bb7bc2d8d836bd71f2c9</td>
+  </tr>
+  <tr id="volantisgmob30w">
+    <td>6.0.1 (MOB30W)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-mob30w-09f75012.zip">Link</a></td>
+    <td>09f750122d12b79fc7fc718b05adf0d2065e04814f53ac9f3356aeb53b4ea749</td>
+  </tr>
+  <tr id="volantisgmob31e">
+    <td>6.0.1 (MOB31E)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-mob31e-9a2b3565.zip">Link</a></td>
+    <td>9a2b35653d0afcfa7b558bd1a803222338ef401d7fef6a37e2131895681afafb</td>
+  </tr>
+  <tr id="volantisgnrd90r">
+    <td>7.0.0 (NRD90R)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-nrd90r-d208bec7.zip">Link</a></td>
+    <td>d208bec7b99a03e357b0ab2c109e3cdf6ec9d99acc2964166f1f857cb8d08217</td>
+  </tr>
+  <tr id="volantisgnrd91n">
+    <td>7.0.0 (NRD91N, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-nrd91n-0a631340.zip">Link</a></td>
+    <td>0a6313402f7d9b4f786c12e6db448bbebd73f5cc5a551aefd04ef82895c41115</td>
+  </tr>
+  <tr id="volantisgnmf26f">
+    <td>7.1.1 (NMF26F, Dec 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-nmf26f-18495d4b.zip">Link</a></td>
+    <td>18495d4b11d9071d6e1e09065e0334f64dbc63b85fc10bcb5a8e5521c5d846d7</td>
+  </tr>
+  <tr id="volantisgn4f26q">
+    <td>7.1.1 (N4F26Q, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-n4f26q-753c09a2.zip">Link</a></td>
+    <td>753c09a2470ab95024b878830ac3a73b2f655e9ef573c773a65149ff3d0f1b1c</td>
+  </tr>
+  <tr id="volantisgn4f26t">
+    <td>7.1.1 (N4F26T, Mar 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-n4f26t-441953ff.zip">Link</a></td>
+    <td>441953ff9c1198d53db4faa8dc88a7111325a9ff0b17d769d9312b69d9baea26</td>
+  </tr>
+  <tr id="volantisgn4f26x">
+    <td>7.1.1 (N4F26X, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-n4f26x-350658e2.zip">Link</a></td>
+    <td>350658e2af3ea7805ae90345a7355aabff6dc18e258a1886a9050f4696d4c934</td>
+  </tr>
+  <tr id="volantisgn4f27b">
+    <td>7.1.1 (N4F27B, May 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-n4f27b-aefcb323.zip">Link</a></td>
+    <td>aefcb323f3b6e1246528bd9ba078b008b3d942c575b8ca5c9d77b13c2d55eb22</td>
+  </tr>
+  <tr id="volantisgn4f27e">
+    <td>7.1.1 (N4F27E, Jun 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-n4f27e-229ddb0a.zip">Link</a></td>
+    <td>229ddb0a112ae2acff37caf26581e3e65e50693dc8355b8deb28cb1f15205bf5</td>
+  </tr>
+  <tr id="volantisgn4f27i">
+    <td>7.1.1 (N4F27I, Jul 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-n4f27i-f4d0b76d.zip">Link</a></td>
+    <td>f4d0b76ddc6a6c7d31eb0ce0ba52f9425206f7454a656b28172f75d37f4ea238</td>
+  </tr>
+  <tr id="volantisgn4f27k">
+    <td>7.1.1 (N4F27K, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-n4f27k-90395132.zip">Link</a></td>
+    <td>90395132c6b93473c140470317a2aaafb3e375af7732486b892eecaccead9c79</td>
+  </tr>
+  <tr id="volantisgn4f27o">
+    <td>7.1.1 (N4F27O, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-n4f27o-e7d43de7.zip">Link</a></td>
+    <td>e7d43de7f2beed7221cec63628308e0df985a97c1bf478c3fc169b52d4875d6f</td>
+  </tr>
+  <tr id="volantisgn4f27p">
+    <td>7.1.1 (N4F27P, Oct 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantisg-ota-n4f27p-3616b6a4.zip">Link</a></td>
+    <td>3616b6a4e8187d343fbc188b35b767bf44d4f20defd6ed33a7be4867b7850f62</td>
+  </tr>
+</table>
+
+
+<h2 id="volantis">"volantis" for Nexus 9 (Wi-Fi)</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="volantismob30d">
+    <td>6.0.1 (MOB30D)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp//volantis-ota-mob30d-1da7c803.zip">Link</a></td>
+    <td>1da7c803f85c64a90369b5c90af9bc6ae440e6f19595b9f5ee938d7b5d99b9a0</td>
+  </tr>
+  <tr id="volantismob30g">
+    <td>6.0.1 (MOB30G)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-mob30g-555f0865.zip">Link</a></td>
+    <td>555f0865d7521b8d1559dd32562c2236ccba685b4b5a55812b2c3671e1ff4a4d</td>
+  </tr>
+  <tr id="volantismob30m">
+    <td>6.0.1 (MOB30M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-mob30m-738daf66.zip">Link</a></td>
+    <td>738daf66c98b01cf57db6bbd0c6054839ed485e93adcfdfc5bcf6ec0d41d05c5</td>
+  </tr>
+  <tr id="volantismob30p">
+    <td>6.0.1 (MOB30P)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-mob30p-0fa39d97.zip">Link</a></td>
+    <td>0fa39d9778c60273e02ced92373586e1c2d9d341a98ca5eb5ebd55735a820590</td>
+  </tr>
+  <tr id="volantismob30w">
+    <td>6.0.1 (MOB30W)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-mob30w-32d7336e.zip">Link</a></td>
+    <td>32d7336e122bc2ffbdcde42ca84037ef1c0f082d60a6421efe1ad8bbf5c1eec4</td>
+  </tr>
+  <tr id="volantisnrd90m">
+    <td>7.0.0 (NRD90M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-nrd90m-5468c87c.zip">Link</a></td>
+    <td>5468c87c1e80de6b4fd6ad3d4772caf07ffcc99fc590a6aa97d62245178049e9</td>
+  </tr>
+  <tr id="volantisnrd90r">
+    <td>7.0.0 (NRD90R)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-nrd90r-7c417d20.zip">Link</a></td>
+    <td>7c417d20aaf5f27d1ce5eef7c53cf8c5deee2dcc5a3f75e76383699184535b13</td>
+  </tr>
+  <tr id="volantisnrd91d">
+    <td>7.0.0 (NRD91D, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-nrd91d-f88a707f.zip">Link</a></td>
+    <td>f88a707f06b531cc2b5fa8fde4379b940ae4ed5f8d3cd3d5a3984fd2edfee890</td>
+  </tr>
+  <tr id="volantisnrd91n">
+    <td>7.0.0 (NRD91N, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-nrd91n-0319bbd6.zip">Link</a></td>
+    <td>0319bbd6c08e8e941d7d74069f8c71fbd4c4c6934411926f7a06cc0ceb646647</td>
+  </tr>
+  <tr id="volantisnmf26f">
+    <td>7.1.1 (NMF26F, Dec 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-nmf26f-de961a3c.zip">Link</a></td>
+    <td>de961a3cdc899c8dbe5dd2539c23c2c0d2e3bd1e2e42ff894ec5a168ff3901bd</td>
+  </tr>
+  <tr id="volantisn4f26m">
+    <td>7.1.1 (N4F26M, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-n4f26m-9524dcbf.zip">Link</a></td>
+    <td>9524dcbf109c0863a61a6b70c006cde498b3663a489c1c13eeb33e30f4ca2530</td>
+  </tr>
+  <tr id="volantisn4f26q">
+    <td>7.1.1 (N4F26Q, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-n4f26q-c1d0968b.zip">Link</a></td>
+    <td>c1d0968b864889bea2e2b4ee179e5b9cfa414d468304132db9376c866f048d03</td>
+  </tr>
+  <tr id="volantisn4f26t">
+    <td>7.1.1 (N4F26T, Mar 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-n4f26t-1d2abb81.zip">Link</a></td>
+    <td>1d2abb81d1a163dd8b897f46a8e0ab9d40129583f3c26025481bebccbdbc1457</td>
+  </tr>
+  <tr id="volantisn4f26x">
+    <td>7.1.1 (N4F26X, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-n4f26x-e2cc193d.zip">Link</a></td>
+    <td>e2cc193d4bba9950447709069a663663eb02e3c833e5cede1b79fba2b569507b</td>
+  </tr>
+  <tr id="volantisn4f27b">
+    <td>7.1.1 (N4F27B, May 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-n4f27b-e5b3a8a9.zip">Link</a></td>
+    <td>e5b3a8a9db123a9aa5cc9443dfe53b5b4c310b9995e7f00cbad3e902e0c50232</td>
+  </tr>
+  <tr id="volantisn9f27c">
+    <td>7.1.1 (N9F27C, Jun 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-n9f27c-3a1f1bb8.zip">Link</a></td>
+    <td>3a1f1bb8d609c4250fb34b40911e1c8fb62c836cb78cace6e01f50ddbac359f9</td>
+  </tr>
+  <tr id="volantisn9f27f">
+    <td>7.1.1 (N9F27F, Jul 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-n9f27f-05abe680.zip">Link</a></td>
+    <td>05abe6803f63971267a5d109681a5a0ef3f03bf63d482989d7a95d7e126cd83c</td>
+  </tr>
+  <tr id="volantisn9f27h">
+    <td>7.1.1 (N9F27H, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-n9f27h-352ae317.zip">Link</a></td>
+    <td>352ae317135665441b3301c4ebfa335caae57f1375230b6b18350b33019aa38e</td>
+  </tr>
+  <tr id="volantisn9f27l">
+    <td>7.1.1 (N9F27L, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-n9f27l-7fd5d6e6.zip">Link</a></td>
+    <td>7fd5d6e6e7d486b6aaa7a0c59bb8e697f74c1a11b0647a4ef939cfef32206edd</td>
+  </tr>
+  <tr id="volantisn9f27m">
+    <td>7.1.1 (N9F27M, Oct 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/volantis-ota-n9f27m-ad1aee0f.zip">Link</a></td>
+    <td>ad1aee0f88649afd7aab15f188b9532506b52224111e8fa97644189f0e732ceb</td>
+  </tr>
+</table>
+
+
+<h2 id="fugu">"fugu" for Nexus Player</h2>
+
+<table>
+  <thead>
+    <th>Description</th>
+    <th>Download</th>
+    <th>SHA-256 Checksum</th>
+  </thead>
+  <tr id="fugumob30d">
+    <td>6.0.1 (MOB30D)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-mob30d-6aee10f9.zip">Link</a></td>
+    <td>6aee10f97242f2b47d5daa7e4b03aa8c3be3378b751b38adff50d329ec2199ac</td>
+  </tr>
+  <tr id="fugumob30g">
+    <td>6.0.1 (MOB30G)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-mob30g-71bd9ea8.zip">Link</a></td>
+    <td>71bd9ea8f2c19e18e953b77de311213d084959b2a6d4895e81d77a07e8099de7</td>
+  </tr>
+  <tr id="fugumob30m">
+    <td>6.0.1 (MOB30M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-mob30m-6f4d7f77.zip">Link</a></td>
+    <td>6f4d7f77bf37f108c4edee5526f26ddf8a8bd284ac6b02f781bffa3f333bd55d</td>
+  </tr>
+  <tr id="fugumob30p">
+    <td>6.0.1 (MOB30P)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-mob30p-443443ab.zip">Link</a></td>
+    <td>443443ab2b9f35da3b6c8ef2059077978bacac2cd7fbf9699d6c2bb9c9b42438</td>
+  </tr>
+  <tr id="fugumob30w">
+    <td>6.0.1 (MOB30W)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-mob30w-da502398.zip">Link</a></td>
+    <td>da50239826081ff3105bd90765e9b6ca460ac95f5aef3bbf80a9652e6bfc2789</td>
+  </tr>
+  <tr id="fugunrd90m">
+    <td>7.0.0 (NRD90M)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-nrd90m-2c446ffb.zip">Link</a></td>
+    <td>2c446ffb1a548b04c711b18bf144768b8276238d16460fc6a22fc321a5f64ad1</td>
+  </tr>
+  <tr id="fugunrd90r">
+    <td>7.0.0 (NRD90R)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-nrd90r-a45ccb30.zip">Link</a></td>
+    <td>a45ccb3050882606b0877d0520f39d8b9ad94d6a8daffc37ef6fc402a548a40c</td>
+  </tr>
+  <tr id="fugunrd91d">
+    <td>7.0.0 (NRD91D, Oct 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-nrd91d-647860d6.zip">Link</a></td>
+    <td>647860d6462cea38b926b25c125fe6bcbc7476e83f8ba0089ea33e35986fc7e4</td>
+  </tr>
+  <tr id="fugunrd91n">
+    <td>7.0.0 (NRD91N, Nov 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-nrd91n-f340b315.zip">Link</a></td>
+    <td>f340b3154b60fb5b402a1ca92eba6da4bef1180559458726484b682e783fbd14</td>
+  </tr>
+  <tr id="fugunmf26j">
+    <td>7.1.1 (NMF26J, Dec 2016)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-nmf26j-8cd065bc.zip">Link</a></td>
+    <td>8cd065bcaf394486e575e749c26892b5b54500368fad4f6c9a7a2b9019f91cda</td>
+  </tr>
+  <tr id="fugunmf26r">
+    <td>7.1.1 (NMF26R, Jan 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-nmf26r-109e4df1.zip">Link</a></td>
+    <td>109e4df1478f7d5327752fffe97aef45519e64f4203356609966bd003cef1d0b</td>
+  </tr>
+  <tr id="fugunmf26x">
+    <td>7.1.1 (NMF26X, Feb 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-nmf26x-dd6b5ed2.zip">Link</a></td>
+    <td>dd6b5ed238ffd1efc0cfb1096f6c4012c10743b2a3bf9ea91e60000f1b5d542c</td>
+  </tr>
+  <tr id="fugunmf27d">
+    <td>7.1.1 (NMF27D, Mar 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-nmf27d-24aa0ddb.zip">Link</a></td>
+    <td>24aa0ddbb0bc56e370c277369020cf919073fe945cb997d3fb184dc732b0408b</td>
+  </tr>
+  <tr id="fugun2g47h">
+    <td>7.1.2 (N2G47H, Apr 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-n2g47h-8ce1e152.zip">Link</a></td>
+    <td>8ce1e15200ac41d93c16e72fd9b2cb6d7a63cb7504652a4745ace32768191aa9</td>
+  </tr>
+  <tr id="fugun2g47r">
+    <td>7.1.2 (N2G47R, May 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-n2g47r-689c6f92.zip">Link</a></td>
+    <td>689c6f92586e97f3b6f5ccc76137bd42542adca639fbb9a5d83654ac6261a7fa</td>
+  </tr>
+  <tr id="fugun2g47x">
+    <td>7.1.2 (N2G47X, Jun 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-n2g47x-9f1ac867.zip">Link</a></td>
+    <td>9f1ac867a983a35f15b663f465185cb313e58e180b45323040bccd87f96c77e9</td>
+  </tr>
+  <tr id="fugun2g48b">
+    <td>7.1.2 (N2G48B, Jul 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-n2g48b-13d76eb6.zip">Link</a></td>
+    <td>13d76eb6e6652f4998d5ac7171c0c71c7e58865c7e8a5b5462f49cc9855defd2</td>
+  </tr>
+  <tr id="fugun2g48c">
+    <td>7.1.2 (N2G48C, Aug 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-n2g48c-0f0941ab.zip">Link</a></td>
+    <td>0f0941ab0035032a1c4ef830b23b6d69737305130a92e8d9f091d10be21ba95e</td>
+  </tr>
+  <tr id="fuguopr6.170623.021">
+    <td>8.0.0 (OPR6.170623.021, Sep 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-opr6.170623.021-1474ea3b.zip">Link</a></td>
+    <td>1474ea3b8b281493c58582581b76d29190abb952656c27c7882f90fcff5957be</td>
+  </tr>
+  <tr id="fuguopr2.170623.027">
+    <td>8.0.0 (OPR2.170623.027, Nov 2017)</td>
+    <td><a href="https://dl.google.com/dl/android/aosp/fugu-ota-opr2.170623.027-401d182e.zip">Link</a></td>
+    <td>401d182ecee4258bab1f78299ddcd2076413c9672fa4d1f9f8c6eeedb1bfd4aa</td>
+  </tr>
+</table>
+
+
+
+
+  </div>
+  
+
+  
+        
+  
+
+
+
+
+
+
+
+        
+<div class="devsite-content-footer nocontent">
+  
+  
+    <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see our <a href="https://developers.google.com/terms/site-policies">Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
+  
+
+  
+    
+    <p class="devsite-content-footer-date" itemprop="datePublished"
+       content="2018-08-22T16:56:03.622000">
+      
+      Last updated August 22, 2018.
+    </p>
+  
+
+</div>
+
+        </article>
+      </article>
+  
+
+        </div>
+      
+
+<footer class="devsite-footer-linkboxes nocontent
+               
+               devsite-footer-linkboxes-with-sites"><nav class="devsite-full-site-width"><ul class="devsite-footer-linkboxes-list"><li class="devsite-footer-linkbox "><h3 class="devsite-footer-linkbox-heading">Connect</h3><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//android-developers.googleblog.com/"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Android Developers Blog
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/newsletter/index.html#subscribe"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Get News and Tips by Email
+            </a></li></ul></li><li class="devsite-footer-linkbox "><h3 class="devsite-footer-linkbox-heading">More Resources</h3><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Android Developers Website
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//www.google.com/design/"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Google Design
+            </a></li></ul></li><li class="devsite-footer-linkbox "><h3 class="devsite-footer-linkbox-heading">Tools</h3><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/tools/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Android Studio
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/distribute/console/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Google Play Console
+            </a></li></ul></li><li class="devsite-footer-linkbox devsite-footer-linkbox-sites"><a href="https://developers.google.com/"
+           class="gc-analytics-event devsite-footer-linkbox-logo-link"
+           data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link"><img class="devsite-footer-linkbox-logo"
+               src="https://developers.google.com/_static/16eb031c2e/images/redesign-14/lockup-color-knockout.png"
+               alt="Google Developers"></a><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Android Link"
+               >
+                Android
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developer.chrome.com/home"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Chrome Link"
+               >
+                Chrome
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//firebase.google.com"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Firebase Link"
+               >
+                Firebase
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//cloud.google.com"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Cloud Link"
+               >
+                Google Cloud Platform
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developers.google.com/products/"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Products Link"
+               >
+                All Products
+            </a></li></ul></li></ul></nav></footer><footer class="devsite-utility-footer"><nav class="devsite-utility-footer-nav devsite-nav devsite-full-site-width"><div class="devsite-utility-footer-nav-left"><form class="devsite-utility-footer-language" action="https://developers.google.com/i18n/setlang/"
+            method="post"><input type="hidden" name="xsrf_token" value="3aF-ZuUNJNL0uBjO7uFj8e07DbgRDM5NOD7WIfaIbrQ6MTU1MTk5MTg0MTI5Njg3OA" /><input type="hidden" name="next" value="/android/ota"><select class="devsite-utility-footer-language-select kd-select" name="language"
+                track-type="languageSelector" track-name="click"><option value="id"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="id"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="id">
+            Bahasa Indonesia
+          </option><option value="de"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="de"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="de">
+            Deutsch
+          </option><option value="en"
+                 selected="selected" 
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="en"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="en">
+            English
+          </option><option value="es"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="es"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="es">
+            español
+          </option><option value="fr"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="fr"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="fr">
+            français
+          </option><option value="pt-br"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="pt-br"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="pt-br">
+            Português Brasileiro
+          </option><option value="ru"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="ru"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="ru">
+            Русский
+          </option><option value="ja"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="ja"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="ja">
+            日本語
+          </option><option value="zh-cn"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="zh-cn"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="zh-cn">
+            简体中文
+          </option><option value="ko"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="ko"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="ko">
+            한국어
+          </option></select></form><span class="devsite-utility-footer-links"><a class="devsite-utility-footer-link gc-analytics-event"
+           href="https://developers.google.com/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer terms link"
+           data-footer-link-id="terms"
+           >Terms
+         </a><a class="devsite-utility-footer-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer privacy link"
+           data-footer-link-id="privacy"
+           >Privacy
+         </a></span></div><div class="devsite-utility-footer-nav-right"><div class="devsite-utility-footer-newsletter-signup-text">
+        Sign up for the Google Developers newsletter
+      </div><a class="button button-primary devsite-utility-footer-newsletter-signup-button"
+         href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+         track-type="navigateTo" track-name="newsletter"
+         track-metadata-eventDetail="footer"
+         track-metadata-position="footer">
+        
+        Subscribe
+      </a></div></nav></footer></div><script async defer src="//www.gstatic.com/feedback/api.js"></script><script src="https://developers.google.com/_static2/16eb031c2e/jsi18n/"></script><script src="https://developers.google.com/_static/16eb031c2e/js/script_foot_closure.js"></script><script src="https://developers.google.com/_static/16eb031c2e/js/script_foot.js"></script><script>
+        (function($) {
+          
+          devsite.devsite.Init($, {'ENABLE_BLOCKED_VIDEO_PLACEHOLDER': 0, 'SITE_NAME': 'devsite', 'FULL_SITE_SEARCH_ENABLED': 1, 'ENABLE_CLOUDTRACK': 0, 'VTAGS_ENABLED': 0, 'HISTORY_ENABLED': 1, 'SIDEBAR_MINI_ENABLED': 0, 'VERSION_HASH': '16eb031c2e', 'SCRIPTSAFE_DOMAIN': 'google-developers.appspot.com', 'ENABLE_BLOCKED_LINK_TOOLTIP': 0, 'ALLOWED_HOSTS': ['.android.com', '.appspot.com', '.gonglchuangl.net', '.google.cn', '.google.com', '.googleplex.com', '.tensorflow.org'], 'BLOCK_RSS_FEEDS': 0},
+                               '[]','en',
+                               true, '',
+                               {"99a6bd77935176c43993ac6fe3e23dfc": true, "8de7a048f21618359bd37f5ce44be073": false, "098dafe57affddc137df300142652cfd": false, "8e03e230de0bd8a6fe173fdf172e8b3f": true, "cb025a64a50094835616312f4774a53d": true, "51470233c56fc1fde50f00b73c52b216": false, "d169d485cf24243a263783dbe42029b1": true, "700def1a83e356c06c0925afb05de4b0": false, "6749dcb526ce9bde6993550c7d928d24": true}, '/android/',
+                               'https://developers.google.com/');
+        })(jQuery);
+
+        
+        devsite.localInit = function() {
+          
+        };
+
+      </script><script>
+      $('.devsite-utility-footer-language-select').each(function() {
+        $(this).change(function(){$('.devsite-utility-footer-language').submit();});
+      });
+      </script></div><span id="devsite-request-elapsed" data-request-elapsed="249.369859695"></span></body></html>

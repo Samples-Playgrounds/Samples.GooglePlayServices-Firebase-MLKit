@@ -1,0 +1,905 @@
+
+
+
+
+
+
+<!DOCTYPE html><html lang="en"
+      class=""><head><script>var a=window.devsite||{};window.devsite=a;a.readyCallbacks=[];window.devsite.readyCallbacks=a.readyCallbacks;a.ready=function(b){a.readyCallbacks.push(b)};window.devsite.ready=a.ready;
+</script><meta charset="utf-8"><meta name="xsrf_token" content="natYuHlCIik8nFuWPLT0gOvFZQ1fNHnMxC911tWa-HY6MTU1MTk5MjY4NjI2NzA1NA" /><link rel="canonical" href="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions"><link rel="alternate" href="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions" hreflang="en"><link rel="alternate" href="https://developers.google.cn/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions" hreflang="en-cn"><link rel="alternate" href="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions" hreflang="x-default"><link rel="shortcut icon" href="https://developers.google.com/_static/16eb031c2e/images/favicon.png"><link rel="apple-touch-icon" href="https://developers.google.com/_static/16eb031c2e/images/touch-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet"
+      
+      href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"
+      ><link rel="stylesheet"
+        href="https://developers.google.com/_static/16eb031c2e/css/devsite-blue-grey.css"><link rel="search"
+        type="application/opensearchdescription+xml"
+        title="Google Developers"
+        href="https://developers.google.com/s/opensearch.xml"><script src="https://developers.google.com/_static/16eb031c2e/js/jquery-bundle.js"></script><meta property="og:site_name" content="Google Developers"><meta property="og:type" content="website"><meta property="og:url" content="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions"><meta property="og:locale" content="en"><script>
+    var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'en';
+  </script><title>FirebaseModelDownloadConditions &nbsp;|&nbsp; Google APIs for Android
+      &nbsp;|&nbsp; Google Developers</title><meta property="og:title" content="FirebaseModelDownloadConditions &nbsp;|&nbsp; Google APIs for Android
+      &nbsp;|&nbsp; Google Developers"><meta property="og:image"
+          content="https://developers.google.com/_static/16eb031c2e/images/share/devsite-blue-grey.png"><meta property="og:image:secure_url"
+          content="https://developers.google.com/_static/16eb031c2e/images/share/devsite-blue-grey.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.0.0"><meta name="generator" content="Doclava"><meta name="gtm_var" data-key="docType" data-value="reference"><link rel="stylesheet" href="https://developers.google.com/site-assets/doclava-devsite.css"></head><body class="
+               devsite-doc-page
+               
+               
+               
+               devsite-header-no-upper-tabs
+               "
+        data-family="endorsed"
+        
+        
+        
+        id="top_of_page"><div class="devsite-wrapper"><div class="devsite-top-section-wrapper
+            "><header class="devsite-top-section nocontent"><div class="devsite-top-logo-row-wrapper-wrapper"><div class="devsite-top-logo-row-wrapper"><div class="devsite-top-logo-row devsite-full-site-width"><button type="button" class="devsite-expand-section-nav devsite-header-icon-button
+                                       button-flat material-icons gc-analytics-event"
+                  data-category="Site-Wide Custom Events" data-label="Hamburger menu"></button><div class="devsite-product-name-wrapper"><a class="devsite-product-name-link gc-analytics-event"
+       href="https://developers.google.com/android/"
+       data-category="Site-Wide Custom Events"
+       data-label="Project logo (header)"><img src="https://developers.google.com/site-assets/developers_64dp.png" class="devsite-product-logo"
+               alt="Google APIs for Android"></a><span class="devsite-product-name"><ul class="devsite-breadcrumb-list"><li class="devsite-breadcrumb-item"><a href="https://developers.google.com/android/" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Upper Header"
+       data-value="1">
+    
+    
+      
+        Google APIs for Android
+      
+    
+    
+    </a></li></ul></span></div><div class="devsite-header-upper-tabs"></div><form class="devsite-search-form"
+                action="https://developers.google.com/s/results/"
+                method="GET"
+                id="top-search"
+                search-placeholder='Search'><div id="searchbox" class="devsite-searchbox"><input placeholder='Search'
+         
+         type="text"
+         class="devsite-search-field devsite-search-query"
+         name="q"
+         value=""
+         autocomplete="off"
+         
+         aria-label="Search box"
+         ><div class="devsite-search-image material-icons"></div></div><input type="hidden"
+       name="p"
+       id="search_project"
+       value="/android/"
+       data-project-name="Google APIs for Android"
+       data-project-path="/android/"
+       data-query-match=""><input type="hidden" class="suggest-project" value="Google APIs for Android" /></form><a class="devsite-header-link devsite-top-button button gc-analytics-event"
+               
+               href="https://developers.google.com/products/"
+               
+               data-category="Site-Wide Custom Events"
+               data-label="Site header link"
+               track-type="globalNav"
+               track-name="all products"
+               track-metadata-position="nav"
+               track-metadata-eventDetail='nav'><div class="devsite-header-link-label">All Products</div></a><button type="button" class="devsite-search-button devsite-header-icon-button button-flat
+                                       material-icons"></button><a href="https://accounts.google.com/ServiceLogin?passive=true&continue=https%3A%2F%2Fdevelopers.google.com%2Fandroid%2Freference%2Fcom%2Fgoogle%2Ffirebase%2Fml%2Fcustom%2Fmodel%2FFirebaseModelDownloadConditions%3Frefresh%3D1&service=ahsid"
+   class="devsite-user-signin devsite-top-button button gc-analytics-event"
+   data-category="Site-Wide Custom Events"
+   data-label="Sign in button"
+   track-type='globalNav'
+   track-name='signIn'
+   track-metadata-eventDetail='nav'
+   track-metadata-position='nav'>
+  
+  Sign in
+</a></div></div></div><div class="devsite-collapsible-section"><div class="devsite-header-background devsite-full-site-width"><div class="devsite-doc-set-nav-row devsite-full-site-width"><nav class="devsite-doc-set-nav devsite-nav devsite-overflow-tabs-scroll-wrapper"><ul class="devsite-doc-set-nav-tab-list devsite-overflow-tabs-scroll"><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/"
+           class=" devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Home"
+         >
+          Home
+        </a></li><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/guides/overview"
+           class="devsite-doc-set-nav-active devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           aria-label="Guides, selected"
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Guides"
+         >
+          Guides
+        </a></li><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/reference/packages"
+           class=" devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Reference"
+         >
+          Reference
+        </a></li><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/images"
+           class=" devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Downloads"
+         >
+          Downloads
+        </a></li></ul></nav></div></div></div></header><script>
+    if (window.jQuery) {
+      $(document).ready(function() {
+        if (window.devsite && window.devsite.search) {
+          
+          window.devsite.search.init('en')
+        }
+      });
+    }
+  </script></div><div id="gc-wrapper"itemscope itemtype="http://schema.org/Article"><input class="google-analytics-id-json" type="hidden" value="{&quot;dimensions&quot;: {&quot;dimension6&quot;: &quot;en&quot;, &quot;dimension4&quot;: &quot;Google APIs for Android&quot;, &quot;dimension5&quot;: &quot;en&quot;, &quot;dimension3&quot;: false, &quot;dimension1&quot;: &quot;Signed out&quot;, &quot;dimension8&quot;: null}, &quot;gaid&quot;: &quot;UA-24532603-1&quot;}"><script>
+      var dataLayer = [{"freeTrialEligibleUser": "False", "userCountry": "US", "language": {"requested": "en", "served": "en"}, "projectName": "Google APIs for Android", "scriptsafe": null, "signedIn": "False", "internalUser": "False"}];
+    </script>
+
+      
+        <div class="devsite-site-mask"></div>
+        
+  
+
+
+<nav class="devsite-nav-responsive devsite-nav nocontent" tabindex="0">
+  
+  <div class="devsite-nav-responsive-tabs-panel">
+    
+      
+
+
+
+<nav class="devsite-nav-responsive-tabs devsite-nav">
+  <ul class="devsite-nav-list">
+  
+
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <a 
+             href="https://developers.google.com/android/"
+           
+           class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                  "
+           
+           data-category="Site-Wide Custom Events" data-label="Responsive Tab: Home">
+          Home
+        </a>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <span class="devsite-nav-responsive-forward devsite-nav-responsive-tab devsite-nav-title
+                     devsite-nav-active gc-analytics-event"
+              data-category="Site-Wide Custom Events" data-label="Responsive Tab: Guides"
+              tabindex="0">
+          Guides
+        </span>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <a 
+             href="https://developers.google.com/android/reference/packages?nav=true"
+           
+           class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                  "
+           
+           data-category="Site-Wide Custom Events" data-label="Responsive Tab: Reference">
+          Reference
+        </a>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <a 
+             href="https://developers.google.com/android/images?nav=true"
+           
+           class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                  "
+           
+           data-category="Site-Wide Custom Events" data-label="Responsive Tab: Downloads">
+          Downloads
+        </a>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      <a href="https://developers.google.com/products/"
+         class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+         data-label="Responsive Tab: all_products"
+         >
+        All Products
+      </a>
+    </li>
+  
+  </ul>
+</nav>
+
+
+    
+  </div>
+  
+  
+  <div class="devsite-nav-responsive-sidebar-panel">
+    
+    <div class="devsite-nav-responsive-back" tabindex="0"></div>
+    
+    <nav class="devsite-nav-responsive-sidebar">
+      
+      
+    </nav>
+  </div>
+  
+  
+</nav>
+
+
+        <div class="devsite-main-content clearfix">
+
+        
+        
+
+        
+  
+  
+    
+    
+      
+  <nav class="devsite-section-nav devsite-nav nocontent">
+    <ul class="devsite-nav-list"><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/overview" class="devsite-nav-title">Overview</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/setup" class="devsite-nav-title">Setup</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/api-client" class="devsite-nav-title">Accessing APIs</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/google-api-client" class="devsite-nav-title">Accessing APIs with GoogleApiClient</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/client-auth" class="devsite-nav-title">Authenticating Your Client</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/http-auth" class="devsite-nav-title">Authorizing for REST APIs</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/google-services-plugin" class="devsite-nav-title">Google Services Plugin</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/permissions" class="devsite-nav-title">Runtime Permissions</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/tasks" class="devsite-nav-title">Tasks API</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/opensource" class="devsite-nav-title">Open Source Notices</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/versioning" class="devsite-nav-title">Versioning</a></li><li class="devsite-nav-item"><hr class="devsite-nav-break"></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/releases" class="devsite-nav-title">Releases</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/beta-program" class="devsite-nav-title">Beta Program</a></li></ul>
+  </nav>
+
+    
+
+    
+  <nav class="devsite-page-nav devsite-nav"></nav>
+
+
+      <article class="devsite-article">
+        <article class="devsite-article-inner">
+  
+          
+  
+
+
+<div class="devsite-rating-container
+            "><div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="1" data-category="Site-Wide Custom Events" data-label="Star Rating 1"
+         track-metadata-score="1" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="2" data-category="Site-Wide Custom Events" data-label="Star Rating 2"
+         track-metadata-score="2" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="3" data-category="Site-Wide Custom Events" data-label="Star Rating 3"
+         track-metadata-score="3" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="4" data-category="Site-Wide Custom Events" data-label="Star Rating 4"
+         track-metadata-score="4" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="5" data-category="Site-Wide Custom Events" data-label="Star Rating 5"
+         track-metadata-score="5" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 5 out of 5"></div></div><div class="devsite-rating-description"></div><div class="devsite-rating-internal"><span class="devsite-rating-stats"></span></div></div><script>
+  $(document).ready(function() {
+    devsite.ratings.init(
+      document.querySelectorAll('#devsite-feedback-project'), false
+      
+    );
+  });
+</script>
+
+
+  
+  <nav class="devsite-breadcrumb-nav devsite-nav">
+    
+
+
+<ul class="devsite-breadcrumb-list">
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <a href="https://developers.google.com/products/" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Breadcrumbs"
+       data-value="1">
+    
+    
+      Products
+    
+    
+    </a>
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <div class="devsite-breadcrumb-guillemet material-icons"></div>
+    
+    
+    <a href="https://developers.google.com/android/" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Breadcrumbs"
+       data-value="2">
+    
+    
+      Google APIs for Android
+    
+    
+    </a>
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <div class="devsite-breadcrumb-guillemet material-icons"></div>
+    
+    
+    <a href="https://developers.google.com/android/guides/overview" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Breadcrumbs"
+       data-value="3">
+    
+    
+      Guides
+    
+    
+    </a>
+    
+  </li>
+  
+</ul>
+
+  </nav>
+  
+  
+  <h1 itemprop="name" class="devsite-page-title">
+    FirebaseModelDownloadConditions
+  </h1>
+  
+  
+  <nav class="devsite-page-nav-embedded devsite-nav"></nav>
+  
+  <div class="devsite-article-body clearfix
+            "
+       itemprop="articleBody">
+    
+  <div id="api-info-block">
+    <div class="api-level"></div>
+  </div><!-- end api-info-block -->
+  <!-- ======== START OF CLASS DATA ======== -->
+  <div id="jd-header">
+    public class <b>FirebaseModelDownloadConditions</b> extends <a href="//developer.android.com/reference/java/lang/Object.html">Object</a><br>
+  </div><!-- end jd-header -->
+  <div id="naMessage"></div>
+  <div id="jd-content">
+    <div class="jd-descr">
+      <p>Conditions to download cloud models.</p>
+    </div><!-- jd-descr -->
+    <div class="jd-descr">
+      <section id="xml-attributes">
+        <!-- ======== NESTED CLASS SUMMARY ======== -->
+        <section>
+          <h3>Nested Class Summary</h3>
+          <table id="nestedclasses" class="jd-sumtable">
+            <tr>
+              <td class="jd-typecol">class</td>
+              <td class="jd-linkcol" colspan="2">
+                <a href="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions.Builder.html">
+                FirebaseModelDownloadConditions.Builder</a>
+              </td>
+              <td class="jd-descrcol" width="100%">Builder of <code><a href="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions.html">
+              FirebaseModelDownloadConditions</a></code>.&nbsp;</td>
+            </tr>
+          </table>
+        </section><!-- ========== METHOD SUMMARY =========== -->
+        <section>
+          <h3>Public Method Summary</h3>
+          <table id="pubmethods" class="jd-sumtable">
+            <tr>
+              <td class="jd-typecol">boolean</td>
+              <td class="jd-linkcol" width="100%">
+                <div class="jd-hang">
+                  <span class="sympad"><a href="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions.html#equals(java.lang.Object)">
+                  equals</a></span>(<a href="//developer.android.com/reference/java/lang/Object.html">Object</a> o)
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="jd-typecol">int</td>
+              <td class="jd-linkcol" width="100%">
+                <div class="jd-hang">
+                  <span class="sympad"><a href="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions.html#hashCode()">
+                  hashCode</a></span>()
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="jd-typecol">boolean</td>
+              <td class="jd-linkcol" width="100%">
+                <div class="jd-hang">
+                  <span class="sympad"><a href="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions.html#isChargingRequired()">
+                  isChargingRequired</a></span>()
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="jd-typecol">boolean</td>
+              <td class="jd-linkcol" width="100%">
+                <div class="jd-hang">
+                  <span class="sympad"><a href="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions.html#isDeviceIdleRequired()">
+                  isDeviceIdleRequired</a></span>()
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="jd-typecol">boolean</td>
+              <td class="jd-linkcol" width="100%">
+                <div class="jd-hang">
+                  <span class="sympad"><a href="https://developers.google.com/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions.html#isWifiRequired()">
+                  isWifiRequired</a></span>()
+                </div>
+              </td>
+            </tr>
+          </table>
+        </section><!-- =========== METHOD SUMMARY ============ -->
+        <section id="inhmethods">
+          <h3>Inherited Method Summary</h3>
+          <div class="expandable">
+            <span class="showalways">From class java.lang.Object</span>
+            <div id="inherited-methods-java.lang.Object">
+              <div id="inherited-methods-java.lang.Object-list" class="jd-inheritedLinks"></div>
+              <div id="inherited-methods-java.lang.Object-summary">
+                <table class="jd-sumtable-expando">
+                  <tr>
+                    <td class="jd-typecol">
+                      <a href="//developer.android.com/reference/java/lang/Object.html">Object</a>
+                    </td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">clone</span>()
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="jd-typecol">boolean</td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">equals</span>(<a href="//developer.android.com/reference/java/lang/Object.html">Object</a> arg0)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="jd-typecol">void</td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">finalize</span>()
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="jd-typecol">
+                      final <a href="//developer.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;
+                    </td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">getClass</span>()
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="jd-typecol">int</td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">hashCode</span>()
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="jd-typecol">final void</td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">notify</span>()
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="jd-typecol">final void</td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">notifyAll</span>()
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="jd-typecol">
+                      <a href="//developer.android.com/reference/java/lang/String.html">String</a>
+                    </td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">toString</span>()
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="jd-typecol">final void</td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">wait</span>(long arg0, int arg1)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="jd-typecol">final void</td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">wait</span>(long arg0)
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="jd-typecol">final void</td>
+                    <td class="jd-linkcol" width="100%">
+                      <div class="jd-hang">
+                        <span class="sympad">wait</span>()
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section><!-- end inhmethods -->
+    </div><!-- class="jd-descr" (end of Summary) -->
+    <!-- Details -->
+    <!-- XML Attributes -->
+    <!-- Enum Values -->
+    <!-- Constants -->
+    <!-- Fields -->
+    <!-- Public ctors -->
+    <!-- ========= CONSTRUCTOR DETAIL ======== -->
+    <!-- Protected ctors -->
+    <!-- ========= METHOD DETAIL ======== -->
+    <!-- Public methdos -->
+    <section id="public-methods">
+      <h2>Public Methods</h2><a name="equals(java.lang.Object)" id="equals(java.lang.Object)"></a>
+      <div class="jd-details">
+        <h4 class="jd-details-title"><span class="normal">public boolean</span> <span class=
+        "sympad"><strong>equals</strong></span> <span class="params">(<a href="//developer.android.com/reference/java/lang/Object.html">Object</a> o)</span></h4>
+        <div class="api-level"></div>
+        <div class="jd-details-descr">
+          <div class="jd-tagdata jd-tagdescr"></div>
+        </div>
+      </div><a name="hashCode()" id="hashCode()"></a>
+      <div class="jd-details">
+        <h4 class="jd-details-title"><span class="normal">public int</span> <span class=
+        "sympad"><strong>hashCode</strong></span> <span class="params">()</span></h4>
+        <div class="api-level"></div>
+        <div class="jd-details-descr">
+          <div class="jd-tagdata jd-tagdescr"></div>
+        </div>
+      </div><a name="isChargingRequired()" id="isChargingRequired()"></a>
+      <div class="jd-details">
+        <h4 class="jd-details-title"><span class="normal">public boolean</span> <span class=
+        "sympad"><strong>isChargingRequired</strong></span> <span class="params">()</span></h4>
+        <div class="api-level"></div>
+        <div class="jd-details-descr">
+          <div class="jd-tagdata jd-tagdescr"></div>
+          <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Returns</h5>
+            <ul class="nolist">
+              <li>true if charging is required for download.</li>
+            </ul>
+          </div>
+        </div>
+      </div><a name="isDeviceIdleRequired()" id="isDeviceIdleRequired()"></a>
+      <div class="jd-details">
+        <h4 class="jd-details-title"><span class="normal">public boolean</span> <span class=
+        "sympad"><strong>isDeviceIdleRequired</strong></span> <span class="params">()</span></h4>
+        <div class="api-level"></div>
+        <div class="jd-details-descr">
+          <div class="jd-tagdata jd-tagdescr"></div>
+          <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Returns</h5>
+            <ul class="nolist">
+              <li>true if device idle is required for download.</li>
+            </ul>
+          </div>
+        </div>
+      </div><a name="isWifiRequired()" id="isWifiRequired()"></a>
+      <div class="jd-details">
+        <h4 class="jd-details-title"><span class="normal">public boolean</span> <span class=
+        "sympad"><strong>isWifiRequired</strong></span> <span class="params">()</span></h4>
+        <div class="api-level"></div>
+        <div class="jd-details-descr">
+          <div class="jd-tagdata jd-tagdescr"></div>
+          <div class="jd-tagdata">
+            <h5 class="jd-tagtitle">Returns</h5>
+            <ul class="nolist">
+              <li>true if wifi is required for download.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- ========= METHOD DETAIL ======== -->
+    <!-- ========= END OF CLASS DATA ========= -->
+    <a name="navbar_top" id="navbar_top"></a>
+  </div><!-- jd-content -->
+
+  </div>
+  
+
+  
+        
+  
+
+
+
+
+
+
+
+        
+<div class="devsite-content-footer nocontent">
+  
+  
+    <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see our <a href="https://developers.google.com/terms/site-policies">Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
+  
+
+  
+    
+    <p class="devsite-content-footer-date" itemprop="datePublished"
+       content="2018-05-08T18:39:20.032470">
+      
+      Last updated May 8, 2018.
+    </p>
+  
+
+</div>
+
+        </article>
+      </article>
+  
+
+        </div>
+      
+
+<footer class="devsite-footer-linkboxes nocontent
+               
+               devsite-footer-linkboxes-with-sites"><nav class="devsite-full-site-width"><ul class="devsite-footer-linkboxes-list"><li class="devsite-footer-linkbox "><h3 class="devsite-footer-linkbox-heading">Connect</h3><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//android-developers.googleblog.com/"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Android Developers Blog
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/newsletter/index.html#subscribe"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Get News and Tips by Email
+            </a></li></ul></li><li class="devsite-footer-linkbox "><h3 class="devsite-footer-linkbox-heading">More Resources</h3><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Android Developers Website
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//www.google.com/design/"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Google Design
+            </a></li></ul></li><li class="devsite-footer-linkbox "><h3 class="devsite-footer-linkbox-heading">Tools</h3><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/tools/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Android Studio
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/distribute/console/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Google Play Console
+            </a></li></ul></li><li class="devsite-footer-linkbox devsite-footer-linkbox-sites"><a href="https://developers.google.com/"
+           class="gc-analytics-event devsite-footer-linkbox-logo-link"
+           data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link"><img class="devsite-footer-linkbox-logo"
+               src="https://developers.google.com/_static/16eb031c2e/images/redesign-14/lockup-color-knockout.png"
+               alt="Google Developers"></a><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Android Link"
+               >
+                Android
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developer.chrome.com/home"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Chrome Link"
+               >
+                Chrome
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//firebase.google.com"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Firebase Link"
+               >
+                Firebase
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//cloud.google.com"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Cloud Link"
+               >
+                Google Cloud Platform
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developers.google.com/products/"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Products Link"
+               >
+                All Products
+            </a></li></ul></li></ul></nav></footer><footer class="devsite-utility-footer"><nav class="devsite-utility-footer-nav devsite-nav devsite-full-site-width"><div class="devsite-utility-footer-nav-left"><form class="devsite-utility-footer-language" action="https://developers.google.com/i18n/setlang/"
+            method="post"><input type="hidden" name="xsrf_token" value="natYuHlCIik8nFuWPLT0gOvFZQ1fNHnMxC911tWa-HY6MTU1MTk5MjY4NjI2NzA1NA" /><input type="hidden" name="next" value="/android/reference/com/google/firebase/ml/custom/model/FirebaseModelDownloadConditions"><select class="devsite-utility-footer-language-select kd-select" name="language"
+                track-type="languageSelector" track-name="click"><option value="id"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="id"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="id">
+            Bahasa Indonesia
+          </option><option value="de"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="de"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="de">
+            Deutsch
+          </option><option value="en"
+                 selected="selected" 
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="en"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="en">
+            English
+          </option><option value="es"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="es"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="es">
+            español
+          </option><option value="fr"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="fr"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="fr">
+            français
+          </option><option value="pt-br"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="pt-br"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="pt-br">
+            Português Brasileiro
+          </option><option value="ru"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="ru"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="ru">
+            Русский
+          </option><option value="ja"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="ja"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="ja">
+            日本語
+          </option><option value="zh-cn"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="zh-cn"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="zh-cn">
+            简体中文
+          </option><option value="ko"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="ko"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="ko">
+            한국어
+          </option></select></form><span class="devsite-utility-footer-links"><a class="devsite-utility-footer-link gc-analytics-event"
+           href="https://developers.google.com/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer terms link"
+           data-footer-link-id="terms"
+           >Terms
+         </a><a class="devsite-utility-footer-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer privacy link"
+           data-footer-link-id="privacy"
+           >Privacy
+         </a></span></div><div class="devsite-utility-footer-nav-right"><div class="devsite-utility-footer-newsletter-signup-text">
+        Sign up for the Google Developers newsletter
+      </div><a class="button button-primary devsite-utility-footer-newsletter-signup-button"
+         href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+         track-type="navigateTo" track-name="newsletter"
+         track-metadata-eventDetail="footer"
+         track-metadata-position="footer">
+        
+        Subscribe
+      </a></div></nav></footer></div><script async defer src="//www.gstatic.com/feedback/api.js"></script><script src="https://developers.google.com/_static2/16eb031c2e/jsi18n/"></script><script src="https://developers.google.com/_static/16eb031c2e/js/script_foot_closure.js"></script><script src="https://developers.google.com/_static/16eb031c2e/js/script_foot.js"></script><script>
+        (function($) {
+          
+          devsite.devsite.Init($, {'ENABLE_BLOCKED_VIDEO_PLACEHOLDER': 0, 'SITE_NAME': 'devsite', 'FULL_SITE_SEARCH_ENABLED': 1, 'ENABLE_CLOUDTRACK': 0, 'VTAGS_ENABLED': 0, 'HISTORY_ENABLED': 1, 'SIDEBAR_MINI_ENABLED': 0, 'VERSION_HASH': '16eb031c2e', 'SCRIPTSAFE_DOMAIN': 'google-developers.appspot.com', 'ENABLE_BLOCKED_LINK_TOOLTIP': 0, 'ALLOWED_HOSTS': ['.android.com', '.appspot.com', '.gonglchuangl.net', '.google.cn', '.google.com', '.googleplex.com', '.tensorflow.org'], 'BLOCK_RSS_FEEDS': 0},
+                               '[]','en',
+                               true, '',
+                               {"99a6bd77935176c43993ac6fe3e23dfc": true, "8de7a048f21618359bd37f5ce44be073": false, "098dafe57affddc137df300142652cfd": false, "8e03e230de0bd8a6fe173fdf172e8b3f": true, "cb025a64a50094835616312f4774a53d": true, "51470233c56fc1fde50f00b73c52b216": false, "d169d485cf24243a263783dbe42029b1": true, "700def1a83e356c06c0925afb05de4b0": false, "6749dcb526ce9bde6993550c7d928d24": true}, '/android/',
+                               'https://developers.google.com/');
+        })(jQuery);
+
+        
+        devsite.localInit = function() {
+          
+        };
+
+      </script><script>
+      $('.devsite-utility-footer-language-select').each(function() {
+        $(this).change(function(){$('.devsite-utility-footer-language').submit();});
+      });
+      </script></div><span id="devsite-request-elapsed" data-request-elapsed="197.344064713"></span></body></html>

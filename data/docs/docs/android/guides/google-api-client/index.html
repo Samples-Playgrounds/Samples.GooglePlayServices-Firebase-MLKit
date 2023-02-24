@@ -1,0 +1,1292 @@
+
+
+
+
+
+
+<!DOCTYPE html><html lang="en"
+      class=""><head><script>var a=window.devsite||{};window.devsite=a;a.readyCallbacks=[];window.devsite.readyCallbacks=a.readyCallbacks;a.ready=function(b){a.readyCallbacks.push(b)};window.devsite.ready=a.ready;
+</script><meta charset="utf-8"><meta name="xsrf_token" content="JrH4AH7sqvpUVBw1id4vk9W321xfciOqLPcg81c4Q8k6MTU1MTk5MTgzODI5NjE4NQ" /><link rel="canonical" href="https://developers.google.com/android/guides/google-api-client"><link rel="alternate" href="https://developers.google.com/android/guides/google-api-client" hreflang="en"><link rel="alternate" href="https://developers.google.cn/android/guides/google-api-client" hreflang="en-cn"><link rel="alternate" href="https://developers.google.com/android/guides/google-api-client" hreflang="x-default"><link rel="shortcut icon" href="https://developers.google.com/_static/16eb031c2e/images/favicon.png"><link rel="apple-touch-icon" href="https://developers.google.com/_static/16eb031c2e/images/touch-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet"
+      
+      href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"
+      ><link rel="stylesheet"
+        href="https://developers.google.com/_static/16eb031c2e/css/devsite-blue-grey.css"><link rel="search"
+        type="application/opensearchdescription+xml"
+        title="Google Developers"
+        href="https://developers.google.com/s/opensearch.xml"><script src="https://developers.google.com/_static/16eb031c2e/js/jquery-bundle.js"></script><meta property="og:site_name" content="Google Developers"><meta property="og:type" content="website"><meta property="og:url" content="https://developers.google.com/android/guides/google-api-client"><meta property="og:locale" content="en"><script>
+    var ___gcfg = ___gcfg || {};
+    ___gcfg.lang = 'en';
+  </script><title>Accessing Google APIs with GoogleApiClient (deprecated) &nbsp;|&nbsp; Google APIs for Android
+      &nbsp;|&nbsp; Google Developers</title><meta property="og:title" content="Accessing Google APIs with GoogleApiClient (deprecated) &nbsp;|&nbsp; Google APIs for Android
+      &nbsp;|&nbsp; Google Developers"><meta property="og:image"
+          content="https://developers.google.com/_static/16eb031c2e/images/share/devsite-blue-grey.png"><meta property="og:image:secure_url"
+          content="https://developers.google.com/_static/16eb031c2e/images/share/devsite-blue-grey.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"></head><body class="
+               devsite-doc-page
+               
+               
+               
+               devsite-header-no-upper-tabs
+               "
+        data-family="endorsed"
+        
+        
+        
+        id="top_of_page"><div class="devsite-wrapper"><div class="devsite-top-section-wrapper
+            "><header class="devsite-top-section nocontent"><div class="devsite-top-logo-row-wrapper-wrapper"><div class="devsite-top-logo-row-wrapper"><div class="devsite-top-logo-row devsite-full-site-width"><button type="button" class="devsite-expand-section-nav devsite-header-icon-button
+                                       button-flat material-icons gc-analytics-event"
+                  data-category="Site-Wide Custom Events" data-label="Hamburger menu"></button><div class="devsite-product-name-wrapper"><a class="devsite-product-name-link gc-analytics-event"
+       href="https://developers.google.com/android/"
+       data-category="Site-Wide Custom Events"
+       data-label="Project logo (header)"><img src="https://developers.google.com/site-assets/developers_64dp.png" class="devsite-product-logo"
+               alt="Google APIs for Android"></a><span class="devsite-product-name"><ul class="devsite-breadcrumb-list"><li class="devsite-breadcrumb-item"><a href="https://developers.google.com/android/" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Upper Header"
+       data-value="1">
+    
+    
+      
+        Google APIs for Android
+      
+    
+    
+    </a></li></ul></span></div><div class="devsite-header-upper-tabs"></div><form class="devsite-search-form"
+                action="https://developers.google.com/s/results/"
+                method="GET"
+                id="top-search"
+                search-placeholder='Search'><div id="searchbox" class="devsite-searchbox"><input placeholder='Search'
+         
+         type="text"
+         class="devsite-search-field devsite-search-query"
+         name="q"
+         value=""
+         autocomplete="off"
+         
+         aria-label="Search box"
+         ><div class="devsite-search-image material-icons"></div></div><input type="hidden"
+       name="p"
+       id="search_project"
+       value="/android/"
+       data-project-name="Google APIs for Android"
+       data-project-path="/android/"
+       data-query-match=""><input type="hidden" class="suggest-project" value="Google APIs for Android" /></form><a class="devsite-header-link devsite-top-button button gc-analytics-event"
+               
+               href="https://developers.google.com/products/"
+               
+               data-category="Site-Wide Custom Events"
+               data-label="Site header link"
+               track-type="globalNav"
+               track-name="all products"
+               track-metadata-position="nav"
+               track-metadata-eventDetail='nav'><div class="devsite-header-link-label">All Products</div></a><button type="button" class="devsite-search-button devsite-header-icon-button button-flat
+                                       material-icons"></button><a href="https://accounts.google.com/ServiceLogin?passive=true&continue=https%3A%2F%2Fdevelopers.google.com%2Fandroid%2Fguides%2Fgoogle-api-client%3Frefresh%3D1&service=ahsid"
+   class="devsite-user-signin devsite-top-button button gc-analytics-event"
+   data-category="Site-Wide Custom Events"
+   data-label="Sign in button"
+   track-type='globalNav'
+   track-name='signIn'
+   track-metadata-eventDetail='nav'
+   track-metadata-position='nav'>
+  
+  Sign in
+</a></div></div></div><div class="devsite-collapsible-section"><div class="devsite-header-background devsite-full-site-width"><div class="devsite-doc-set-nav-row devsite-full-site-width"><nav class="devsite-doc-set-nav devsite-nav devsite-overflow-tabs-scroll-wrapper"><ul class="devsite-doc-set-nav-tab-list devsite-overflow-tabs-scroll"><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/"
+           class=" devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Home"
+         >
+          Home
+        </a></li><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/guides/overview"
+           class="devsite-doc-set-nav-active devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           aria-label="Guides, selected"
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Guides"
+         >
+          Guides
+        </a></li><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/reference/packages"
+           class=" devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Reference"
+         >
+          Reference
+        </a></li><li class="devsite-doc-set-nav-tab-container devsite-nav-tab
+                 "><a href="https://developers.google.com/android/images"
+           class=" devsite-nav-tab
+                  devsite-doc-set-nav-tab devsite-doc-set-nav-tab-link gc-analytics-event"
+           
+         
+           data-category="Site-Wide Custom Events"
+         
+           data-label="Tab: Downloads"
+         >
+          Downloads
+        </a></li></ul></nav></div></div></div></header><script>
+    if (window.jQuery) {
+      $(document).ready(function() {
+        if (window.devsite && window.devsite.search) {
+          
+          window.devsite.search.init('en')
+        }
+      });
+    }
+  </script></div><div id="gc-wrapper"itemscope itemtype="http://schema.org/Article"><input class="google-analytics-id-json" type="hidden" value="{&quot;dimensions&quot;: {&quot;dimension6&quot;: &quot;en&quot;, &quot;dimension4&quot;: &quot;Google APIs for Android&quot;, &quot;dimension5&quot;: &quot;en&quot;, &quot;dimension3&quot;: false, &quot;dimension1&quot;: &quot;Signed out&quot;, &quot;dimension8&quot;: null}, &quot;gaid&quot;: &quot;UA-24532603-1&quot;}"><script>
+      var dataLayer = [{"freeTrialEligibleUser": "False", "userCountry": "US", "language": {"requested": "en", "served": "en"}, "projectName": "Google APIs for Android", "scriptsafe": null, "signedIn": "False", "internalUser": "False"}];
+    </script>
+
+      
+        <div class="devsite-site-mask"></div>
+        
+  
+
+
+<nav class="devsite-nav-responsive devsite-nav nocontent" tabindex="0">
+  
+  <div class="devsite-nav-responsive-tabs-panel">
+    
+      
+
+
+
+<nav class="devsite-nav-responsive-tabs devsite-nav">
+  <ul class="devsite-nav-list">
+  
+
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <a 
+             href="https://developers.google.com/android/"
+           
+           class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                  "
+           
+           data-category="Site-Wide Custom Events" data-label="Responsive Tab: Home">
+          Home
+        </a>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <span class="devsite-nav-responsive-forward devsite-nav-responsive-tab devsite-nav-title
+                     devsite-nav-active gc-analytics-event"
+              data-category="Site-Wide Custom Events" data-label="Responsive Tab: Guides"
+              tabindex="0">
+          Guides
+        </span>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <a 
+             href="https://developers.google.com/android/reference/packages?nav=true"
+           
+           class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                  "
+           
+           data-category="Site-Wide Custom Events" data-label="Responsive Tab: Reference">
+          Reference
+        </a>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      
+        <a 
+             href="https://developers.google.com/android/images?nav=true"
+           
+           class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event
+                  "
+           
+           data-category="Site-Wide Custom Events" data-label="Responsive Tab: Downloads">
+          Downloads
+        </a>
+      
+
+      
+
+      
+
+      
+    </li>
+  
+
+  
+    <li class="devsite-nav-item devsite-nav-item-heading">
+      <a href="https://developers.google.com/products/"
+         class="devsite-nav-responsive-tab devsite-nav-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+         data-label="Responsive Tab: all_products"
+         >
+        All Products
+      </a>
+    </li>
+  
+  </ul>
+</nav>
+
+
+    
+  </div>
+  
+  
+  <div class="devsite-nav-responsive-sidebar-panel">
+    
+    <div class="devsite-nav-responsive-back" tabindex="0"></div>
+    
+    <nav class="devsite-nav-responsive-sidebar">
+      
+      
+    </nav>
+  </div>
+  
+  
+</nav>
+
+
+        <div class="devsite-main-content clearfix">
+
+        
+        
+
+        
+  
+  
+    
+    
+      
+  <nav class="devsite-section-nav devsite-nav nocontent">
+    <ul class="devsite-nav-list"><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/overview" class="devsite-nav-title">Overview</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/setup" class="devsite-nav-title">Setup</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/api-client" class="devsite-nav-title">Accessing APIs</a></li><li class="devsite-nav-item devsite-nav-active"><a href="https://developers.google.com/android/guides/google-api-client" class="devsite-nav-title">Accessing APIs with GoogleApiClient</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/client-auth" class="devsite-nav-title">Authenticating Your Client</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/http-auth" class="devsite-nav-title">Authorizing for REST APIs</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/google-services-plugin" class="devsite-nav-title">Google Services Plugin</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/permissions" class="devsite-nav-title">Runtime Permissions</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/tasks" class="devsite-nav-title">Tasks API</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/opensource" class="devsite-nav-title">Open Source Notices</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/versioning" class="devsite-nav-title">Versioning</a></li><li class="devsite-nav-item"><hr class="devsite-nav-break"></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/releases" class="devsite-nav-title">Releases</a></li><li class="devsite-nav-item"><a href="https://developers.google.com/android/guides/beta-program" class="devsite-nav-title">Beta Program</a></li></ul>
+  </nav>
+
+    
+
+    
+  <nav class="devsite-page-nav devsite-nav"></nav>
+
+
+      <article class="devsite-article">
+        <article class="devsite-article-inner">
+  
+          
+  
+
+
+<div class="devsite-rating-container
+            "><div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="1" data-category="Site-Wide Custom Events" data-label="Star Rating 1"
+         track-metadata-score="1" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="2" data-category="Site-Wide Custom Events" data-label="Star Rating 2"
+         track-metadata-score="2" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="3" data-category="Site-Wide Custom Events" data-label="Star Rating 3"
+         track-metadata-score="3" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="4" data-category="Site-Wide Custom Events" data-label="Star Rating 4"
+         track-metadata-score="4" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons"
+         data-rating-val="5" data-category="Site-Wide Custom Events" data-label="Star Rating 5"
+         track-metadata-score="5" track-type="feedback" track-name="rating"
+         track-metadata-position="header"
+         role="button"
+         
+         aria-label="Site content star ratings, rating 5 out of 5"></div></div><div class="devsite-rating-description"></div><div class="devsite-rating-internal"><span class="devsite-rating-stats"></span></div></div><script>
+  $(document).ready(function() {
+    devsite.ratings.init(
+      document.querySelectorAll('#devsite-feedback-project'), false
+      
+    );
+  });
+</script>
+
+
+  
+  <nav class="devsite-breadcrumb-nav devsite-nav">
+    
+
+
+<ul class="devsite-breadcrumb-list">
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <a href="https://developers.google.com/products/" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Breadcrumbs"
+       data-value="1">
+    
+    
+      Products
+    
+    
+    </a>
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <div class="devsite-breadcrumb-guillemet material-icons"></div>
+    
+    
+    <a href="https://developers.google.com/android/" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Breadcrumbs"
+       data-value="2">
+    
+    
+      Google APIs for Android
+    
+    
+    </a>
+    
+  </li>
+  
+  <li class="devsite-breadcrumb-item">
+    
+    
+    <div class="devsite-breadcrumb-guillemet material-icons"></div>
+    
+    
+    <a href="https://developers.google.com/android/guides/overview" class="devsite-breadcrumb-link gc-analytics-event"
+       data-category="Site-Wide Custom Events" data-label="Breadcrumbs"
+       data-value="3">
+    
+    
+      Guides
+    
+    
+    </a>
+    
+  </li>
+  
+</ul>
+
+  </nav>
+  
+  
+  <h1 itemprop="name" class="devsite-page-title">
+    Accessing Google APIs with GoogleApiClient (deprecated)
+  </h1>
+  
+  
+  <nav class="devsite-page-nav-embedded devsite-nav"></nav>
+  
+  <div class="devsite-article-body clearfix
+            "
+       itemprop="articleBody">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>You can use the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> (&quot;Google API Client&quot;)
+object to access the Google APIs provided in the Google Play services library
+(such as Google Sign-In, Games, and Drive). The Google API Client provides a
+common entry point to Google Play services and manages the network
+connection between the user&#39;s device and each Google service.</p>
+
+<p>However, the newer <code>GoogleApi</code> interface and its implementations are easier to
+use and are the preferred way to access Play services APIs.
+See <a href="https://developers.google.com/android/guides/api-client">Accessing Google APIs</a>.</p>
+<aside class="note"><strong>Note:</strong><span> If the Google API you want to use is not included in the Google Play services library, you
+can connect using the appropriate REST API, but you must obtain user authorization with OAuth 2.0. For
+more information, read <a href="https://developers.google.com/android/guides/http-auth">Authorizing with Google for REST APIs</a>.</span></aside>
+<p>This guide shows how you can:</p>
+
+<ul>
+<li>Automatically manage your connection to Google Play services.</li>
+<li>Perform synchronous and asynchronous API calls to any of the Google Play services.</li>
+<li>Manually manage your connection to Google Play services in those rare cases where this is
+necessary. To learn more, see <a href="#manually_managed_connections">Manually managed connections</a>.</li>
+</ul>
+
+<figure id="fig1">
+  <img src="https://developers.google.com/android/images/GoogleApiClient_2x.png"
+    alt="">
+  <figcaption>Figure 1: An illustration showing how the Google API Client provides an
+interface for connecting and making calls to any of the available Google Play services such as
+Google Play Games and Google Drive.</figcaption>
+</figure>
+
+<p>To get started, you must first install the Google Play services library (revision 15 or higher)
+for your Android SDK. If you haven&#39;t done so already, follow the instructions in
+<a href="https://developers.google.com/android/guides/setup">Set Up Google Play Services SDK</a>.</p>
+
+<h2 id="start_an_automatically_managed_connection">Start an automatically managed connection</h2>
+
+<p>After your project is linked to the Google Play services library, create an instance of
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> using the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html"><code>GoogleApiClient.Builder</code></a>
+APIs in your activity&#39;s
+<a href="//developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle)"><code>onCreate()</code></a>
+method. The
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html"><code>GoogleApiClient.Builder</code></a>
+class provides methods that allow you to specify the Google APIs you want to use and your desired
+OAuth 2.0 scopes. Here is a code example that creates a
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> instance that connects with the Google Drive service:</p>
+
+<pre class="prettyprint notranslate">GoogleApiClient mGoogleApiClient = new GoogleApiClient.Builder(this)
+    .enableAutoManage(this /* FragmentActivity */,
+                      this /* OnConnectionFailedListener */)
+    .addApi(Drive.API)
+    .addScope(Drive.SCOPE_FILE)
+    .build();
+</pre>
+
+<p>You can add multiple APIs and multiple scopes to the same
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a>
+by appending additional calls to <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder#addApi"><code>addApi()</code></a>
+and <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html#addScope(com.google.android.gms.common.api.Scope)"><code>addScope()</code></a>.</p>
+
+<p><strong>Important:</strong> If you are adding the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html"><code>Wearable</code> API</a> together with other APIs to a
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a>, you may run into client connection errors on devices that do
+not have the Wear OS app installed. To
+avoid connection errors, call the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder#addApiIfAvailable(com.google.android.gms.common.api.Api%3C?%20extends%20com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions%3E,%20com.google.android.gms.common.api.Scope...)"><code>addApiIfAvailable()</code></a>  method and pass in
+the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html"><code>Wearable</code> API</a> to allow your client to gracefully handle the missing
+API. For more information, see <a href="#access_the_wearable_api">Access the Wearable API</a>.</p>
+
+<p>To begin an automatically managed connection, you must specify an
+implementation for the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.OnConnectionFailedListener.html"><code>OnConnectionFailedListener</code></a>
+interface to receive unresolvable connection errors. When your auto-managed
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> instance attempts to connect to Google APIs, it will automatically
+display UI to attempt to fix any resolvable connection failures (for example, if
+Google Play services needs to be updated). If an error occurs that cannot be
+resolved, you will receive a call to
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.OnConnectionFailedListener.html#onConnectionFailed(com.google.android.gms.common.ConnectionResult))"><code>onConnectionFailed()</code></a>.</p>
+
+<p>You may also specify an optional implementation for the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.ConnectionCallbacks.html"><code>ConnectionCallbacks</code></a> interface if your app needs to know when the
+automatically managed connection is established or suspended. For example if
+your app makes calls to write data to Google APIs, these should be invoked
+only after the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.ConnectionCallbacks.html#onConnected(android.os.Bundle)"><code>onConnected()</code></a> method has been called.</p>
+
+<p>Here is an example activity that implements the callback interfaces and adds
+them to the Google API Client:</p>
+
+<pre class="prettyprint notranslate">import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
+import gms.drive.*;
+import android.support.v4.app.FragmentActivity;
+
+public class MyActivity extends FragmentActivity
+        implements OnConnectionFailedListener {
+    private GoogleApiClient mGoogleApiClient;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        // Create a GoogleApiClient instance
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .enableAutoManage(this /* FragmentActivity */,
+                                  this /* OnConnectionFailedListener */)
+                .addApi(Drive.API)
+                .addScope(Drive.SCOPE_FILE)
+                .build();
+
+        // ...
+    }
+
+    @Override
+    public void onConnectionFailed(ConnectionResult result) {
+        // An unresolvable error has occurred and a connection to Google APIs
+        // could not be established. Display an error message, or handle
+        // the failure silently
+
+        // ...
+    }
+}
+</pre>
+
+<p>Your <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> instance will automatically connect after your activity
+calls <a href="//developer.android.com/reference/android/app/Activity.html#onStart()"><code>onStart()</code></a> and disconnect after calling <a href="//developer.android.com/reference/android/app/Activity.html#onStop()"><code>onStop()</code></a>.
+Your app can immediately begin making
+read requests to Google APIs after building <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a>, without
+waiting for the connection to complete.</p>
+
+<h2 id="communicate_with_google_services">Communicate with Google Services</h2>
+
+<p>After connecting, your client can make read and write calls using the service-specific APIs for
+which your app is authorized, as specified by the APIs and scopes you added to your
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> instance.</p>
+
+<p><strong>Note:</strong> Before making calls to specific Google services, you may first need to register your
+app in the Google Developer Console. For instructions, refer to the appropriate getting
+started guide for the API you&#39;re using, such as
+<a href="https://developers.google.com/drive/android/get-started">Google Drive</a> or
+<a href="https://developers.google.com/identity/sign-in/android/start">Google Sign-In</a>.</p>
+
+<p>When you perform a read or write request using <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a>, the API client returns a <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/PendingResult.html"><code>PendingResult</code></a> object that represents the request.
+This occurs immediately, before the request is delivered to the Google service that your app is calling.</p>
+
+<p>For example, here&#39;s a request to read a file from Google Drive that provides a
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/PendingResult.html"><code>PendingResult</code></a> object:</p>
+
+<pre class="prettyprint notranslate">
+Query query = new Query.Builder()
+        .addFilter(Filters.eq(SearchableField.TITLE, filename));
+PendingResult&lt;DriveApi.MetadataBufferResult&gt; result = Drive.DriveApi.query(mGoogleApiClient, query);
+</pre>
+
+<p>After your app has a <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/PendingResult.html"><code>PendingResult</code></a> object,
+your app can then specify whether the request is handled as an asynchronous call or as a synchronous call.</p>
+
+<p><strong>Tip:</strong> Your app can enqueue read requests while not connected to Google Play services. For
+example, your app can call methods to read a file from Google Drive regardless of whether your <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> instance is connected yet. After a connection is established, enqueued read requests execute. Write requests generate an error if your app calls
+Google Play services write methods while your Google API Client is not connected.</p>
+
+<h3 id="using_asynchronous_calls">Using asynchronous calls</h3>
+
+<p>To make the request asynchronous, call
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/PendingResult.html#setResultCallback(com.google.android.gms.common.api.ResultCallback%3CR%3E)"><code>setResultCallback()</code></a>
+on the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/PendingResult.html"><code>PendingResult</code></a> and provide an
+implementation of the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/ResultCallback.html"><code>ResultCallback</code></a> interface. For
+example, here&#39;s the request executed asynchronously:</p>
+
+<pre class="prettyprint notranslate">private void loadFile(String filename) {
+    // Create a query for a specific filename in Drive.
+    Query query = new Query.Builder()
+            .addFilter(Filters.eq(SearchableField.TITLE, filename))
+            .build();
+    // Invoke the query asynchronously with a callback method
+    Drive.DriveApi.query(mGoogleApiClient, query)
+            .setResultCallback(new ResultCallback&lt;DriveApi.MetadataBufferResult&gt;() {
+        @Override
+        public void onResult(DriveApi.MetadataBufferResult result) {
+            // Success! Handle the query result.
+            // ...
+        }
+    });
+}
+</pre>
+
+<p>When your app receives a <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/Result.html"><code>Result</code></a> object in
+the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/ResultCallback.html#onResult(R)"><code>onResult()</code></a> callback,
+it is delivered as an instance of the appropriate subclass as specified by the API you&#39;re using,
+such as
+<a href="https://developers.google.com/android/reference/com/google/android/gms/drive/DriveApi.MetadataBufferResult.html"><code>DriveApi.MetadataBufferResult</code></a>.</p>
+
+<h3 id="using_synchronous_calls">Using synchronous calls</h3>
+
+<p>If you want your code to execute in a strictly defined order, perhaps because the result of one
+call is needed as an argument to another, you can make your request synchronous by calling
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/PendingResult.html#await()"><code>await()</code></a> on the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/PendingResult.html"><code>PendingResult</code></a>. This blocks the thread
+and returns the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/Result.html"><code>Result</code></a> object when the
+request completes. This object is delivered as an instance of the appropriate subclass as specified by
+the API you&#39;re using, for example
+<a href="https://developers.google.com/android/reference/com/google/android/gms/drive/DriveApi.MetadataBufferResult.html"><code>DriveApi.MetadataBufferResult</code></a>.</p>
+
+<p>Because calling <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/PendingResult.html#await()"><code>await()</code></a>
+blocks the thread until the result arrives, your app should never make synchronous requests to Google APIs on the
+UI thread. Your app can create a new thread using an <a href="//developer.android.com/reference/android/os/AsyncTask.html"><code>AsyncTask</code></a> object, and use that thread to make the synchronous request.</p>
+
+<p>The following example shows how to make a file request to Google Drive as a synchronous call:</p>
+
+<pre class="prettyprint notranslate">private void loadFile(String filename) {
+    new GetFileTask().execute(filename);
+}
+
+private class GetFileTask extends AsyncTask<String, Void, Void> {
+    protected void doInBackground(String filename) {
+        Query query = new Query.Builder()
+                .addFilter(Filters.eq(SearchableField.TITLE, filename))
+                .build();
+        // Invoke the query synchronously
+        DriveApi.MetadataBufferResult result =
+                Drive.DriveApi.query(mGoogleApiClient, query).await();
+
+        // Continue doing other stuff synchronously
+        // ...
+    }
+}
+</pre>
+<aside class="note"><strong>Note:</strong><span> You can also make your code execute in a strictly defined order using
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/PendingResult.html#then(com.google.android.gms.common.api.ResultTransform%3C?%20super%20R,%20?%20extends%20S%3E)">PendingResult.then()</a>.</span></aside>
+<h2 id="access_the_wearable_api">Access the Wearable API</h2>
+
+<p>The <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> provides a communication channel for apps that run on handheld and wearable devices.
+The API consists of a set of data objects that the system can send and synchronize, and
+listeners that notify your apps of important events using a data layer. The
+<a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> is available on devices running Android 4.3 (API level 18) or higher when
+a wearable device is connected and the <a href="//play.google.com/store/apps/details?id=com.google.android.wearable.app&amp;hl=en">Wear OS companion app</a>
+is installed on the device.</p>
+
+<h3 id="using_the_wearable_api_stand-alone">Using the Wearable API stand-alone</h3>
+
+<p>If your app uses the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> but not other Google APIs, you can add this API by
+calling the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html#addApi(com.google.android.gms.common.api.Api%3C?%20extends%20com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions%3E)"><code>addApi()</code></a> method. The following example shows how to add the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> to your <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> instance:</p>
+
+<pre class="prettyprint notranslate">
+GoogleApiClient mGoogleApiClient = new GoogleApiClient.Builder(this)
+    .enableAutoManage(this /* FragmentActivity */,
+                      this /* OnConnectionFailedListener */)
+    .addApi(Wearable.API)
+    .build();
+</pre>
+
+<p>In situations where the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> is not available, connection requests that
+include the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> fail with the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#API_UNAVAILABLE"><code>API_UNAVAILABLE</code></a>
+error code.</p>
+
+<p>The following example shows how to determine whether the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> is available:</p>
+
+<pre class="prettyprint notranslate">
+// Connection failed listener method for a client that only
+// requests access to the Wearable API
+@Override
+public void onConnectionFailed(ConnectionResult result) {
+    if (result.getErrorCode() == ConnectionResult.API_UNAVAILABLE) {
+        // The Wearable API is unavailable
+    }
+    // ...
+}
+</pre>
+
+<h3 id="using_the_wearable_api_with_other_google_apis">Using the Wearable API with other Google APIs</h3>
+
+<p>If your app uses the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> in addition to other Google APIs, call the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder#addApiIfAvailable(com.google.android.gms.common.api.Api%3C?%20extends%20com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions%3E,%20com.google.android.gms.common.api.Scope...)"><code>addApiIfAvailable()</code></a> method and pass in the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> to check whether it is available. You can use this check to help your app to gracefully handle cases where the API is unavailable.</p>
+
+<p>The following example shows how to access the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> along with the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/drive/DriveApi.html">Drive API</a>:</p>
+
+<pre class="prettyprint notranslate">
+// Create a GoogleApiClient instance
+mGoogleApiClient = new GoogleApiClient.Builder(this)
+        .enableAutoManage(this /* FragmentActivity */,
+                          this /* OnConnectionFailedListener */)
+        .addApi(Drive.API)
+        .addApiIfAvailable(Wearable.API)
+        .addScope(Drive.SCOPE_FILE)
+        .build();
+</pre>
+
+<p>In the example above, the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> can successfully connect with
+Google Drive without connecting to the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> if it is unavailable. After
+you connect your <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a>
+instance, ensure that the <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/Wearable.html">Wearable API</a> is available before making the API calls:</p>
+
+<pre class="prettyprint notranslate">
+boolean wearAvailable = mGoogleApiClient.hasConnectedApi(Wearable.API);
+</pre>
+
+<h2 id="ignoring_api_connection_failures">Ignoring API Connection Failures</h2>
+
+<p>If you call <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html#addApi(com.google.android.gms.common.api.Api%3C?%20extends%20com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions%3E)"><code>addApi()</code></a> and the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> is unable to
+connect successfully to that API, the entire connection operation for that client fails and
+triggers the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.OnConnectionFailedListener.html#onConnectionFailed(com.google.android.gms.common.ConnectionResult))"><code>onConnectionFailed()</code></a> callback.</p>
+
+<p>You can register an API connection failure to be ignored by using
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder#addApiIfAvailable(com.google.android.gms.common.api.Api%3C?%20extends%20com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions%3E,%20com.google.android.gms.common.api.Scope...)"><code>addApiIfAvailable()</code></a>. If an API added with
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder#addApiIfAvailable(com.google.android.gms.common.api.Api%3C?%20extends%20com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions%3E,%20com.google.android.gms.common.api.Scope...)"><code>addApiIfAvailable()</code></a> fails to connect due to a non-recoverable error
+(like <a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#API_UNAVAILABLE"><code>API_UNAVAILABLE</code></a> for Wear),
+that API is dropped from your <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> and the client proceeds to
+connect to other APIs. However, if any API connection fails with a recoverable error (like an
+OAuth consent resolution intent), the client connect operation fails. When
+using an automatically managed connection the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> will attempt
+to resolve such errors when possible. When using a manually managed connection
+a <a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html"><code>ConnectionResult</code></a> containing a resolution intent is
+delivered to the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.OnConnectionFailedListener.html#onConnectionFailed(com.google.android.gms.common.ConnectionResult))"><code>onConnectionFailed()</code></a> callback. API
+connection failures are ignored only if there is no resolution for the failure
+and the API was added
+with <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder#addApiIfAvailable(com.google.android.gms.common.api.Api%3C?%20extends%20com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions%3E,%20com.google.android.gms.common.api.Scope...)"><code>addApiIfAvailable()</code></a>.
+To learn how to implement manual connection failure
+handling, see <a href="#handle_connection_failures">Handle connection failures</a>.</p>
+
+<p>Because APIs added with
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder#addApiIfAvailable(com.google.android.gms.common.api.Api%3C?%20extends%20com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions%3E,%20com.google.android.gms.common.api.Scope...)"><code>addApiIfAvailable()</code></a> may not always be present in the connected
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> instance, you should guard calls to these APIs by adding a check
+using <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html#hasConnectedApi(com.google.android.gms.common.api.Api%3C?%3E)"><code>hasConnectedApi()</code></a>. To find out why a
+particular API failed to connect when the entire connection operation succeeded for the client, call
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient#getConnectionResult(com.google.android.gms.common.api.Api%3C?%3E)"><code>getConnectionResult()</code></a> and get the error code from the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html"><code>ConnectionResult</code></a> object. If your client calls an API when it is not
+connected to the client, the call fails with the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/CommonStatusCodes#API_NOT_AVAILABLE"><code>API_NOT_AVAILABLE</code></a>
+status code.</p>
+
+<p>If the API you are adding through <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder#addApiIfAvailable(com.google.android.gms.common.api.Api%3C?%20extends%20com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions%3E,%20com.google.android.gms.common.api.Scope...)"><code>addApiIfAvailable()</code></a> requires one or
+more scopes, add those scopes as parameters in your
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder#addApiIfAvailable(com.google.android.gms.common.api.Api%3C?%20extends%20com.google.android.gms.common.api.Api.ApiOptions.NotRequiredOptions%3E,%20com.google.android.gms.common.api.Scope...)"><code>addApiIfAvailable()</code></a> method call rather than by using the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html#addScope(com.google.android.gms.common.api.Scope)"><code>addScope()</code></a> method. Scopes added using this approach may not be requested if the API
+connection fails before getting OAuth consent, whereas scopes added with
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html#addScope(com.google.android.gms.common.api.Scope)"><code>addScope()</code></a> are always requested.</p>
+
+<h2 id="manually_managed_connections">Manually managed connections</h2>
+
+<p>The majority of this guide shows you how to use the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.Builder.html#enableAutoManage(android.support.v4.app.FragmentActivity,%20com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener)"><code>enableAutoManage</code></a> method to initiate an
+automatically managed connection with automatically resolved errors. In almost
+all cases, this is the best and easiest way to connect to Google APIs from your
+Android app. However, there are some situations where you would want to use a
+manually managed connection to Google APIs in your app:</p>
+
+<ul>
+<li>To access Google APIs outside of an activity or retain control of the API
+connection</li>
+<li>To customize connection error handling and resolution</li>
+</ul>
+
+<p>This section provides examples of these and other advanced use cases.</p>
+
+<h3 id="start_a_manually_managed_connection">Start a manually managed connection</h3>
+
+<p>To initiate a manually managed connection to <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a>, you must
+specify an implementation for the callback interfaces,
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.ConnectionCallbacks.html"><code>ConnectionCallbacks</code></a>
+and <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.OnConnectionFailedListener.html"><code>OnConnectionFailedListener</code></a>.
+These interfaces receive callbacks in response to the asynchronous
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html#connect()"><code>connect()</code></a> method when the
+connection to Google Play services succeeds, fails, or becomes suspended.</p>
+
+<pre class="prettyprint notranslate">
+    mGoogleApiClient = new GoogleApiClient.Builder(this)
+            .addApi(Drive.API)
+            .addScope(Drive.SCOPE_FILE)
+            .addConnectionCallbacks(this)
+            .addOnConnectionFailedListener(this)
+            .build()
+</pre>
+
+<p>When managing a connection manually you will need to call the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html#connect()"><code>connect()</code></a>
+and
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html#disconnect()"><code>disconnect()</code></a>
+methods at the right points in your app&#39;s lifecycle. In an activity
+context the best practice is to call <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html#connect()"><code>connect()</code></a> in your activity&#39;s <a href="//developer.android.com/reference/android/app/Activity.html#onStart()"><code>onStart()</code></a>
+method and <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html#disconnect()"><code>disconnect()</code></a> in your activity&#39;s <a href="//developer.android.com/reference/android/app/Activity.html#onStop()"><code>onStop()</code></a> method.
+The <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html#connect()"><code>connect()</code></a> and
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html#disconnect()"><code>disconnect()</code></a> methods
+are called automatically when using an automatically managed connection.</p>
+
+<p>If you are using <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html"><code>GoogleApiClient</code></a> to connect to APIs that require
+authentication, like Google Drive or Google Play Games, there&#39;s a good chance
+your first connection attempt will fail and your app will receive a call
+to <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.OnConnectionFailedListener.html#onConnectionFailed(com.google.android.gms.common.ConnectionResult))"><code>onConnectionFailed()</code></a>
+with the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#SIGN_IN_REQUIRED"><code>SIGN_IN_REQUIRED</code></a>
+error because the user account was not specified.</p>
+
+<h3 id="handle_connection_failures">Handle connection failures</h3>
+
+<p>When your app receives a call to the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.OnConnectionFailedListener.html#onConnectionFailed(com.google.android.gms.common.ConnectionResult))"><code>onConnectionFailed()</code></a>
+callback, you should call <a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#hasResolution()"><code>hasResolution()</code></a>
+on the provided <a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html"><code>ConnectionResult</code></a>
+object. If it returns true, your app can request that the user take immediate action to resolve the error by
+calling <a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#startResolutionForResult(android.app.Activity,%20int)"><code>startResolutionForResult()</code></a>
+on the <a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html"><code>ConnectionResult</code></a> object.
+The <a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#startResolutionForResult(android.app.Activity,%20int)"><code>startResolutionForResult()</code></a> method
+behaves the same as <a href="//developer.android.com/reference/android/app/Activity.html#startActivityForResult(android.content.Intent,%20int)"><code>startActivityForResult()</code></a> in this situation,
+and launches an activity appropriate to the context that helps the user to resolve the error (such as an activity that helps the user to
+select an account).</p>
+
+<p>If <a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#hasResolution()"><code>hasResolution()</code></a>
+returns false, your app should call
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/GoogleApiAvailability.html#getErrorDialog(android.app.Activity,%20int,%20int)"><code>GoogleApiAvailability.getErrorDialog()</code></a>,
+passing the error code to this method. This returns a
+<a href="//developer.android.com/reference/android/app/Dialog.html"><code>Dialog</code></a> provided by Google Play
+services that&#39;s appropriate to the error. The dialog may simply provide a message explaining
+the error, or it may also provide an action to launch an activity that can resolve the error
+(such as when the user needs to install a newer version of Google Play services).</p>
+
+<p>For example, your
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.OnConnectionFailedListener.html#onConnectionFailed(com.google.android.gms.common.ConnectionResult))"><code>onConnectionFailed()</code></a> callback method should now look like this:</p>
+
+<pre class="prettyprint notranslate">public class MyActivity extends Activity
+        implements ConnectionCallbacks, OnConnectionFailedListener {
+
+    // Request code to use when launching the resolution activity
+    private static final int REQUEST_RESOLVE_ERROR = 1001;
+    // Unique tag for the error dialog fragment
+    private static final String DIALOG_ERROR = "dialog_error";
+    // Bool to track whether the app is already resolving an error
+    private boolean mResolvingError = false;
+
+    // ...
+
+    @Override
+    public void onConnectionFailed(ConnectionResult result) {
+        if (mResolvingError) {
+            // Already attempting to resolve an error.
+            return;
+        } else if (result.hasResolution()) {
+            try {
+                mResolvingError = true;
+                result.startResolutionForResult(this, REQUEST_RESOLVE_ERROR);
+            } catch (SendIntentException e) {
+                // There was an error with the resolution intent. Try again.
+                mGoogleApiClient.connect();
+            }
+        } else {
+            // Show dialog using GoogleApiAvailability.getErrorDialog()
+            showErrorDialog(result.getErrorCode());
+            mResolvingError = true;
+        }
+    }
+
+    // The rest of this code is all about building the error dialog
+
+    /* Creates a dialog for an error message */
+    private void showErrorDialog(int errorCode) {
+        // Create a fragment for the error dialog
+        ErrorDialogFragment dialogFragment = new ErrorDialogFragment();
+        // Pass the error that should be displayed
+        Bundle args = new Bundle();
+        args.putInt(DIALOG_ERROR, errorCode);
+        dialogFragment.setArguments(args);
+        dialogFragment.show(getSupportFragmentManager(), "errordialog");
+    }
+
+    /* Called from ErrorDialogFragment when the dialog is dismissed. */
+    public void onDialogDismissed() {
+        mResolvingError = false;
+    }
+
+    /* A fragment to display an error dialog */
+    public static class ErrorDialogFragment extends DialogFragment {
+        public ErrorDialogFragment() { }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+            // Get the error code and retrieve the appropriate dialog
+            int errorCode = this.getArguments().getInt(DIALOG_ERROR);
+            return GoogleApiAvailability.getInstance().getErrorDialog(
+                    this.getActivity(), errorCode, REQUEST_RESOLVE_ERROR);
+        }
+
+        @Override
+        public void onDismiss(DialogInterface dialog) {
+            ((MyActivity) getActivity()).onDialogDismissed();
+        }
+    }
+}
+</pre>
+
+<p>After the user completes the dialog provided by
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#startResolutionForResult(android.app.Activity,%20int)"><code>startResolutionForResult()</code></a>
+or dismisses the message provided by <a href="https://developers.google.com/android/reference/com/google/android/gms/common/GoogleApiAvailability.html#getErrorDialog(android.app.Activity,%20int,%20int)"><code>GoogleApiAvailability.getErrorDialog()</code></a>,
+your activity receives the
+<a href="//developer.android.com/reference/android/app/Activity.html#onActivityResult(int,%20int,%20android.content.Intent)"><code>onActivityResult()</code></a>
+callback with the
+<a href="//developer.android.com/reference/android/app/Activity.html#RESULT_OK"><code>RESULT_OK</code></a> result code.
+Your app can then call
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html#connect()"><code>connect()</code></a> again.
+For example:</p>
+
+<pre class="prettyprint notranslate">@Override
+protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    if (requestCode == REQUEST_RESOLVE_ERROR) {
+        mResolvingError = false;
+        if (resultCode == RESULT_OK) {
+            // Make sure the app is not already connected or attempting to connect
+            if (!mGoogleApiClient.isConnecting() &&
+                    !mGoogleApiClient.isConnected()) {
+                mGoogleApiClient.connect();
+            }
+        }
+    }
+}
+</pre>
+
+<p>In the above code, you probably noticed the boolean, <code>mResolvingError</code>. This keeps track of the
+app state while the user is resolving the error to avoid repetitive attempts to resolve the same
+error. For example, while the account picker dialog is displayed to help the user to resolve the
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#SIGN_IN_REQUIRED"><code>SIGN_IN_REQUIRED</code></a>
+error, the user may rotate the screen. This recreates your activity and causes your
+<a href="//developer.android.com/reference/android/app/Activity.html#onStart()"><code>onStart()</code></a> method to be
+called again, which then calls
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.html#connect()"><code>connect()</code></a> again. This
+results in another call to
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#startResolutionForResult(android.app.Activity,%20int)"><code>startResolutionForResult()</code></a>,
+which creates another account picker dialog in front of the existing one.</p>
+
+<p>This boolean serves its intended purpose only if it persists across activity instances.
+The next section explains how to maintain the error handling state of your app despite other user actions
+or events that occur on the device.</p>
+
+<h3 id="maintain_state_while_resolving_an_error">Maintain state while resolving an error</h3>
+
+<p>To avoid executing the code in
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/api/GoogleApiClient.OnConnectionFailedListener.html#onConnectionFailed(com.google.android.gms.common.ConnectionResult))"><code>onConnectionFailed()</code></a>
+while a previous attempt to resolve an error is in progress, you need to retain a boolean that
+tracks whether your app is already attempting to resolve an error.</p>
+
+<p>As shown in the code example above, your app should set a boolean to <code>true</code> each time it calls
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/ConnectionResult.html#startResolutionForResult(android.app.Activity,%20int)"><code>startResolutionForResult()</code></a>
+or displays the dialog from
+<a href="https://developers.google.com/android/reference/com/google/android/gms/common/GoogleApiAvailability.html#getErrorDialog(android.app.Activity,%20int,%20int)"><code>GoogleApiAvailability.getErrorDialog()</code></a>.
+Then, when your app receives
+<a href="//developer.android.com/reference/android/app/Activity.html#RESULT_OK"><code>RESULT_OK</code></a> in the
+<a href="//developer.android.com/reference/android/app/Activity.html#onActivityResult(int,%20int,%20android.content.Intent)"><code>onActivityResult()</code></a>
+callback, set the boolean to <code>false</code>.</p>
+
+<p>To keep track of the boolean across activity restarts (such as when the user rotates the screen),
+save the boolean in the activity&#39;s saved instance data using
+<a href="//developer.android.com/reference/android/app/Activity.html#onSaveInstanceState(android.os.Bundle)"><code>onSaveInstanceState()</code></a>:</p>
+
+<pre class="prettyprint notranslate">private static final String STATE_RESOLVING_ERROR = "resolving_error";
+
+@Override
+protected void onSaveInstanceState(Bundle outState) {
+    super.onSaveInstanceState(outState);
+    outState.putBoolean(STATE_RESOLVING_ERROR, mResolvingError);
+}
+</pre>
+
+<p>Then recover the saved state during
+<a href="//developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle)"><code>onCreate()</code></a>:</p>
+
+<pre class="prettyprint notranslate">@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+    // ...
+    mResolvingError = savedInstanceState != null
+            && savedInstanceState.getBoolean(STATE_RESOLVING_ERROR, false);
+}
+</pre>
+
+<p>Now you&#39;re ready to safely run your app and manually connect to Google Play services.</p>
+
+  </div>
+  
+
+  
+        
+  
+
+
+
+
+
+
+
+        
+<div class="devsite-content-footer nocontent">
+  
+  
+    <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see our <a href="https://developers.google.com/terms/site-policies">Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
+  
+
+  
+    
+    <p class="devsite-content-footer-date" itemprop="datePublished"
+       content="2018-08-23T17:48:44.522970">
+      
+      Last updated August 23, 2018.
+    </p>
+  
+
+</div>
+
+        </article>
+      </article>
+  
+
+        </div>
+      
+
+<footer class="devsite-footer-linkboxes nocontent
+               
+               devsite-footer-linkboxes-with-sites"><nav class="devsite-full-site-width"><ul class="devsite-footer-linkboxes-list"><li class="devsite-footer-linkbox "><h3 class="devsite-footer-linkbox-heading">Connect</h3><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//android-developers.googleblog.com/"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Android Developers Blog
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/newsletter/index.html#subscribe"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Get News and Tips by Email
+            </a></li></ul></li><li class="devsite-footer-linkbox "><h3 class="devsite-footer-linkbox-heading">More Resources</h3><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Android Developers Website
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//www.google.com/design/"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Google Design
+            </a></li></ul></li><li class="devsite-footer-linkbox "><h3 class="devsite-footer-linkbox-heading">Tools</h3><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/tools/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Android Studio
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/distribute/console/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Content Page Footer Linkbox"
+               >
+                Google Play Console
+            </a></li></ul></li><li class="devsite-footer-linkbox devsite-footer-linkbox-sites"><a href="https://developers.google.com/"
+           class="gc-analytics-event devsite-footer-linkbox-logo-link"
+           data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link"><img class="devsite-footer-linkbox-logo"
+               src="https://developers.google.com/_static/16eb031c2e/images/redesign-14/lockup-color-knockout.png"
+               alt="Google Developers"></a><ul class="devsite-footer-linkbox-list"><li class="devsite-footer-linkbox-item"><a href="//developer.android.com/index.html"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Android Link"
+               >
+                Android
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developer.chrome.com/home"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Chrome Link"
+               >
+                Chrome
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//firebase.google.com"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Firebase Link"
+               >
+                Firebase
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//cloud.google.com"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Cloud Link"
+               >
+                Google Cloud Platform
+            </a></li><li class="devsite-footer-linkbox-item"><a href="//developers.google.com/products/"
+               class="gc-analytics-event"
+               data-category="Site-Wide Custom Events"
+               data-label="Footer Products Link"
+               >
+                All Products
+            </a></li></ul></li></ul></nav></footer><footer class="devsite-utility-footer"><nav class="devsite-utility-footer-nav devsite-nav devsite-full-site-width"><div class="devsite-utility-footer-nav-left"><form class="devsite-utility-footer-language" action="https://developers.google.com/i18n/setlang/"
+            method="post"><input type="hidden" name="xsrf_token" value="JrH4AH7sqvpUVBw1id4vk9W321xfciOqLPcg81c4Q8k6MTU1MTk5MTgzODI5NjE4NQ" /><input type="hidden" name="next" value="/android/guides/google-api-client"><select class="devsite-utility-footer-language-select kd-select" name="language"
+                track-type="languageSelector" track-name="click"><option value="id"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="id"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="id">
+            Bahasa Indonesia
+          </option><option value="de"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="de"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="de">
+            Deutsch
+          </option><option value="en"
+                 selected="selected" 
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="en"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="en">
+            English
+          </option><option value="es"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="es"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="es">
+            español
+          </option><option value="fr"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="fr"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="fr">
+            français
+          </option><option value="pt-br"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="pt-br"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="pt-br">
+            Português Brasileiro
+          </option><option value="ru"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="ru"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="ru">
+            Русский
+          </option><option value="ja"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="ja"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="ja">
+            日本語
+          </option><option value="zh-cn"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="zh-cn"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="zh-cn">
+            简体中文
+          </option><option value="ko"
+                
+                track-type="languageSelector" track-name="changed"
+                track-metadata-eventDetail="ko"
+                track-metadata-original-language="en"
+                track-metadata-selected-language="ko">
+            한국어
+          </option></select></form><span class="devsite-utility-footer-links"><a class="devsite-utility-footer-link gc-analytics-event"
+           href="https://developers.google.com/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer terms link"
+           data-footer-link-id="terms"
+           >Terms
+         </a><a class="devsite-utility-footer-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer privacy link"
+           data-footer-link-id="privacy"
+           >Privacy
+         </a></span></div><div class="devsite-utility-footer-nav-right"><div class="devsite-utility-footer-newsletter-signup-text">
+        Sign up for the Google Developers newsletter
+      </div><a class="button button-primary devsite-utility-footer-newsletter-signup-button"
+         href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+         track-type="navigateTo" track-name="newsletter"
+         track-metadata-eventDetail="footer"
+         track-metadata-position="footer">
+        
+        Subscribe
+      </a></div></nav></footer></div><script async defer src="//www.gstatic.com/feedback/api.js"></script><script src="https://developers.google.com/_static2/16eb031c2e/jsi18n/"></script><script src="https://developers.google.com/_static/16eb031c2e/js/script_foot_closure.js"></script><script src="https://developers.google.com/_static/16eb031c2e/js/script_foot.js"></script><script>
+        (function($) {
+          
+          devsite.devsite.Init($, {'ENABLE_BLOCKED_VIDEO_PLACEHOLDER': 0, 'SITE_NAME': 'devsite', 'FULL_SITE_SEARCH_ENABLED': 1, 'ENABLE_CLOUDTRACK': 0, 'VTAGS_ENABLED': 0, 'HISTORY_ENABLED': 1, 'SIDEBAR_MINI_ENABLED': 0, 'VERSION_HASH': '16eb031c2e', 'SCRIPTSAFE_DOMAIN': 'google-developers.appspot.com', 'ENABLE_BLOCKED_LINK_TOOLTIP': 0, 'ALLOWED_HOSTS': ['.android.com', '.appspot.com', '.gonglchuangl.net', '.google.cn', '.google.com', '.googleplex.com', '.tensorflow.org'], 'BLOCK_RSS_FEEDS': 0},
+                               '[]','en',
+                               true, '',
+                               {"99a6bd77935176c43993ac6fe3e23dfc": true, "8de7a048f21618359bd37f5ce44be073": false, "098dafe57affddc137df300142652cfd": false, "8e03e230de0bd8a6fe173fdf172e8b3f": true, "cb025a64a50094835616312f4774a53d": true, "51470233c56fc1fde50f00b73c52b216": false, "d169d485cf24243a263783dbe42029b1": true, "700def1a83e356c06c0925afb05de4b0": false, "6749dcb526ce9bde6993550c7d928d24": true}, '/android/',
+                               'https://developers.google.com/');
+        })(jQuery);
+
+        
+        devsite.localInit = function() {
+          
+        };
+
+      </script><script>
+      $('.devsite-utility-footer-language-select').each(function() {
+        $(this).change(function(){$('.devsite-utility-footer-language').submit();});
+      });
+      </script></div><span id="devsite-request-elapsed" data-request-elapsed="253.718137741"></span></body></html>
